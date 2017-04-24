@@ -5,7 +5,7 @@
 Skin: 0,0,480,695
 Display: 42,36 3 4 caffbf 000000
 
-#Nr kx,ky,kw,kh bx,by,bw,bh mx,my	k*: klickbarer Bereich, b*: Button, m*: runtergedrückte Ecke
+#Nr kx,ky,kw,kh bx,by,bw,bh mx,my	k*: klickbarer Bereich, b*: Button, m*: runtergedrÃ¼ckte Ecke
 Key: 1   15,115,075,83  17,138,70,58  16,137
 Key: 2   90,115,075,83  92,138,70,58  91,137
 Key: 3  165,115,075,83 168,138,70,58 167,137

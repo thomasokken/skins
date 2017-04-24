@@ -53,7 +53,7 @@
                 $title .= $line;
             }
             fclose($lf);
-            print "    <tr" . ($title == "" ? "" : (" title=\"" . htmlspecialchars($title) . "\"")) . "><td><b>" . $base . "</b></td>"
+            print "    <tr" . ($title == "" ? "" : (" title=\"" . htmlentities($title) . "\"")) . "><td><b>" . $base . "</b></td>"
                 . "<td align=\"center\"><a href=\"" . $dir . "/" . $gif . "\"><img src=\"" . $dir . "/" . $thumb
                             . "\" width=\"" . $size[0] . "\" height=\"" . $size[1] .  "\"></a></td>"
                 . "<td><a href=\"" . $dir . "/" . $gif . "\" download>gif</a></td>"
