@@ -42,7 +42,18 @@
                 print "    <tr><th>name</th><th>preview</th><th colspan=\"2\">download</th></tr>\n";
                 $printed_title = TRUE;
             }
-            print "    <tr><td><b>" . $base . "</b></td>"
+            $lf = fopen($subdir . "/" . $layout, "r");
+            $title = "";
+            while (($line = fgets($lf)) !== FALSE) {
+                if (strlen($line) == 0 || substr($line, 0, 1) != "#")
+                    break;
+                $line = substr($line, 1);
+                if (strlen($line > 0) && substr($line, 0, 1) == " ")
+                    $line = substr($line, 1);
+                $title .= $line;
+            }
+            fclose($lf);
+            print "    <tr" . ($title == "" ? "" : (" title=\"" . htmlspecialchars($title) . "\"")) . "><td><b>" . $base . "</b></td>"
                 . "<td align=\"center\"><a href=\"" . $dir . "/" . $gif . "\"><img src=\"" . $dir . "/" . $thumb
                             . "\" width=\"" . $size[0] . "\" height=\"" . $size[1] .  "\"></a></td>"
                 . "<td><a href=\"" . $dir . "/" . $gif . "\" download>gif</a></td>"
