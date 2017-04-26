@@ -22,6 +22,7 @@
         $list = scandir($subdir);
         if ($list === FALSE)
             continue;
+        sort($list, SORT_STRING | SORT_FLAG_CASE);
         $printed_title = FALSE;
         foreach ($list as $gif) {
             if (!is_file($subdir . "/" . $gif))
