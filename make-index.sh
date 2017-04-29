@@ -45,11 +45,17 @@ do
     title=
     while read -r line
     do
-        if [ "$line" == "" -o "$line" =~ '^[^#]' ]
+        line=`echo $line | tr -d '\r'`
+        if [[ "$line" = "" || "$line" =~ '^[^#]' ]]
         then
             break
         fi
-        title="${title}\n${line}"
+        if [ "$title" = "" ]
+        then
+            title="${line}"
+        else
+            title="${title}\n${line}"
+        fi
     done < $layout
     if [ "$title" != "" ]
     then
