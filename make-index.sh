@@ -1,15 +1,17 @@
 #!/bin/sh
+exec > index.html
 cat - << EOF
 <!DOCTYPE html>
 <html>
 <head>
   <title>Free42 Skins</title>
+  <meta charset="UTF-8">
 </head>
 <body>
   <h3>Free42 Skins</h3>
   <a href="README.txt">README</a>
   <p>
-  <table border="1" cellpadding="10">
+  <table border="0" cellpadding="10">
 EOF
 prevdir=null
 for layout in `\ls desktop/*.layout | sort -i ; \ls android/*.layout | sort -i ; \ls iphone/*.layout | sort -i`
@@ -34,8 +36,10 @@ do
             title="iPhone"
             ;;
         esac
-        echo "    <tr bgcolor=\"yellow\"><th colspan=\"4\">Skins designed for $title</th></tr>"
+        echo "    <tr bgcolor=\"yellow\"><th colspan=\"2\">Skins designed for $title</th><td><a href="$dir-skins.zip">download all</a></tr>"
+        zip -j -q $dir-skins.zip `\ls $dir/*.gif $dir/*.layout | sort -i`
         prevdir=$dir
+        color=dddddd
     fi
     thumb=$dir/${base}.thumb.png
     giftopnm $gif | pamscale -xyfit 160 160 | pnmtopng > $thumb
@@ -50,6 +54,7 @@ do
         then
             break
         fi
+        line=`echo $line | sed -e 's/^# \{0,1\}//'`
         if [ "$title" = "" ]
         then
             title="${line}"
@@ -59,12 +64,18 @@ do
     done < $layout
     if [ "$title" != "" ]
     then
-        title=`echo "$title" | sed 's/&/&amp;/g' | sed 's/</&lt;/g' | sed 's/>/&gt;/g'`
-        title=" title=\"${title}\""
+        title=`echo "$title" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g'`
+        title="title=\"${title}\""
     fi
-    echo "    <tr><td $title><b>$base</b></td><td align=\"center\"><a href=\"$gif\"><img src=\"$thumb\" width=\"$width\" height=\"$height\"></a></td><td><a href=\"$gif\" download>gif</a></td><td><a href=\"$layout\" download>layout</a></td></tr>"
+    echo "    <tr bgcolor=\"#$color\" $title><td><b>$base</b></td><td align=\"center\"><a href=\"$gif\"><img src=\"$thumb\" width=\"$width\" height=\"$height\"></a></td><td><a href=\"$gif\">view gif</a><br><a href=\"$layout\">view layout</a><p><a href=\"$gif\" download>download gif</a><br><a href=\"$layout\" download>download layout</a></td></tr>"
+    if [ $color = "dddddd" ]
+    then
+        color=eeeeee
+    else
+        color=dddddd
+    fi
 done
-echo << EOF
+cat - << EOF
   </table>
   <p>
   Go <a href="..">back</a>.
