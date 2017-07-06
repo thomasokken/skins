@@ -1,0 +1,64 @@
+# Braun ET-66 skin (iPhone version) for Free42
+# Created by Michael Khor
+
+Skin: 0,0,640,1096
+Display: 60,235 4 6 FFFFFF 333333
+
+# Fifth row, number pad and right column
+Key: 34 158,855,84,84 158,855,84,84 158,854 # 0
+Key: 35 279,855,84,84 279,855,84,84 279,854 # .
+Key: 13 400,855,84,84 400,855,84,84 400,854 # ENTER
+Key: 37 522,855,84,84 522,855,84,84 522,854 # PLUS
+
+# Fourth row, number pad and right column
+Key: 29 158,735,84,84 158,735,84,84 158,734 # 1
+Key: 30 279,735,84,84 279,735,84,84 279,734 # 2
+Key: 31 400,735,84,84 400,735,84,84 400,734 # 3
+Key: 32 522,735,84,84 522,735,84,84 522,734 # MINUS
+
+# Third row, number pad and right column
+Key: 24 158,611,84,84 158,611,84,84 158,610 # 4
+Key: 25 279,611,84,84 279,611,84,84 279,610 # 5
+Key: 26 400,611,84,84 400,611,84,84 400,610 # 6
+Key: 27 522,611,84,84 522,611,84,84 522,610 # MULT
+
+# Second row, number pad and right column
+Key: 19 158,491,84,84 158,491,84,84 158,490 # 7
+Key: 20 279,491,84,84 279,491,84,84 279,490 # 8
+Key: 21 400,491,84,84 400,491,84,84 400,490 # 9
+Key: 22 522,491,84,84 522,491,84,84 522,490 # DIV
+
+# First row, rightmost button
+Key: 15 522,371,84,84 522,371,84,82 522,370 # CHS
+
+# Left column, fifth to second rows
+Macro: 151 28 17 06 # CLX
+Key: 151 035,855,84,84 035,855,84,84 035,854 # CLX
+
+Macro: 141 28 08    # %
+Key: 141 035,735,84,84 035,735,84,84 035,734 # %
+
+Macro: 131 28 15 23 04 03 # RRES (real results only) SQRT
+Key: 131 035,611,84,84 035,611,84,84 035,610 # SQRT (real results only)
+
+Macro: 121 28 37 01 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 06 # %CH
+Key: 121 035,491,84,84 035,491,84,84 035,490 # %CH
+
+# First row, first four buttons
+Macro: 111 07 37 30 24 # M+  STO+ Reg24
+Macro: 112 07 32 30 24 # M-  STO- Reg24
+Macro: 113 08 30 24    # MR  RCL Reg24
+Macro: 114 07 35 02 28 17 06 07 30 24 28 17 06 08 35 02 # MC  STO .ST L CLX STO Reg24 CLX RCL .ST L
+Key: 111 035,371,84,84 035,371,84,84 035,370 # M+
+Key: 112 158,371,84,84 158,371,84,84 158,370 # M-
+Key: 113 279,371,84,84 279,371,84,84 279,370 # MR
+Key: 114 400,371,84,84 400,371,84,84 400,370 # MC
+
+# Annunciators (not displayed)
+Annunciator: 1 000,000,00,00 000,000 # Scroll Up-Down
+Annunciator: 2 000,000,00,00 000,000 # Shift
+Annunciator: 3 000,000,00,00 000,000 # Printing
+Annunciator: 4 000,000,00,00 000,000 # Busy
+Annunciator: 5 000,000,00,00 000,000 # Battery
+Annunciator: 6 000,000,00,00 000,000 # GRAD
+Annunciator: 7 000,000,00,00 000,000 # RAD
