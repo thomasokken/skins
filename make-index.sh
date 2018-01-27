@@ -14,7 +14,7 @@ cat - << EOF
   <table border="0" cellpadding="10">
 EOF
 prevdir=null
-for layout in `\ls desktop/*.layout | sort -i ; \ls android/*.layout | sort -i ; \ls iphone/*.layout | sort -i`
+for layout in `\ls desktop/*.layout | sort -f ; \ls android/*.layout | sort -f ; \ls iphone/*.layout | sort -f`
 do
     dir=`dirname $layout`
     base=`basename $layout .layout`
@@ -37,7 +37,7 @@ do
             ;;
         esac
         echo "    <tr bgcolor=\"yellow\"><th colspan=\"2\">Skins designed for $title</th><td><a href="$dir-skins.zip">download all</a></tr>"
-        zip -j -q $dir-skins.zip `\ls $dir/*.gif $dir/*.layout | sort -i`
+        zip -j -q $dir-skins.zip `\ls $dir/*.gif $dir/*.layout | sort -f`
         prevdir=$dir
         color=dddddd
     fi
