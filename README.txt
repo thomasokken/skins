@@ -1,9 +1,15 @@
-If you are using Windows, put the skins in the Free42 directory. By default,
-this is the directory containing the Free42 executable, but its location can be
-changed in the preferences dialog. Note: If you set the Free42 directory to a
-location other than the executable's directory, you may put skins in both
-locations.
-If you are using Unix, put the skins in $HOME/.free42/.
+On Windows, put skins in the same directory where the Free42 executable is
+located, or in %APPDATA%\Free42.
+
+On Mac, put skins in $HOME/Library/Application Support/Free42. N.B. This only
+applies to the Application; the Dashboard Widget does not support skin
+switching.
+
+On Linux, put the skins in $HOME/.free42/.
+
+On Android, put the skins wherever you like. Remember the location, and, in
+Free42, choose Main Menu -> Skin: Other, and use the file selection dialog to
+locate and select the desired skin's layout file.
 
 To use these skins with Free42 on iPhone or iPod touch, you must upload them to
 the device. This is done as follows: on the device, run Free42. Tap in the top
