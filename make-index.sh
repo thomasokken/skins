@@ -9,7 +9,7 @@ cat - << EOF
 </head>
 <body>
   <h3>Free42 Skins</h3>
-  <a href="README.txt">README</a>
+  <a href="README.html">README</a>
   <p>
   <table border="0" cellpadding="10">
 EOF
