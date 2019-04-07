@@ -1,26 +1,67 @@
 # HP-42S skin for Free42 (Windows and Unix)
 
-Alt 1 : 1
-Alt 2 : 2
-Alt 3 : 3
-Alt 4 : 4
-Alt 5 : 5
-Alt 6 : 6
+WinKey: Alt 49 : 1
+WinKey: Alt 97 : 1
+WinKey: Alt 50 : 2
+WinKey: Alt 98 : 2
+WinKey: Alt 51 : 3
+WinKey: Alt 99 : 3
+WinKey: Alt 52 : 4
+WinKey: Alt 100 : 4
+WinKey: Alt 53 : 5
+WinKey: Alt 101 : 5
+WinKey: Alt 54 : 6
+WinKey: Alt 102 : 6
+WinKey: 85 : 38               # map 'u' to macro 38
+WinKey: Shift 85 : 39         # map 'U' to macro 39
+WinKey: CShift 85 : 39        # map CShift plus 'u' to macro 39
+WinKey: CShift Shift 85 : 39  # map CShift plus 'U' to macro 39
+WinKey: 80 : 37
+WinKey: Shift 80 : 28 37
+WinKey: CShift 80 : 28 37
+WinKey: CShift Shift 80 : 28 37
+WinKey: 74 : 27
+WinKey: Shift 74 : 28 27
+WinKey: CShift 74 : 28 27
+WinKey: CShift Shift 74 : 28 27
 
-u : 38         # map 'u' to macro 38
-U : 39         # map 'U' to macro 39
-CShift u : 39  # map CShift plus 'u' to macro 39
-CShift U : 39  # map CShift plus 'U' to macro 39
+MacKey: Alt 1 : 1
+MacKey: Alt 2 : 2
+MacKey: Alt 3 : 3
+MacKey: Alt 4 : 4
+MacKey: Alt 5 : 5
+MacKey: Alt 6 : 6
+MacKey: u : 38         # map 'u' to macro 38
+MacKey: U : 39         # map 'U' to macro 39
+MacKey: CShift u : 39  # map CShift plus 'u' to macro 39
+MacKey: CShift U : 39  # map CShift plus 'U' to macro 39
+MacKey: p : 37
+MacKey: P : 28 37
+MacKey: CShift p : 28 37
+MacKey: CShift P : 28 37
+MacKey: j : 27
+MacKey: J : 28 27
+MacKey: CShift j : 28 27
+MacKey: CShift J : 28 27
 
-p : 37
-P : 28 37
-CShift p : 28 37
-CShift P : 28 37
-
-j : 27
-J : 28 27
-CShift j : 28 27
-CShift J : 28 27
+GtkKey: Alt 1 : 1
+GtkKey: Alt 2 : 2
+GtkKey: Alt 3 : 3
+GtkKey: Alt 4 : 4
+GtkKey: Alt 5 : 5
+GtkKey: Alt 6 : 6
+GtkKey: u : 38         # map 'u' to macro 38
+GtkKey: U : 39         # map 'U' to macro 39
+GtkKey: CShift u : 39  # map CShift plus 'u' to macro 39
+GtkKey: CShift U : 39  # map CShift plus 'U' to macro 39
+GtkKey: p : 37
+GtkKey: P : 28 37
+GtkKey: CShift p : 28 37
+GtkKey: CShift P : 28 37
+GtkKey: j : 27
+GtkKey: J : 28 27
+GtkKey: CShift j : 28 27
+GtkKey: CShift J : 28 27
 
 Skin: 0,0,640,402
 Display: 61,47 3 3 6b836b 0b2327
