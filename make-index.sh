@@ -6,6 +6,7 @@ cat - << EOF
 <head>
   <title>Free42 Skins</title>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="../images/free42-icon.png">
 </head>
 <body>
   <h3>Free42 Skins</h3>
