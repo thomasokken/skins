@@ -1,4 +1,5 @@
 # HP-42S skin for Free42 (Windows and Unix)
+# Modified version of 42ct, with SST→ / SST↑ key added.
 
 WinKey: Alt 49 : 1
 WinKey: Alt 97 : 1
