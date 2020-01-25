@@ -48,8 +48,7 @@ do
             title="Android and iOS"
             ;;
         esac
-        echo "    <tr bgcolor=\"yellow\"><th colspan=\"2\">Skins designed for $title</th><td><a href="$dir-skins.zip">download all</a></tr>"
-        zip -j -q $dir-skins.zip `\ls $dir/*.gif $dir/*.layout | sort -f`
+        echo "    <tr bgcolor=\"yellow\"><th colspan=\"3\">Skins designed for $title</th></tr>"
         prevdir=$dir
         color=dddddd
     fi
