@@ -1,2 +1,2 @@
 #!/bin/sh
-rm -f index.html android-skins.zip desktop-skins.zip iphone-skins.zip */*.thumb.png
+rm -f index.html desktop-skins.zip mobile-skins.zip */*.thumb.png

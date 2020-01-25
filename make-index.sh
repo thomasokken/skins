@@ -15,7 +15,7 @@ cat - << EOF
   <table border="0" cellpadding="10">
 EOF
 prevdir=null
-for layout in `\ls desktop/*.layout | sort -f ; \ls android/*.layout | sort -f ; \ls iphone/*.layout | sort -f`
+for layout in `\ls desktop/*.layout | sort -f ; \ls mobile/*.layout | sort -f`
 do
     dir=`dirname $layout`
     base=`basename $layout .layout`
@@ -44,11 +44,8 @@ do
         desktop)
             title="desktop environments"
             ;;
-        android)
-            title="Android"
-            ;;
-        iphone)
-            title="iPhone"
+        mobile)
+            title="Android and iOS"
             ;;
         esac
         echo "    <tr bgcolor=\"yellow\"><th colspan=\"2\">Skins designed for $title</th><td><a href="$dir-skins.zip">download all</a></tr>"
