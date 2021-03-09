@@ -1,0 +1,220 @@
+# HP-42S skin for Free42 calculator simulator
+#
+# Skin dimensions are (360 x 640) pixels
+# Suitable for a display resolution of (360 x 640)
+#
+# By Andrew Novinc
+# March 2016
+#
+# Shrunk for desktop
+# Auto screen shift buttons added
+# Additional keyboard keymaps added
+# Removed softkey functionality from the top buttons - just click on display
+# by Helaman Ferguson - February 2021
+
+Skin: 0,0,360,640
+Display: 32,72 2.25 3 cacdb4 525e5d
+
+Annunciator: 1  30,51,25,15  390,51 # Scroll Up-Down
+Annunciator: 2  55,51,29,15  415,51 # Shift
+Annunciator: 3  84,51,29,15  444,51 # Printing
+Annunciator: 4 113,51,18,15  473,51 # Busy
+Annunciator: 5 131,51,27,15  491,51 # Battery
+Annunciator: 6 159,51,34,15  519,51 # GRAD
+Annunciator: 7 168,51,24,15  528,51 # RAD
+
+#             click         display      down
+#          x, y, w, h     x, y, w, h     x, y
+# Normally these are just 1-6 but removed to get rid of key
+#  also acting as a soft key. Just click the display for a softkey.
+Key: 76    3,186,59,20   11,191,43,15  371,191 # Sigma minus
+Key: 75    3,207,59,33   11,207,43,33  371,207 # Sigma plus
+Key: 78   62,186,59,20   70,191,43,15  430,191 # Power
+Key: 77   62,207,59,33   70,207,43,33  430,207 # Reciprocal
+Key: 80  121,186,59,20  129,191,43,15  489,191 # Square
+Key: 79  121,207,59,33  129,207,43,33  489,207 # Square Root
+Key: 82  180,186,59,20  188,191,43,15  548,191 # LOG-1
+Key: 81  180,207,59,33  188,207,43,33  548,207 # LOG
+Key: 84  239,186,59,20  247,191,43,15  607,191 # LN-1
+Key: 83  239,207,59,33  247,207,43,33  607,207 # LN
+Key: 86  298,186,59,20  306,191,43,15  666,191 # GTO
+Key: 85  298,207,59,33  306,207,43,33  666,207 # XEQ
+
+Key: 44    3,249,59,20    5,253,56,15  365,253 # COMPLEX
+Key:  7    3,269,59,33   11,269,43,33  371,269 # STO
+Macro: 44 28 7
+Key: 45   62,249,59,20   70,253,43,15  430,253 # %
+Key:  8   62,269,59,33   70,269,43,33  430,269 # RCL
+Macro: 45 28 8
+Key: 46  121,249,59,20  129,253,43,15  489,253 # Pi
+Key:  9  121,269,59,33  129,269,43,33  489,269 # Pop Stack
+Macro: 46 28 9
+Key: 47  180,249,59,20  188,253,43,15  548,253 # SIN-1
+Key: 10  180,269,59,33  188,269,43,33  548,269 # SIN
+Macro: 47 28 10
+Key: 48  239,249,59,20  247,253,43,15  607,253 # COS-1
+Key: 11  239,269,59,33  247,269,43,33  607,269 # COS
+Macro: 48 28 11
+Key: 49  298,249,59,20  306,253,43,15  666,253 # TAN-1
+Key: 12  298,269,59,33  306,269,43,33  666,269 # TAN
+Macro: 49 28 12
+
+Key: 50   3,311,118,20  11,316,102,15  371,316 # ALPHA
+Key: 13   3,332,118,33  11,332,102,33  371,332 # ENTER
+Macro: 50 28 13
+Key: 51  121,311,59,20  129,316,43,15  489,316 # Last x
+Key: 14  121,332,59,33  129,332,43,33  489,332 # Swap X<>Y
+Macro: 51 28 14
+Key: 52  180,311,59,20  188,316,43,15  548,316 # MODES
+Key: 15  180,332,59,33  188,332,43,33  548,332 # Negate
+Macro: 52 28 15
+Key: 53  239,311,59,20  247,316,43,15  607,316 # DISP
+Key: 16  239,332,59,33  247,332,43,33  607,332 # Exponent
+Macro: 53 28 16
+Key: 54  298,311,59,20  306,316,43,15  666,316 # CLEAR
+Key: 17  298,332,59,33  306,332,43,33  666,332 # Backspace
+Macro: 54 28 17
+
+Key: 55    3,374,59,20   11,379,43,15  371,379 # BST
+Key: 18    3,394,59,33   11,394,43,33  371,394 # Scroll Up
+Macro: 55 28 18
+Key: 56   70,374,72,20   78,379,56,15  438,379 # SOLVER
+Key: 19   70,394,72,33   78,394,56,33  438,394 # 7
+Macro: 56 28 19
+Key: 57  142,374,72,20  150,379,56,15  510,379 # Integral
+Key: 20  142,394,72,33  150,394,56,33  510,394 # 8
+Macro: 57 28 20
+Key: 58  213,374,72,20  221,379,56,15  581,379 # MATRIX
+Key: 21  213,394,72,33  221,394,56,33  581,394 # 9
+Macro: 58 28 21
+Key: 59  285,374,72,20  293,379,56,15  653,379 # STAT
+Key: 22  285,394,72,33  293,394,56,33  653,394 # Divide
+Macro: 59 28 22
+
+Key: 60    3,436,59,20   11,441,43,15  371,441 # SST
+Key: 23    3,457,59,33   11,457,43,33  371,457 # Scroll Down
+Macro: 60 28 23
+Key: 61   70,436,72,20   78,441,56,15  438,441 # BASE
+Key: 24   70,457,72,33   78,457,56,33  438,457 # 4
+Macro: 61 28 24
+Key: 62  142,436,72,20  150,441,56,15  510,441 # CONVERT
+Key: 25  142,457,72,33  150,457,56,33  510,457 # 5
+Macro: 62 28 25
+Key: 63  213,436,72,20  221,441,56,15  581,441 # FLAGS
+Key: 26  213,457,72,33  221,457,56,33  581,457 # 6
+Macro: 63 28 26
+Key: 64  285,436,72,20  293,441,56,15  653,441 # PROB
+Key: 27  285,457,72,33  293,457,56,33  653,457 # Multiply
+Macro: 64 28 27
+
+Key: 28    3,499,59,62   11,519,43,33  371,519 # Shift
+# 65 is not used currently
+
+Key: 66   70,499,72,20   78,504,56,15  438,504 # ASSIGN
+Key: 29   70,519,72,33   78,519,56,33  438,519 # 1
+Macro: 66 28 29
+Key: 67  142,499,72,20  150,504,56,15  510,504 # CUSTOM
+Key: 30  142,519,72,33  150,519,56,33  510,519 # 2
+Macro: 67 28 30
+Key: 68  213,499,72,20  221,504,56,15  581,504 # PGM.FCN
+Key: 31  213,519,72,33  221,519,56,33  581,519 # 3
+Macro: 68 28 31
+Key: 69  285,499,72,20  293,504,56,15  653,504 # PRINT
+Key: 32  285,519,72,33  293,519,56,33  653,519 # Subtract
+Macro: 69 28 32
+
+Key: 70    3,561,59,20   11,566,43,15  371,566 # OFF
+Key: 33    3,582,59,33   11,582,43,33  371,582 # Exit
+Macro: 70 28 33
+Key: 71   70,561,72,20   78,566,56,15  438,566 # TOP.FCN
+Key: 34   70,582,72,33   78,582,56,33  438,582 # 0
+Macro: 71 28 34
+Key: 72  142,561,72,20  150,566,56,15  510,566 # SHOW
+Key: 35  142,582,72,33  150,582,56,33  510,582 # Point
+Macro: 72 28 35
+Key: 73  213,561,72,20  221,566,56,15  581,566 # PRGM
+Key: 36  213,582,72,33  221,582,56,33  581,582 # R-S
+Macro: 73 28 36
+Key: 74  285,561,72,20  293,566,56,15  653,566 # CATALOG
+Key: 37  285,582,72,33  293,582,56,33  653,582 # Add
+Macro: 74 28 37
+
+Macro: 75 "Σ+"
+Macro: 76 "Σ-"
+Macro: 77 "1/X"
+Macro: 78 "Y↑X"
+Macro: 79 "SQRT"
+Macro: 80 "X↑2"
+Macro: 81 "LOG"
+Macro: 82 "10↑X"
+Macro: 83 "LN"
+Macro: 84 "E↑X"
+Macro: 85 "XEQ"
+Macro: 86 "GTO"
+Macro: 87 "R↑"
+Macro: 88 "CLST"
+Macro: 89 "SST→"
+Macro: 90 "SST↑"
+
+WinKey: Alt 49 : 1
+WinKey: Alt 97 : 1
+WinKey: Alt 50 : 2
+WinKey: Alt 98 : 2
+WinKey: Alt 51 : 3
+WinKey: Alt 99 : 3
+WinKey: Alt 52 : 4
+WinKey: Alt 100 : 4
+WinKey: Alt 53 : 5
+WinKey: Alt 101 : 5
+WinKey: Alt 54 : 6
+WinKey: Alt 102 : 6
+WinKey: 80 : 37
+WinKey: Shift 80 : 28 37
+WinKey: CShift 80 : 28 37
+WinKey: CShift Shift 80 : 28 37
+WinKey: 74 : 27
+WinKey: Shift 74 : 28 27
+WinKey: CShift 74 : 28 27
+WinKey: CShift Shift 74 : 28 27
+WinKey: 85 : 87               # map 'u' to macro 87
+WinKey: Shift 85 : 88         # map 'U' to macro 88
+WinKey: CShift 85 : 88        # map CShift plus 'u' to macro 88
+WinKey: CShift Shift 85 : 88  # map CShift plus 'U' to macro 88
+
+MacKey: Alt 1 : 1
+MacKey: Alt 2 : 2
+MacKey: Alt 3 : 3
+MacKey: Alt 4 : 4
+MacKey: Alt 5 : 5
+MacKey: Alt 6 : 6
+MacKey: p : 37
+MacKey: P : 28 37
+MacKey: CShift p : 28 37
+MacKey: CShift P : 28 37
+MacKey: j : 27
+MacKey: J : 28 27
+MacKey: CShift j : 28 27
+MacKey: CShift J : 28 27
+MacKey: u : 87         # map 'u' to macro 87
+MacKey: U : 88         # map 'U' to macro 88
+MacKey: CShift u : 88  # map CShift plus 'u' to macro 88
+MacKey: CShift U : 88  # map CShift plus 'U' to macro 88
+
+GtkKey: Alt 1 : 1
+GtkKey: Alt 2 : 2
+GtkKey: Alt 3 : 3
+GtkKey: Alt 4 : 4
+GtkKey: Alt 5 : 5
+GtkKey: Alt 6 : 6
+GtkKey: p : 37
+GtkKey: P : 28 37
+GtkKey: CShift p : 28 37
+GtkKey: CShift P : 28 37
+GtkKey: j : 27
+GtkKey: J : 28 27
+GtkKey: CShift j : 28 27
+GtkKey: CShift J : 28 27
+GtkKey: u : 87         # map 'u' to macro 87
+GtkKey: U : 88         # map 'U' to macro 88
+GtkKey: CShift u : 88  # map CShift plus 'u' to macro 88
+GtkKey: CShift U : 88  # map CShift plus 'U' to macro 88
