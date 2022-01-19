@@ -65,6 +65,7 @@ GtkKey: CShift J : 28 27
 
 Skin: 0,0,640,402
 Display: 61,47 3 3 6b836b 0b2327
+DisplayExpansionZone: 74 94
 
 Annunciator: 1 72,32,17,11 0,403
 Annunciator: 2 93,32,20,11 18,403
