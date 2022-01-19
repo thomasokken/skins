@@ -5,6 +5,7 @@
 Skin: 0,0,1024,590
 Display: 42,52 4 7 C8CECA 303632
 #Display: 37,67 4 6 D5DBD7 2B2B2B
+DisplayExpansionZone: 30 110
 
 Annunciator: 1 50,28,34,20 2,594 # Scroll Up-Down
 Annunciator: 2 92,28,40,20 38,596 # Shift

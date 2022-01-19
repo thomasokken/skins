@@ -7,6 +7,7 @@ Display: 42,62 4 6 858C83 1A1E1B
 #Display: 42,52 4 7 858C83 1A1E1B
 #Display: 42,52 4 7 C8CECA 303632
 #Display: 42,52 4 7 D5DBD7 2B2B2B
+DisplayExpansionZone: 28 110
 
 Annunciator: 1 50,28,34,20 2,594 # Scroll Up-Down
 Annunciator: 2 92,28,40,20 38,596 # Shift

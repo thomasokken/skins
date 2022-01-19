@@ -6,6 +6,7 @@ Skin: 0,0,1024,584
 #Display: 28,59 4 6 949A83 242A26 # v2
 #Display: 28,59 4 6 B3B9A2 242A26 # v3
 Display: 28,59 4 6 9EA48D 242A26 # v4
+DisplayExpansionZone: 36 104
 
 Annunciator: 1  35,35,33,16  5,593  # Scroll Up-Down
 Annunciator: 2  68,35,42,16  38,593  # Shift
