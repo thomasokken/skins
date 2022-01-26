@@ -72,3 +72,41 @@ Annunciator: 5 277,48,26,14 163,657
 Annunciator: 6 170,66,8,14 202,657
 Annunciator: 7 179,66,25,14 211,657
 
+WinKey: 65       : 41
+WinKey: Shift 65 : 42
+WinKey: 86       : 43
+WinKey: Shift 86 : 44
+WinKey: 81       : 45
+WinKey: Shift 81 : 46
+WinKey: 79       : 47
+WinKey: Shift 79 : 48
+WinKey: 76       : 49
+WinKey: Shift 76 : 50
+WinKey: 88       : 51
+WinKey: Shift 88 : 52
+
+MacKey: a : 41
+MacKey: A : 42
+MacKey: v : 43
+MacKey: V : 44
+MacKey: q : 45
+MacKey: Q : 46
+MacKey: o : 47
+MacKey: O : 48
+MacKey: l : 49
+MacKey: L : 50
+MacKey: x : 51
+MacKey: X : 52
+
+GtkKey: a : 41
+GtkKey: A : 42
+GtkKey: v : 43
+GtkKey: V : 44
+GtkKey: q : 45
+GtkKey: Q : 46
+GtkKey: o : 47
+GtkKey: O : 48
+GtkKey: l : 49
+GtkKey: L : 50
+GtkKey: x : 51
+GtkKey: X : 52
