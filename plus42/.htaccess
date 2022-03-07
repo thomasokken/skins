@@ -1,0 +1,2 @@
+AddType text/plain .layout
+AddCharset UTF-8 .layout
