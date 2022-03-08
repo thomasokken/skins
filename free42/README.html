@@ -8,19 +8,28 @@
 <pre>On Windows, put skins in the same directory where the Free42 executable is
 located, or in %APPDATA%\Free42.
 
-On Mac, put skins in $HOME/Library/Application Support/Free42.
+On Mac, use Skin -&gt; Load Skins to load skins from this web site, or put skins
+in $HOME/Library/Application Support/Free42 manually.
 
-On Linux, put the skins in $HOME/.free42/.
+On Linux, users should put skins in $XDG_DATA_HOME/free42, or, if XDG_DATA_HOME
+is unset or empty, in $HOME/.local/share/free42.
+In addition, system administrators may put skins for all users in directories
+named free42 or free42/skins under any of the directories in $XDG_DATA_DIRS, or
+/usr/local/share:/usr/share if XDG_DATA_DIRS is unset or empty.
 
-On Android, put the skins wherever you like. Remember the location, and, in
-Free42, choose Main Menu -&gt; Skin: Other, and use the file selection dialog to
-locate and select the desired skin's layout file.
+On Android, use Main Menu -&gt; Select Skin -&gt; Load to load skins from this web
+site. Or, alternatively, on Android 10 or earlier, put the skins wherever you
+like; remember the location, and, in Free42, choose Main Menu -&gt; Skin:
+Other, and use the file selection dialog to locate and select the desired
+skin's layout file. On Android 11 or later, this procedure only works with skins
+stored in /sdcard/Android/data/com.thomasokken.free42/files.
 
-To use these skins with Free42 on iPhone or iPod touch, you must upload them to
-the device. This is done as follows: on the device, run Free42. Tap in the top
-part of the display to bring up the main menu. In the menu, select "Program
-Import &amp; Export", and in the next menu, select "HTTP Server". You should now
-see a message like "The HTTP server is running at: http://ipod:9090/".
+On iOS, use Main Menu -&gt; Select Skin -&gt; Load to load skins from this web site.
+Or, alternatively, upload them to the device manually. This is done as follows:
+on the device, run Free42. Tap in the top part of the display to bring up the
+main menu. In the menu, select "Program Import &amp; Export", and in the next menu,
+select "HTTP Server". You should now see a message like "The HTTP server is
+running at: http://ipod:9090/".
 On your PC or Mac, open a browser window, and point it at the URL shown on the
 iPhone or iPod (the "http://ipod:9090/" in the example above). You should see a
 listing containing three directories, named "config", "memory", and "skins".
