@@ -21,19 +21,6 @@ do
     base=`basename $layout .layout`
     gif=$dir/${base}.gif
     size=`grep '^Skin:' $layout | sed 's/^Skin: 0,0,\([^,]*\),\([^,]*\).*$/\1x\2/'`
-    scale=`grep '^Display:' $layout | sed 's/^Display:  *[^ ][^ ]*  *\([^ ][^ ]*\)  *\([^ ][^ ]*\) .*$/\1\2/'`
-    if [[ $scale =~ [^0-9] ]]
-    then
-        scale='<br><a href="#nonint">uses non-integer display scale</a>'
-    else
-        scale=""
-    fi
-    if [ `grep -i 'Macro:[^#]*"' $layout | wc -l` -ne 0 ]
-    then
-        directcmds='<br><a href="#directcmds">uses direct command mapping</a>'
-    else
-        directcmds=""
-    fi
     if [ ! -f $gif ]
     then
         continue
@@ -78,7 +65,7 @@ do
         title=`echo "$title" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g'`
         title="title=\"${title}\""
     fi
-    echo "    <tr bgcolor=\"#$color\" $title><td><b>$base</b><br><font size=\"-1\">$size$scale$directcmds</font></td><td align=\"center\"><a href=\"$gif\"><img src=\"$thumb\" width=\"$width\" height=\"$height\"></a></td><td><a href=\"$gif\">view gif</a><br><a href=\"$layout\">view layout</a><p><a href=\"$gif\" download>download gif</a><br><a href=\"$layout\" download>download layout</a></td></tr>"
+    echo "    <tr bgcolor=\"#$color\" $title><td><b>$base</b><br><font size=\"-1\">$size</font></td><td align=\"center\"><a href=\"$gif\"><img src=\"$thumb\" width=\"$width\" height=\"$height\"></a></td><td><a href=\"$gif\">view gif</a><br><a href=\"$layout\">view layout</a><p><a href=\"$gif\" download>download gif</a><br><a href=\"$layout\" download>download layout</a></td></tr>"
     if [ $color = "dddddd" ]
     then
         color=eeeeee
@@ -88,11 +75,6 @@ do
 done
 cat - << EOF
   </table>
-  <p>
-  <a name="nonint">Non-integer display scales are supported in Free42 for Android, iOS, and MacOS, release 2.0.24g and later.</a>
-  <br>
-  <a name="directcmds">Direct command mapping is supported in Free42 2.2 and later.</a>
-</body>
   <p>
   <a href="..">Go to Free42 home page</a>
 </html>
