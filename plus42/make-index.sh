@@ -10,7 +10,7 @@ cat - << EOF
 </head>
 <body>
   <h3>Plus42 Skins</h3>
-  <a href="README.html">README</a>
+  <a href="README.html">README</a> &mdash; <a href="../../free42/skins/">Free42 Skins</a>
   <p>
   <table border="0" cellpadding="10">
 EOF
