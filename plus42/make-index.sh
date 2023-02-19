@@ -7,9 +7,17 @@ cat - << EOF
   <title>Plus42 Skins</title>
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="../images/plus42-icon.png">
+  <style>
+    .crumb { color: DeepPink }
+    .crumb:link { text-decoration: none; }
+    .crumb:visited {text-decoration: none; }
+    .crumb:active { text-decoration: none; }
+    .crumb:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
   <h3>Plus42 Skins</h3>
+  <pre><a href="../.." class="crumb">Home</a> &gt; <a href=".." class="crumb">Plus42</a> &gt; Skins</pre>
   <a href="README.html">README</a> &mdash; <a href="../../free42/skins/">Free42 Skins</a>
   <p>
   <table border="0" cellpadding="10">
