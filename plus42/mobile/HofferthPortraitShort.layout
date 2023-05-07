@@ -11,7 +11,7 @@ Annunciator: 1  56,11,40,26 655,11
 Annunciator: 2 106,11,52,26 700,11
 Annunciator: 3 168,11,64,26 760,11
 Annunciator: 4 242,11,38,26 830,11
-#Annunciator: 5
+Annunciator: 5 363,11,10,26 960,11
 Annunciator: 6 291,11,16,26 880,11
 Annunciator: 7 307,11,46,26 896,11
 
