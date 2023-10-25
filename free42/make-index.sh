@@ -73,7 +73,12 @@ do
         title=`echo "$title" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g'`
         title="title=\"${title}\""
     fi
-    echo "    <tr bgcolor=\"#$color\" $title><td><b>$base</b><br><font size=\"-1\">$size</font></td><td align=\"center\"><a href=\"$gif\"><img src=\"$thumb\" width=\"$width\" height=\"$height\"></a></td><td><a href=\"$gif\">view gif</a><br><a href=\"$layout\">view layout</a><p><a href=\"$gif\" download>download gif</a><br><a href=\"$layout\" download>download layout</a></td></tr>"
+    layout_ds=`git log --follow $dir/${base}.layout | awk 'BEGIN { d = ""; f = 0 }; /Date:/ { if (d == "") { d = $0 }; f++}; /Created subdirectories/ { if (f == 1) { d = "" }}; END { print d }'`
+    layout_d=`date -jf 'Date: %a %b %d %H:%M:%S %Y %z' '+%Y-%d-%m' "$layout_ds"`
+    gif_ds=`git log --follow $dir/${base}.gif | awk 'BEGIN { d = ""; f = 0 }; /Date:/ { if (d == "") { d = $0 }; f++}; /Created subdirectories/ { if (f == 1) { d = "" }}; END { print d }'`
+    gif_d=`date -jf 'Date: %a %b %d %H:%M:%S %Y %z' '+%Y-%d-%m' "$gif_ds"`
+    date=`(echo $layout_d; echo $gif_d) | sort | tail -1`
+    echo "    <tr bgcolor=\"#$color\" $title><td><b>$base</b><br><font size=\"-1\">$size<p>Last Updated: $date</font></td><td align=\"center\"><a href=\"$gif\"><img src=\"$thumb\" width=\"$width\" height=\"$height\"></a></td><td><a href=\"$gif\">view gif</a><br><a href=\"$layout\">view layout</a><p><a href=\"$gif\" download>download gif</a><br><a href=\"$layout\" download>download layout</a></td></tr>"
     if [ $color = "dddddd" ]
     then
         color=eeeeee
@@ -85,5 +90,6 @@ cat - << EOF
   </table>
   <p>
   <a href="..">Go to Free42 home page</a>
+</body>
 </html>
 EOF
