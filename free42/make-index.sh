@@ -14,12 +14,70 @@ cat - << EOF
     .crumb:active { text-decoration: none; }
     .crumb:hover { text-decoration: underline; }
   </style>
+  <script>
+    var lastSortKey = "sk_name";
+    function sortList(which) {
+        var rows = document.getElementsByTagName("tr");
+        var header = [];
+        var list = [];
+        for (var i = 0; i < rows.length; i++) {
+            var row = rows[i];
+            if (row.bgColor == "yellow") {
+                header.push(row);
+                list.push([]);
+            } else {
+                list[list.length - 1].push(row);
+            }
+        }
+        var label = document.getElementById(which);
+        var labelText = label.innerText;
+        var ascending = labelText.substring(labelText.length - 1) == "↓";
+        if (which == lastSortKey) {
+            label.innerText = labelText.substring(0, labelText.length - 1) + (ascending ? "↑" : "↓");
+            ascending = !ascending;
+        }
+        lastSortKey = which;
+        for (var i = 0; i < list.length; i++) {
+            list[i].sort(function(a, b) {
+                    var pa = getKey(a, which);
+                    var pb = getKey(b, which);
+                    var res = pa.localeCompare(pb);
+                    return ascending ? res : -res;
+                });
+        }
+        var parent = rows[0].parentNode;
+        for (var i = 0; i < list.length; i++) {
+            parent.appendChild(header[i]);
+            for (var j = 0; j < list[i].length; j++) {
+                var item = list[i][j];
+                item.bgColor = j % 2 == 0 ? "#dddddd" : "#eeeeee";
+                parent.appendChild(item);
+            }
+        }
+    }
+    function getKey(item, which) {
+        if (which == "sk_name")
+            return item.childNodes[0].childNodes[0].innerText;
+        else if (which == "sk_date")
+            return item.childNodes[0].childNodes[3].childNodes[0].innerText;
+        var res = item.childNodes[0].childNodes[2].innerText;
+        var t = res.indexOf("x");
+        var x = +res.substring(0, t);
+        var y = +res.substring(t + 1);
+        var r = "000000000" + (x * y);
+        return r.substring(r.length - 9);
+    }
+  </script>
 </head>
 <body>
   <h1>Free42 Skins</h1>
   <pre><a href="../.." class="crumb">Home</a> &gt; <a href=".." class="crumb">Free42</a> &gt; Skins</pre>
   <a href="README.html">README</a>
   <p>
+  Sort by: <a href="javascript:sortList('sk_name')" id="sk_name">name↓</a>
+           <a href="javascript:sortList('sk_date')" id="sk_date">date↑</a>
+           <a href="javascript:sortList('sk_resolution')" id="sk_resolution">resolution↑</a>
+  <br>
   <table border="0" cellpadding="10">
 EOF
 prevdir=null
@@ -74,9 +132,9 @@ do
         title="title=\"${title}\""
     fi
     layout_ds=`git log --follow $dir/${base}.layout | awk 'BEGIN { d = ""; f = 0 }; /Date:/ { if (d == "") { d = $0 }; f++}; /Created subdirectories/ { if (f == 1) { d = "" }}; END { print d }'`
-    layout_d=`date -jf 'Date: %a %b %d %H:%M:%S %Y %z' '+%Y-%d-%m' "$layout_ds"`
+    layout_d=`date -jf 'Date: %a %b %d %H:%M:%S %Y %z' '+%Y-%m-%d' "$layout_ds"`
     gif_ds=`git log --follow $dir/${base}.gif | awk 'BEGIN { d = ""; f = 0 }; /Date:/ { if (d == "") { d = $0 }; f++}; /Created subdirectories/ { if (f == 1) { d = "" }}; END { print d }'`
-    gif_d=`date -jf 'Date: %a %b %d %H:%M:%S %Y %z' '+%Y-%d-%m' "$gif_ds"`
+    gif_d=`date -jf 'Date: %a %b %d %H:%M:%S %Y %z' '+%Y-%m-%d' "$gif_ds"`
     date=`(echo $layout_d; echo $gif_d) | sort | tail -1`
     echo "    <tr bgcolor=\"#$color\" $title><td><b>$base</b><br><font size=\"-1\">$size<p>Last Updated: $date</font></td><td align=\"center\"><a href=\"$gif\"><img src=\"$thumb\" width=\"$width\" height=\"$height\"></a></td><td><a href=\"$gif\">view gif</a><br><a href=\"$layout\">view layout</a><p><a href=\"$gif\" download>download gif</a><br><a href=\"$layout\" download>download layout</a></td></tr>"
     if [ $color = "dddddd" ]
