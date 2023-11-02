@@ -16,6 +16,8 @@ cat - << EOF
   </style>
   <script>
     var lastSortKey = "sk_name";
+    var sortDirection = { "sk_name": true, "sk_date": false, "sk_pixels": false, "sk_width": false, "sk_height": false };
+
     function sortList(which) {
         var rows = document.getElementsByTagName("tr");
         var header = [];
@@ -29,14 +31,18 @@ cat - << EOF
                 list[list.length - 1].push(row);
             }
         }
-        var label = document.getElementById(which);
-        var labelText = label.innerText;
-        var ascending = labelText.substring(labelText.length - 1) == "↓";
+
+        var label = document.getElementById(lastSortKey);
+        label.innerText = label.innerText.substring(0, label.innerText.length - 1);
+        var ascending = sortDirection[which];
         if (which == lastSortKey) {
-            label.innerText = labelText.substring(0, labelText.length - 1) + (ascending ? "↑" : "↓");
             ascending = !ascending;
+            sortDirection[which] = ascending;
         }
+        label = document.getElementById(which);
+        label.innerText += ascending ? "▼" : "▲";
         lastSortKey = which;
+
         for (var i = 0; i < list.length; i++) {
             list[i].sort(function(a, b) {
                     var pa = getKey(a, which);
@@ -55,6 +61,7 @@ cat - << EOF
             }
         }
     }
+
     function getKey(item, which) {
         if (which == "sk_name")
             return item.childNodes[0].childNodes[0].innerText;
@@ -64,7 +71,13 @@ cat - << EOF
         var t = res.indexOf("x");
         var x = +res.substring(0, t);
         var y = +res.substring(t + 1);
-        var r = "000000000" + (x * y);
+        var r;
+        switch (which) {
+            case "sk_pixels": r = x * y; break;
+            case "sk_width": r = x; break;
+            case "sk_height": r = y; break;
+        }
+        r = "000000000" + r;
         return r.substring(r.length - 9);
     }
   </script>
@@ -73,11 +86,7 @@ cat - << EOF
   <h1>Free42 Skins</h1>
   <pre><a href="../.." class="crumb">Home</a> &gt; <a href=".." class="crumb">Free42</a> &gt; Skins</pre>
   <a href="README.html">README</a>
-  <p>
-  Sort by: <a href="javascript:sortList('sk_name')" id="sk_name">name↓</a>
-           <a href="javascript:sortList('sk_date')" id="sk_date">date↑</a>
-           <a href="javascript:sortList('sk_resolution')" id="sk_resolution">resolution↑</a>
-  <br>
+  <pre>Sort by: <a href="javascript:sortList('sk_name')" class="crumb" id="sk_name">name▼</a> <a href="javascript:sortList('sk_date')" class="crumb" id="sk_date">date</a> <a href="javascript:sortList('sk_pixels')" class="crumb" id="sk_pixels">pixels</a> <a href="javascript:sortList('sk_width')" class="crumb" id="sk_width">width</a> <a href="javascript:sortList('sk_height')" class="crumb" id="sk_height">height</a></pre>
   <table border="0" cellpadding="10">
 EOF
 prevdir=null
