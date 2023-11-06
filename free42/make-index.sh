@@ -40,7 +40,7 @@ cat - << EOF
             sortDirection[which] = ascending;
         }
         label = document.getElementById(which);
-        label.innerText += ascending ? "▼" : "▲";
+        label.innerText += ascending ? "▲" : "▼";
         lastSortKey = which;
 
         for (var i = 0; i < list.length; i++) {
@@ -86,7 +86,7 @@ cat - << EOF
   <h1>Free42 Skins</h1>
   <pre><a href="../.." class="crumb">Home</a> &gt; <a href=".." class="crumb">Free42</a> &gt; Skins</pre>
   <a href="README.html">README</a>
-  <pre>Sort by: <a href="javascript:sortList('sk_name')" class="crumb" id="sk_name">name▼</a> <a href="javascript:sortList('sk_date')" class="crumb" id="sk_date">date</a> <a href="javascript:sortList('sk_pixels')" class="crumb" id="sk_pixels">pixels</a> <a href="javascript:sortList('sk_width')" class="crumb" id="sk_width">width</a> <a href="javascript:sortList('sk_height')" class="crumb" id="sk_height">height</a></pre>
+  <pre>Sort by: <a href="javascript:sortList('sk_name')" class="crumb" id="sk_name">name▲</a> <a href="javascript:sortList('sk_date')" class="crumb" id="sk_date">date</a> <a href="javascript:sortList('sk_pixels')" class="crumb" id="sk_pixels">pixels</a> <a href="javascript:sortList('sk_width')" class="crumb" id="sk_width">width</a> <a href="javascript:sortList('sk_height')" class="crumb" id="sk_height">height</a></pre>
   <table border="0" cellpadding="10">
 EOF
 prevdir=null
