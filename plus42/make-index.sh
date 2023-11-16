@@ -85,7 +85,9 @@ cat - << EOF
 <body>
   <h3>Plus42 Skins</h3>
   <pre><a href="../.." class="crumb">Home</a> &gt; <a href=".." class="crumb">Plus42</a> &gt; Skins</pre>
-  <a href="README.html">README</a> &mdash; <a href="../../free42/skins/">Free42 Skins</a>
+  <a href="README.html">README</a>
+  <br>
+  Plus42 can use Free42 skins as well; browse them <a href="../../free42/skins/">here</a>.
   <pre>Sort by: <a href="javascript:sortList('sk_name')" class="crumb" id="sk_name">name▲</a> <a href="javascript:sortList('sk_date')" class="crumb" id="sk_date">date</a> <a href="javascript:sortList('sk_pixels')" class="crumb" id="sk_pixels">pixels</a> <a href="javascript:sortList('sk_width')" class="crumb" id="sk_width">width</a> <a href="javascript:sortList('sk_height')" class="crumb" id="sk_height">height</a></pre>
   <table border="0" cellpadding="10">
 EOF
@@ -95,7 +97,7 @@ do
     dir=`dirname $layout`
     base=`basename $layout .layout`
     gif=$dir/${base}.gif
-    size=`grep '^Skin:' $layout | sed 's/^Skin: 0,0,\([^,]*\),\([^,]*\).*$/\1x\2/'`
+    size=`grep '^Skin:' $layout | sed 's/^Skin: 0,0,\([0-9]*\),\([0-9]*\).*$/\1x\2/'`
     if [ ! -f $gif ]
     then
         continue
@@ -145,7 +147,13 @@ do
     gif_ds=`git log --follow $dir/${base}.gif | awk 'BEGIN { d = ""; f = 0 }; /Date:/ { if (d == "") { d = $0 }; f++}; /Created subdirectories/ { if (f == 1) { d = "" }}; END { print d }'`
     gif_d=`date -jf 'Date: %a %b %d %H:%M:%S %Y %z' '+%Y-%m-%d' "$gif_ds"`
     date=`(echo $layout_d; echo $gif_d) | sort | tail -1`
-    echo "    <tr bgcolor=\"#$color\" $title><td><b>$base</b><br><font size=\"-1\">$size<p>Last Updated: $date</font></td><td align=\"center\"><a href=\"$gif\"><img src=\"$thumb\" width=\"$width\" height=\"$height\"></a></td><td><a href=\"$gif\">view gif</a><br><a href=\"$layout\">view layout</a><p><a href=\"$gif\" download>download gif</a><br><a href=\"$layout\" download>download layout</a></td></tr>"
+    if [ -f $dir/${base}.zip ]
+    then
+        zip_link="<p><b><font color=\"red\">Support files:</font> <a href=\"$dir/${base}.zip\">zip</a></b>"
+    else
+        zip_link=""
+    fi
+    echo "    <tr bgcolor=\"#$color\" $title><td><b>$base</b><br><font size=\"-1\">$size<p>Last Updated: $date</font>$zip_link</td><td align=\"center\"><a href=\"$gif\"><img src=\"$thumb\" width=\"$width\" height=\"$height\"></a></td><td><a href=\"$gif\">view gif</a><br><a href=\"$layout\">view layout</a><p><a href=\"$gif\" download>download gif</a><br><a href=\"$layout\" download>download layout</a></td></tr>"
     if [ $color = "dddddd" ]
     then
         color=eeeeee
