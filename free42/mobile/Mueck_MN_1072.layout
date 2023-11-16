@@ -1,0 +1,276 @@
+# Mueck_MN_1072.layout  1072 x 1840 Metric Notation skin for Free42 phone version
+# 2023.1115: Mick Mueck (mick.mueck@mac.com)
+# With thanks to Thomas Okken, Jerrod Hofferth and Andrew Novinc :-)
+# If you want to use the desktop version of this skin then use Plus42 - it's free!
+
+# Do NOT press the top row of keys to access any menu button appearing in the display! 
+# A menu item shown in the display is selected ONLY by touching it on the display itself.
+
+# A rectangle is specified as: TL_X-coord, TL_Y-coord, width, height 
+# Button icon rectangle includes the shift-text for a more realistic key press "animation"
+
+# Small buttons:   176 x 176 with a pitch of 176
+# Big buttons:     216 x 176 with a pitch of 216
+# Row pitch:       176
+# HP banner strip: 72 pixels tall
+# Annunciators:    64 pixels tall (48 pixel tall icons with 8 blank pixel rows above & below)
+# Display Bottom:  Y=344 (also the top of the first row of buttons)
+
+Skin: 0,0,1072,1840		# From Top Left (TL) of the display to Bottom Right (BR) of the keyboard
+
+# Display:	TL_X-coord, TL_Y-coord X-mag Y-mag background_color foreground_color
+#			Does NOT include the annunciator area!
+#
+# NOTE: TL_Y-coord & Y-mag are ONLY used when the number of rows=2
+#       For rows>2 Top_Y-coord & PixelScaleY in the DisplaySize line are used
+# NOTE: When rows=2 the data is TOP justified, when rows>2 it's BOTTOM justified
+# NOTE: Set TL_Y-coord to move the top justified data down so that the bottom of the display
+#       menu boxes is the same as for when rows>2
+#
+Display: 8,136 8.05 12.6 bbc5a1 000000
+
+# ------- Ignored by Free42 and only recognized by Plus42 when # Rows >NumRows --------
+#
+# DisplaySize:	NumCols, NumRows Top_Y-coord PixelScaleY MaxRows
+#			    Does NOT include the annunciator area!
+#
+# NOTE: Extra vertical display space is ONLY allocated when NumRows is exceeded in Plus42
+# NOTE: MaxRows puts an upper limit on the total number of rows requested in Plus42
+# NOTE: Top_Y-coord should be 8 pixels below the bottom of the annunciators 
+# NOTE: PixelScaleY is used instead of Y-mag for rows>2 
+#
+DisplaySize: 22,2 136 11.2
+DisplayExpansionZone: 320 336	# A full-width strip to be replicated when stretching
+#
+# -------------------------------------------------------------------------------------
+
+# Annunciator rectangles the designed to be abutted
+#              Display_Region  TL_Icon
+Annunciator: 1 096,080,080,048 096,200 # Scroll Up-Down
+Annunciator: 2 176,080,096,048 176,200 # Shift
+Annunciator: 3 272,080,120,048 272,200 # Printing
+Annunciator: 4 392,080,080,048 392,200 # Busy
+Annunciator: 6 472,080,040,048 472,200 # G
+Annunciator: 7 512,080,088,048 512,200 # RAD
+Annunciator: 5 600,080,016,048 600,200 # Battery (dummy blank icon at end)
+
+# ROW 1    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
+Key:   050,051  0008,0344,0176,0176  0008,0344,0176,0176  0008,0360   # SCROLL_UP  BST
+Key:   052,053  0184,0344,0176,0176  0184,0344,0176,0176  0184,0360   # XEQ        PGM.FCN
+Key:   054,055  0360,0344,0176,0176  0360,0344,0176,0176  0360,0360   # SIN        ASIN
+Key:   056,057  0536,0344,0176,0176  0536,0344,0176,0176  0536,0360   # COS        ACOS
+Key:   058,059  0712,0344,0176,0176  0712,0344,0176,0176  0712,0360   # TAN        ATAN
+Key:   060,061  0888,0344,0176,0176  0888,0344,0176,0176  0888,0360   # EXIT       CLEAR
+# ROW 2    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
+Key:   070,071  0008,0520,0176,0176  0008,0520,0176,0176  0008,0536   # SCROLL_DN  SST
+Key:   072,073  0184,0520,0176,0176  0184,0520,0176,0176  0184,0536   # R/S        PRGM
+Key:   076,077  0360,0520,0176,0176  0360,0520,0176,0176  0360,0536   # LOG        10^X
+Key:   078,079  0536,0520,0176,0176  0536,0520,0176,0176  0536,0536   # LN         E^X
+Key:   074,075  0712,0520,0176,0176  0712,0520,0176,0176  0712,0536   # ∑+         ∑-
+Key:   080,081  0888,0520,0176,0176  0888,0520,0176,0176  0888,0536   # SHIFT      SHIFT
+# ROW 3    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon Rectangle-->  Pressed_TL  Button_____⇧Button
+Key:   090,091  0008,0696,0176,0176  0008,0696,0176,0176  0008,0712   # ENTER-L    GTO
+Key:   092,093  0184,0696,0176,0176  0184,0696,0176,0176  0184,0712   # ENTER-R    ALPHA
+Key:   096,097  0360,0696,0176,0176  0360,0696,0176,0176  0360,0712   # SQRT       X^2
+Key:   094,095  0536,0696,0176,0176  0536,0696,0176,0176  0536,0712   # 1/X        FACT
+Key:   098,145  0712,0696,0176,0176  0712,0696,0176,0176  0712,0712   # Y^X        STAT
+Key:   100,143  0888,0696,0176,0176  0888,0696,0176,0176  0888,0712   # BACKSPACE  PROB
+# ROW 4    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
+Key:   110,111  0008,0872,0176,0176  0008,0872,0176,0176  0008,0888   # E          CATALOG
+Key:   112,113  0184,0872,0176,0176  0184,0872,0176,0176  0184,0888   # +/-        FLAGS
+Key:   114,115  0360,0872,0176,0176  0360,0872,0176,0176  0360,0888   # milli      kilo
+Key:   116,117  0536,0872,0176,0176  0536,0872,0176,0176  0536,0888   # micro      mega
+Key:   118,119  0712,0872,0176,0176  0712,0872,0176,0176  0712,0888   # nano       giga
+Key:   120,121  0888,0872,0176,0176  0888,0872,0176,0176  0888,0888   # pico       tera
+# ROW 5    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
+Key:   130,131  0008,1048,0176,0176  0008,1048,0176,0176  0008,1064   # X<>Y       X<>
+Key:   132,133  0200,1048,0216,0176  0200,1048,0216,0176  0200,1064   # 7          SOLVER
+Key:   134,135  0416,1048,0216,0176  0416,1048,0216,0176  0416,1064   # 8          INTEGRAL
+Key:   136,137  0632,1048,0216,0176  0632,1048,0216,0176  0632,1064   # 9          MATRIX
+Key:   138,099  0848,1048,0216,0176  0848,1048,0216,0176  0848,1064   # /          %
+# ROW 6    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
+Key:   140,141  0008,1224,0176,0176  0008,1224,0176,0176  0008,1240   # R↓         R↑
+Key:   142,161  0200,1224,0216,0176  0200,1224,0216,0176  0200,1240   # 4          SHOW
+Key:   144,165  0416,1224,0216,0176  0416,1224,0216,0176  0416,1240   # 5          PRINT
+Key:   146,163  0632,1224,0216,0176  0632,1224,0216,0176  0632,1240   # 6          DISP
+Key:   148,101  0848,1224,0216,0176  0848,1224,0216,0176  0848,1240   # x          %CH
+# ROW 7    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
+Key:   150,151  0008,1400,0176,0176  0008,1400,0176,0176  0008,1416   # STO        LASTX
+Key:   152,153  0200,1400,0216,0176  0200,1400,0216,0176  0200,1416   # 1          ASSIGN
+Key:   154,155  0416,1400,0216,0176  0416,1400,0216,0176  0416,1416   # 2          CUSTOM
+Key:   156,149  0632,1400,0216,0176  0632,1400,0216,0176  0632,1416   # 3          CONVERT
+Key:   158,159  0848,1400,0216,0176  0848,1400,0216,0176  0848,1416   # -          HMS-
+# ROW 8    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button 
+Key:   160,157  0008,1576,0176,0176  0008,1576,0176,0176  0008,1592   # RCL        MODES
+Key:   162,139  0200,1576,0216,0176  0200,1576,0216,0176  0200,1592   # 0          COMPLEX
+Key:   164,147  0416,1576,0216,0176  0416,1576,0216,0176  0416,1592   # .          BASE
+Key:   166,167  0632,1576,0216,0176  0632,1576,0216,0176  0632,1592   # PI         CONSTANT
+Key:   168,169  0848,1576,0216,0176  0848,1576,0216,0176  0848,1592   # +          HMS+
+
+# -------------------------------------------------------------------------------------
+# MACRO DEFINITIONS (COMMON TO ALL SKINS)
+# -------------------------------------------------------------------------------------
+
+# HP42S Key codes for use in Macro statements
+#--------------------|--------------|----------------|-------------|--------------|----------|
+#      +0            | +1           |  +2            | +3          | +4           | +5       |
+#--------------------|--------------|----------------|-------------|--------------|----------|
+# 01:  ∑+    ∑-      | 1/x  y^x     |  SQRT x^2      | LOG 10^x    | LN   e^x     | XEQ GTO  |
+# 07:  STO   COMPLEX | RCL  %       |  R↓   π        | SIN ASIN    | COS  ACOS    | TAN ATAN |
+# 13:  ENTER ALPHA   | x<>y LASTx   |  +/-  MODES    | E   DISP    | BACK CLEAR   |          |
+# 18:  UP    BST     | 7    SOLVER  |  8    INTEGRAL | 9   MATRIX  | /    STAT    |          |
+# 23:  DOWN  SST     | 4    BASE    |  5    CONVERT  | 6   FLAGS   | X    PROB    |          |
+# 28:  SHIFT         | 1    ASSIGN  |  2    CUSTOM   | 3   PGM.FCN | -    PRINT   |          |
+# 33:  EXIT  OFF     | 0    TOP.FCN |  .    SHOW     | R/S PRGM    | +    CATALOG |          |
+#--------------------|--------------|----------------|-------------|--------------|----------|
+
+# Key code sequences are required for the Macro statements and are defined in the table below.
+# e.g. COS is the key code sequence: 11
+# e.g. LASTx is the key code sequence: 28 14 (i.e. shift & X<>Y)
+#
+# Be careful using Macros:
+# - A Macro for a shifted function assumes Shift is ALREADY pressed via CShift i.e. if you 
+#   need LASTx as a shifted function then the sequence is 14, not 28 14
+# - Any function not  available on the physical HP42S keyboard must use a mnemonic.
+# - Any function on the top row of the physical HP42S keyboard must use a mnemonic.
+#   If a menu is showing on the display then the HP42S uses the top row buttons as a proxy for
+#   those menu "buttons". Using a mnemonic prevents that i.e. use "LOG" vs 04. 
+#   HOWEVER that doesn't work for XEQ and GTO! To XEQ your own program issue the key codes for 
+#   TOP.FCN and then the key code for XEQ i.e. 28 34 5 (assuming Shift wasn't already pressed).
+#   See my example at the bottom for executing my CONST program.
+
+# A macro with an asterisk means it's a shifted function on the actual HP42S
+# Macro numbers and Hot-keys. Use these macro numbers in all lines starting with *Key:
+
+#     Number    Key Code(s)  Function         Hot-key(s)
+Macro: 050      18           # SCROLL UP      #    ▲
+Macro: 051      18           # BST            #   ⇧▲
+Macro: 052      "XEQ"        # XEQ            #    q
+Macro: 053      31           # PGM.FCN        #   ⇧q
+Macro: 054      10           # SIN            #   ⌥s
+Macro: 055      10           # ASIN           #  ⇧⌥s
+Macro: 056      11           # COS            #   ⌥c
+Macro: 057      11           # ACOS           #  ⇧⌥c
+Macro: 058      12           # TAN            #   ⌥t
+Macro: 059      12           # ATAN           #  ⇧⌥t
+Macro: 060      33           # EXIT           #    ESC
+Macro: 061      17           # CLEAR          #   ⇧ESC
+Macro: 070      23           # SCROLL DOWN    #    ▼
+Macro: 071      23           # SST            #   ⇧▼
+Macro: 072      36           # R/S            #    TAB
+Macro: 073      36           # PRGM           #   ⇧TAB
+Macro: 074      "Σ+"         # ∑+             #   ⌥w
+Macro: 075      "Σ-"         # ∑-             #  ⇧⌥w
+Macro: 076      "LOG"        # LOG            #   ⌥l
+Macro: 077      "10^X"       # 10^X           #  ⇧⌥l      ⌥a
+Macro: 078      "LN"         # LN             #   ⌥n
+Macro: 079      "E^X"        # E^X            #   ⌥e     ⇧⌥n
+Macro: 080      28           # SHIFT          #  ⇧
+Macro: 081      28           # SHIFT-SHIFT    #  ⇧⇧
+Macro: 090      13           # ENTER (LHS)    #    CR      ENTER SPACE
+Macro: 091      "GTO"        # GTO            #    ▶︎      ⇧▶︎
+Macro: 092      13           # ENTER (RHS)    #    CR      ENTER  SPACE
+Macro: 093      13           # ALPHA          #   ⇧CR     ⇧ENTER ⇧SPACE
+Macro: 096      "SQRT"       # SQRT           #   ⌥r
+Macro: 097      "X^2"        # X^2            #   ⌥2     ⇧⌥r
+Macro: 094      "1/X"        # 1/X            #   ⌥i
+Macro: 095      "FACT"       # FACT           #   ⌥f     ⇧⌥r
+Macro: 098      "Y^X"        # Y^X            #   ⌥y
+Macro: 099      08           # %              #   ⇧/      ⌥p 
+Macro: 100      17           # BACKSPACE      #    BKSP    DEL
+Macro: 101      "%CH"        # %CH            #   ⇧x     ⇧⌥p ⇧F7 ⇧F8 ⇧F9 ⇧*(numeric pad)
+Macro: 110      16           # E Exponent     #    e       CLEAR(Mac-only)
+Macro: 111      37           # CATALOG        #   ⇧e      ⇧CLEAR(Mac-only)
+Macro: 112      15           # +/-            #    =       NumLock(unix-only)
+Macro: 113      26           # FLAGS          #   ⇧=  ⇧f  ⇧NumLock(unix-only)
+Macro: 114      16 15 31     # milli (E-3)    #    m
+Macro: 115      28 16 31     # kilo  (⇧E3)    #    u
+Macro: 116      16 15 26     # micro (E-6)    #    n
+Macro: 117      28 16 26     # mega  (⇧E6)    #    p
+Macro: 118      16 15 21     # nano  (E-9)    #    k      ⇧k
+Macro: 119      28 16 21     # giga  (⇧E9)    #   ⇧m
+Macro: 120      16 15 29 30  # pico  (E-12)   #    g       G
+Macro: 121      28 16 29 30  # tera  (⇧E12)   #    t       T
+Macro: 130      14           # X<>Y           #    ◀︎       i  F16(Mac-only)
+Macro: 131      "X<>"        # X<>            #   ⇧◀︎      ⇧i ⇧F16(Mac-only)
+Macro: 132      19           # 7              #    7
+Macro: 133      19           # SOLVER         #   ⇧7
+Macro: 134      20           # 8              #    8
+Macro: 135      20           # INTEGRAL       #   ⇧8
+Macro: 136      21           # 9              #    9
+Macro: 137      21           # MATRIX         #   ⇧9
+Macro: 138      22           # /              #    /
+Macro: 139      07           # COMPLEX        #   ⇧0
+Macro: 140      09           # R↓             #    d       F17(Mac-only)
+Macro: 141      "R^"         # R↓             #   ⇧d  ⇧u  ⇧F17(Mac-only)
+Macro: 142      24           # 4              #    4
+Macro: 143      27           # PROB           #   ⇧BKSP   ⇧DEL
+Macro: 144      25           # 5              #    5
+Macro: 145      22           # STAT           #  ⇧⌥y
+Macro: 146      26           # 6              #    6
+Macro: 147      24           # BASE           #   ⇧.       b ⇧b
+Macro: 148      27           # *              #    x       F7 F8 F9  *(numeric pad)
+Macro: 149      25           # CONVERT        #   ⇧3       c ⇧c
+Macro: 150      07           # STO            #    s       F18(Mac-only)
+Macro: 151      14           # LASTx          #   ⇧s l ⇧l ⇧F18(Mac-only)
+Macro: 152      29           # 1              #    1
+Macro: 153      29           # ASSIGN         #   ⇧1
+Macro: 154      30           # 2              #    2
+Macro: 155      30           # CUSTOM         #   ⇧2
+Macro: 156      31           # 3              #    3
+Macro: 157      15           # MODES          #   ⇧r      ⇧F19(Mac-only)
+Macro: 158      32           # -              #    -
+Macro: 159      "HMS-"       # HMS-           #   ⇧-     ⇧⌥h
+Macro: 160      08           # RCL            #    r       F19(Mac-only)
+Macro: 161      35           # SHOW           #   ⇧4
+Macro: 162      34           # 0              #    0
+Macro: 163      16           # DISP           #   ⇧6
+Macro: 164      35           # Period         #    .
+Macro: 165      32           # PRINT          #   ⇧5
+Macro: 166      28 9         # PI             #    o
+Macro: 168      37           # +              #    a       F10  F11  F12  +(numeric pad)
+Macro: 169      "HMS+"       # HMS+           #   ⇧a  ⌥h  ⇧F10 ⇧F11 ⇧F12 ⇧+(numeric pad)
+Macro: 167      34 6 28 13 1 3 4 2 4 1 5 2 5 3 13   # XEQ "CONST"   #   ⇧o
+
+# -------------------------------------------------------------------------------------
+# BONUS MACROS FOR THE DESKTOP VERSION 
+# -------------------------------------------------------------------------------------
+#     Number    Key Code(s)  Function         Hot-key(s)
+Macro: 171      16 15 29 25  # femto (E-15)   #    f
+Macro: 172      16 29 25     # Peta  (E15)    #   ⇧p
+Macro: 180      "SINH"       # SINH           #  ⌃⌥s
+Macro: 181      "ASINH"      # ASINH          # ⌃⇧⌥s
+Macro: 182      "COSH"       # COSH           #  ⌃⌥c
+Macro: 183      "ACOSH"      # ACOSH          # ⌃⇧⌥c
+Macro: 184      "TANH"       # TANH           #  ⌃⌥t
+Macro: 185      "ATANH"      # ATANH          # ⌃⇧⌥t
+Macro: 186      "LN1+X"      # ln(1+x)        #  ⌃⌥n
+Macro: 187      "E^X-1"      # e^x - 1        #  ⌃⌥e    ⌃⇧⌥n
+Macro: 188      "MOD"        # MOD            #   ⌥/      ⌥m
+# x^3 → x^9 (with hot-keys ⌥3 → ⌥9) correctly set LASTx and don't dismiss a program menu
+Macro: 173  07 35 02 07 27 35 02 08 27 35 02                         # x^3  STO.L STO*.L RCL*.L
+Macro: 174  07 35 02 07 27 35 03 07 27 35 03                         # x^4  STO.L 2@(STO*.X)
+Macro: 175  07 35 02 07 27 35 02 07 27 35 02 07 27 35 02 08 27 35 02 # x^5  STO.L 3@(STO*.L) RCL*.L
+Macro: 176  07 35 02 07 27 35 02 08 27 35 02 07 27 35 03             # x^6  STO.L STO*.L RCL*.L STO*.X
+Macro: 177  07 35 02 07 27 35 02 07 27 35 02 07 27 35 02 07 27 35 02 07 27 35 02 08 27 35 02 # x^7  STO.L 5@(STO*.L) RCL*.L
+Macro: 178  07 35 02 07 27 35 03 07 27 35 03 07 27 35 03             # x^8  STO.L 3@(STO*.X)
+Macro: 179  07 35 02 07 27 35 02 07 27 35 02 07 27 35 02 07 27 35 02 07 27 35 02 07 27 35 02 07 27 35 02 08 27 35 02 # x^9  STO.L 7@(STO*.L) RCL*.L
+# Avoid these simpler macros because TOP.FCN clears a currently displayed program menu
+# and you can't access "X<>" within a macro sequence 
+#Macro: 174  28 34 28 03 07 27 35 03                    # x^4   TOP.FCN x^2 STO*.X
+#Macro: 175  28 03 07 27 35 03 "X<>" 35 02 08 27 35 02  # x^5   TOP.FCN x^2 STO*.X X<> . L RCL*.L
+
+# -------------------------------------------------------------------------------------
+# THESE MACROS ARE ONLY FOR Plus42 (AND ARE UNKNOWN TO Free42)
+# -------------------------------------------------------------------------------------
+#     Number    Key Code(s)  Function         Hot-key(s)
+Macro: 200      "DIRS"       # DIRS           # 
+Macro: 201      "DIR.FCN"    # DIR.FCN        # 
+Macro: 202      "UNITS"      # UNITS          # 
+Macro: 203      "UNIT.FCN"   # UNIT.FCN       # 
+Macro: 204      "EQN"        # EQN            # 
+Macro: 205      "EQN.FCN"    # EQN.FCN        # 
+Macro: 206      "PLOT.M"     # PLOT.M         # 
+Macro: 207      "VIEW"       # VIEW           # 
+Macro: 208      "SST^"       # SST^           # 
+
