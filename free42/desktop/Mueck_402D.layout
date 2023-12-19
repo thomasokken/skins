@@ -1,5 +1,5 @@
-# Mueck_MN_536D.layout  536 x 888 Metric Notation skin for Free42 desktop version
-# 2023.1208: Mick Mueck (mick.mueck@mac.com)
+# Mueck_402D.layout  402 x 600 skin for Free42 desktop version
+# 2023.1212: Mick Mueck (mick.mueck@mac.com)
 # With thanks to Thomas Okken, Jerrod Hofferth and Andrew Novinc :-)
 # If you want to use the desktop version of this skin then use Plus42 - it's free!
 
@@ -9,14 +9,14 @@
 # A rectangle is specified as: TL_X-coord, TL_Y-coord, width, height 
 # Button icon rectangle includes the shift-text for a more realistic key press "animation"
 
-# Small buttons:   088 x 088 with a pitch of 088
-# Big buttons:     108 x 088 with a pitch of 108
-# Row pitch:       88
-# HP banner strip: 36 pixels tall
-# Annunciators:    32 pixels tall (24 pixel tall icons with 4 blank pixel rows above & below)
-# Display Bottom:  Y=172 (also the top of the first row of buttons)
+# Small buttons:   066 x 066 with a pitch of 066
+# Big buttons:     081 x 066 with a pitch of 081
+# Row pitch:       66
+# HP banner strip: 27 pixels tall
+# Annunciators:    24 pixels tall (18 pixel tall icons with 3 blank pixel rows above & below)
+# Display Bottom:  Y=129 (also the top of the first row of buttons)
 
-Skin: 0,0,536,888    # From Top Left (TL) of the display to Bottom Right (BR) of the keyboard
+Skin: 0,0,402,600    # From Top Left (TL) of the display to Bottom Right (BR) of the keyboard
 
 # Display:	TL_X-coord, TL_Y-coord X-mag Y-mag background_color foreground_color
 #			Does NOT include the annunciator area!
@@ -27,7 +27,7 @@ Skin: 0,0,536,888    # From Top Left (TL) of the display to Bottom Right (BR) of
 # NOTE: Set TL_Y-coord to move the top justified data down so that the bottom of the display
 #       menu boxes is the same as for when rows>2
 #
-Display: 4,68 4.025 6.3 bbc5a1 000000
+Display: 3,51 3.02 4.73 bbc5a1 000000
 
 # ------- Ignored by Free42 and only recognized by Plus42 when # Rows >NumRows --------
 #
@@ -39,73 +39,66 @@ Display: 4,68 4.025 6.3 bbc5a1 000000
 # NOTE: Top_Y-coord should be 8 pixels below the bottom of the annunciators 
 # NOTE: PixelScaleY is used instead of Y-mag for rows>2 
 #
-DisplaySize: 22,2 68 5.6
-DisplayExpansionZone: 160 168  # A full-width strip to be replicated when stretching
+DisplaySize: 22,2 51 4.2
+DisplayExpansionZone: 120 126  # A full-width strip to be replicated when stretching
 #
 # -------------------------------------------------------------------------------------
 
 # Annunciator rectangles the designed to be abutted
 #              Display_Region  TL_Icon
-Annunciator: 1 048,040,040,024 048,100 # Scroll Up-Down
-Annunciator: 2 088,040,048,024 088,100 # Shift
-Annunciator: 3 136,040,060,024 136,100 # Printing
-Annunciator: 4 196,040,040,024 196,100 # Busy
-Annunciator: 6 236,040,020,024 236,100 # G
-Annunciator: 7 256,040,044,024 256,100 # RAD
-Annunciator: 5 300,040,008,024 300,100 # Battery (dummy blank icon at end)
+Annunciator: 1 036,030,030,018 036,075 # Scroll Up-Down
+Annunciator: 2 066,030,036,018 066,075 # Shift
+Annunciator: 3 102,030,045,018 102,075 # Printing
+Annunciator: 4 147,030,030,018 147,075 # Busy
+Annunciator: 6 177,030,015,018 177,075 # G
+Annunciator: 7 192,030,033,018 192,075 # RAD
+Annunciator: 5 225,030,006,018 225,075 # Battery (dummy blank icon at end)
 
 # ROW 1    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
-Key:   050,051  0004,0172,0088,0088  0004,0172,0088,0088  0004,0180   # SCROLL_UP  BST
-Key:   052,053  0092,0172,0088,0088  0092,0172,0088,0088  0092,0180   # XEQ        PGM.FCN
-Key:   054,055  0180,0172,0088,0088  0180,0172,0088,0088  0180,0180   # SIN        ASIN
-Key:   056,057  0268,0172,0088,0088  0268,0172,0088,0088  0268,0180   # COS        ACOS
-Key:   058,059  0356,0172,0088,0088  0356,0172,0088,0088  0356,0180   # TAN        ATAN
-Key:   060,061  0444,0172,0088,0088  0444,0172,0088,0088  0444,0180   # EXIT       CLEAR
+Key:   050,051  0003,0129,0066,0066  0003,0129,0066,0066  0003,0135   # SCROLL_UP  BST
+Key:   052,053  0069,0129,0066,0066  0069,0129,0066,0066  0069,0135   # XEQ        PGM.FCN
+Key:   054,055  0135,0129,0066,0066  0135,0129,0066,0066  0135,0135   # SIN        ASIN
+Key:   056,057  0201,0129,0066,0066  0201,0129,0066,0066  0201,0135   # COS        ACOS
+Key:   058,059  0267,0129,0066,0066  0267,0129,0066,0066  0267,0135   # TAN        ATAN
+Key:   060,061  0333,0129,0066,0066  0333,0129,0066,0066  0333,0135   # EXIT       CLEAR
 # ROW 2    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
-Key:   070,071  0004,0260,0088,0088  0004,0260,0088,0088  0004,0268   # SCROLL_DN  SST
-Key:   072,073  0092,0260,0088,0088  0092,0260,0088,0088  0092,0268   # R/S        PRGM
-Key:   096,143  0180,0260,0088,0088  0180,0260,0088,0088  0180,0268   # SQRT       PROB
-Key:   094,095  0268,0260,0088,0088  0268,0260,0088,0088  0268,0268   # 1/X        FACT
-Key:   078,079  0356,0260,0088,0088  0356,0260,0088,0088  0356,0268   # LN         E^X
-Key:   076,077  0444,0260,0088,0088  0444,0260,0088,0088  0444,0268   # LOG        10^X
+Key:   070,071  0003,0195,0066,0066  0003,0195,0066,0066  0003,0201   # SCROLL_DN  SST
+Key:   072,073  0069,0195,0066,0066  0069,0195,0066,0066  0069,0201   # R/S        PRGM
+Key:   096,097  0135,0195,0066,0066  0135,0195,0066,0066  0135,0201   # SQRT       X^2
+Key:   094,098  0201,0195,0066,0066  0201,0195,0066,0066  0201,0201   # 1/X        Y^X
+Key:   078,079  0267,0195,0066,0066  0267,0195,0066,0066  0267,0201   # LN         E^X
+Key:   076,077  0333,0195,0066,0066  0333,0195,0066,0066  0333,0201   # LOG        10^X
 # ROW 3    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon Rectangle-->  Pressed_TL  Button_____⇧Button
-Key:   090,091  0004,0348,0088,0088  0004,0348,0088,0088  0004,0356   # ENTER-L    GTO
-Key:   092,093  0092,0348,0088,0088  0092,0348,0088,0088  0092,0356   # ENTER-R    ALPHA
-Key:   097,145  0180,0348,0088,0088  0180,0348,0088,0088  0180,0356   # X^2        STAT
-Key:   098,074  0268,0348,0088,0088  0268,0348,0088,0088  0268,0356   # Y^X        ∑+
-Key:   100,075  0356,0348,0088,0088  0356,0348,0088,0088  0356,0356   # BACKSPACE  ∑-
-Key:   080,081  0444,0348,0088,0088  0444,0348,0088,0088  0444,0356   # SHIFT      SHIFT
+Key:   090,091  0003,0261,0066,0066  0003,0261,0066,0066  0003,0267   # ENTER-L    GTO
+Key:   092,093  0069,0261,0066,0066  0069,0261,0066,0066  0069,0267   # ENTER-R    ALPHA
+Key:   110,145  0135,0261,0066,0066  0135,0261,0066,0066  0135,0267   # E          STAT
+Key:   112,074  0201,0261,0066,0066  0201,0261,0066,0066  0201,0267   # +/-        ∑+
+Key:   100,075  0267,0261,0066,0066  0267,0261,0066,0066  0267,0267   # BACKSPACE  ∑-
+Key:   080,081  0333,0261,0066,0066  0333,0261,0066,0066  0333,0267   # SHIFT      SHIFT
 # ROW 4    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
-Key:   110,113  0004,0436,0088,0088  0004,0436,0088,0088  0004,0444   # E          FLAGS
-Key:   112,111  0092,0436,0088,0088  0092,0436,0088,0088  0092,0444   # +/-        CATALOG
-Key:   114,115  0180,0436,0088,0088  0180,0436,0088,0088  0180,0444   # milli      kilo
-Key:   116,117  0268,0436,0088,0088  0268,0436,0088,0088  0268,0444   # micro      mega
-Key:   118,119  0356,0436,0088,0088  0356,0436,0088,0088  0356,0444   # nano       giga
-Key:   120,121  0444,0436,0088,0088  0444,0436,0088,0088  0444,0444   # pico       tera
+Key:   130,113  0003,0327,0066,0066  0003,0327,0066,0066  0003,0333   # X<>Y       FLAGS
+Key:   132,111  0075,0327,0081,0066  0075,0327,0081,0066  0075,0333   # 7          CATALOG
+Key:   134,143  0156,0327,0081,0066  0156,0327,0081,0066  0156,0333   # 8          PROB
+Key:   136,153  0237,0327,0081,0066  0237,0327,0081,0066  0237,0333   # 9          ASSIGN
+Key:   138,155  0318,0327,0081,0066  0318,0327,0081,0066  0318,0333   # /          CUSTOM
 # ROW 5    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
-Key:   130,131  0004,0524,0088,0088  0004,0524,0088,0088  0004,0532   # X<>Y       X<>
-Key:   132,165  0100,0524,0108,0088  0100,0524,0108,0088  0100,0532   # 7          PRINT
-Key:   134,153  0208,0524,0108,0088  0208,0524,0108,0088  0208,0532   # 8          ASSIGN
-Key:   136,155  0316,0524,0108,0088  0316,0524,0108,0088  0316,0532   # 9          CUSTOM
-Key:   138,063  0424,0524,0108,0088  0424,0524,0108,0088  0424,0532   # /          RDS
+Key:   140,141  0003,0393,0066,0066  0003,0393,0066,0066  0003,0399   # R↓         R↑
+Key:   142,165  0075,0393,0081,0066  0075,0393,0081,0066  0075,0399   # 4          PRINT
+Key:   144,161  0156,0393,0081,0066  0156,0393,0081,0066  0156,0399   # 5          SHOW
+Key:   146,157  0237,0393,0081,0066  0237,0393,0081,0066  0237,0399   # 6          MODES
+Key:   148,163  0318,0393,0081,0066  0318,0393,0081,0066  0318,0399   # x          DISP
 # ROW 6    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
-Key:   140,141  0004,0612,0088,0088  0004,0612,0088,0088  0004,0620   # R↓         R↑
-Key:   142,161  0100,0612,0108,0088  0100,0612,0108,0088  0100,0620   # 4          SHOW
-Key:   144,157  0208,0612,0108,0088  0208,0612,0108,0088  0208,0620   # 5          MODES
-Key:   146,163  0316,0612,0108,0088  0316,0612,0108,0088  0316,0620   # 6          DISP
-Key:   148,062  0424,0612,0108,0088  0424,0612,0108,0088  0424,0620   # x          RSS
-# ROW 7    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button
-Key:   150,151  0004,0700,0088,0088  0004,0700,0088,0088  0004,0708   # STO        LASTX
-Key:   152,133  0100,0700,0108,0088  0100,0700,0108,0088  0100,0708   # 1          SOLVER
-Key:   154,135  0208,0700,0108,0088  0208,0700,0108,0088  0208,0708   # 2          INTEGRAL
-Key:   156,149  0316,0700,0108,0088  0316,0700,0108,0088  0316,0708   # 3          CONVERT
-Key:   158,159  0424,0700,0108,0088  0424,0700,0108,0088  0424,0708   # -          HMS-
-# ROW 8    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button 
-Key:   160,137  0004,0788,0088,0088  0004,0788,0088,0088  0004,0796   # RCL        MATRIX
-Key:   162,139  0100,0788,0108,0088  0100,0788,0108,0088  0100,0796   # 0          COMPLEX
-Key:   164,147  0208,0788,0108,0088  0208,0788,0108,0088  0208,0796   # .          BASE
-Key:   166,167  0316,0788,0108,0088  0316,0788,0108,0088  0316,0796   # PI         CONSTANT
-Key:   168,169  0424,0788,0108,0088  0424,0788,0108,0088  0424,0796   # +          HMS+
+Key:   150,151  0003,0459,0066,0066  0003,0459,0066,0066  0003,0465   # STO        LASTX
+Key:   152,133  0075,0459,0081,0066  0075,0459,0081,0066  0075,0465   # 1          SOLVER
+Key:   154,135  0156,0459,0081,0066  0156,0459,0081,0066  0156,0465   # 2          INTEGRAL
+Key:   156,149  0237,0459,0081,0066  0237,0459,0081,0066  0237,0465   # 3          CONVERT
+Key:   158,159  0318,0459,0081,0066  0318,0459,0081,0066  0318,0465   # -          HMS-
+# ROW 7    ⇧⇧⇧  <-Sense_Rectangle->  <-Icon_Rectangle-->  Pressed_TL  Button_____⇧Button 
+Key:   160,137  0003,0525,0066,0066  0003,0525,0066,0066  0003,0531   # RCL        MATRIX
+Key:   162,139  0075,0525,0081,0066  0075,0525,0081,0066  0075,0531   # 0          COMPLEX
+Key:   164,147  0156,0525,0081,0066  0156,0525,0081,0066  0156,0531   # .          BASE
+Key:   166,167  0237,0525,0081,0066  0237,0525,0081,0066  0237,0531   # PI         CONSTANT
+Key:   168,169  0318,0525,0081,0066  0318,0525,0081,0066  0318,0531   # +          HMS+
 
 # -------------------------------------------------------------------------------------
 # MACRO DEFINITIONS (COMMON TO ALL SKINS)
@@ -210,7 +203,7 @@ Macro: 137      21           # MATRIX         #   ⇧9
 Macro: 138      22           # /              #    /
 Macro: 139      07           # COMPLEX        #   ⇧0
 Macro: 140      09           # R↓             #    d       F17(Mac-only)
-Macro: 141      "R^"         # R↓             #   ⇧d  ⇧u  ⇧F17(Mac-only)
+Macro: 141      "R^"         # R↑             #   ⇧d  ⇧u  ⇧F17(Mac-only)
 Macro: 142      24           # 4              #    4
 Macro: 143      27           # PROB           #   ⇧BKSP   ⇧DEL
 Macro: 144      25           # 5              #    5
@@ -599,11 +592,11 @@ Macro: 208      "SST^"       # SST^           #
   MacKey:     CShift 0x0009 :    073  # ⇧,TAB → PRGM
   MacKey:      Shift 0x0019 : 28 073  #  ⇧TAB → PRGM
   MacKey: Alt        0x00AE :    096  #    ⌥r → √x  (r for Root x)
-  MacKey: Alt CShift 0x00AE :    143  #  ⇧,⌥r → PROB ( ⌥r is "®")
-  MacKey: Alt  Shift 0x2030 : 28 143  #   ⇧⌥r → PROB (⇧⌥r is "‰")
+  MacKey: Alt CShift 0x00AE :    097  #  ⇧,⌥r → X^2 ( ⌥r is "®") (mnemonic macro - NO shift)
+  MacKey: Alt  Shift 0x2030 :    097  #   ⇧⌥r → X^2 (⇧⌥r is "‰") (mnemonic macro - NO shift)
   MacKey: Alt        0x02C6 :    094  #    ⌥i → 1/x (i for Inverse)
-  MacKey: Alt CShift 0x02C6 :    095  #  ⇧,⌥i → x!  ( ⌥i is "ˆ") (a new key - no Shift required)
-  MacKey: Alt  Shift 0x02C6 :    095  #   ⇧⌥i → x!  (⇧⌥i is "ˆ") (a new key - no Shift required)
+  MacKey: Alt CShift 0x02C6 :    098  #  ⇧,⌥i → Y^X ( ⌥i is "ˆ") (mnemonic macro - NO shift)
+  MacKey: Alt  Shift 0x02C6 :    098  #   ⇧⌥i → Y^X (⇧⌥i is "ˆ") (mnemonic macro - NO shift)
   MacKey: Alt        0x02DC :    078  #    ⌥n → LN (Natural LOG)
   MacKey: Alt CShift 0x02DC :    079  #  ⇧,⌥n → e^x ( ⌥n is "˜") (mnemonic macro - NO shift)
   MacKey: Alt  Shift 0x02DC :    079  #   ⇧⌥n → e^x (⇧⌥n is "˜") (mnemonic macro - NO shift)
@@ -618,11 +611,11 @@ Macro: 208      "SST^"       # SST^           #
   GtkKey:     CShift    Tab :    073  # ⇧,TAB → PRGM
   GtkKey:      Shift    ISO_Left_Tab : 28 073  #  ⇧TAB → PRGM
   GtkKey: Alt             r :    096  #    ⌥r → √x  (r for Root x)
-  GtkKey: Alt CShift      r :    143  #  ⇧,⌥r → PROB
-  GtkKey: Alt  Shift      R : 28 143  #   ⇧⌥r → PROB
+  GtkKey: Alt CShift      r :    097  #  ⇧,⌥r → X^2 (mnemonic macro - NO shift)
+  GtkKey: Alt  Shift      R :    097  #   ⇧⌥r → X^2 (mnemonic macro - NO shift)
   GtkKey: Alt             i :    094  #    ⌥i → 1/x (i for Inverse)
-  GtkKey: Alt CShift      i :    095  #  ⇧,⌥i → x! (a new key - no Shift required)
-  GtkKey: Alt  Shift      I :    095  #   ⇧⌥i → x! (a new key - no Shift required)
+  GtkKey: Alt CShift      i :    098  #  ⇧,⌥i → Y^X (mnemonic macro - NO shift)
+  GtkKey: Alt  Shift      I :    098  #   ⇧⌥i → Y^X (mnemonic macro - NO shift)
   GtkKey: Alt             n :    078  #    ⌥n → LN (Natural LOG)
   GtkKey: Alt CShift      n :    079  #  ⇧,⌥n → e^x (mnemonic macro - NO shift)
   GtkKey: Alt             N :    079  #   ⇧⌥n → e^x (mnemonic macro - NO shift)
@@ -637,11 +630,11 @@ Macro: 208      "SST^"       # SST^           #
   WinKey:          CShift 09 :    073  # ⇧,TAB → PRGM
   WinKey:           Shift 09 : 28 073  #  ⇧TAB → PRGM
   WinKey: Alt             82 :    096  #    ⌥r → √x  (r for Root x)
-  WinKey: Alt      CShift 82 :    143  #  ⇧,⌥r → PROB
-  WinKey: Alt       Shift 82 : 28 143  #   ⇧⌥r → PROB
+  WinKey: Alt      CShift 82 :    097  #  ⇧,⌥r → X^2 (mnemonic macro - NO shift)
+  WinKey: Alt       Shift 82 :    097  #   ⇧⌥r → X^2 (mnemonic macro - NO shift)
   WinKey: Alt             73 :    094  #    ⌥i → 1/x (i for Inverse)
-  WinKey: Alt      CShift 73 :    095  #  ⇧,⌥i → x! (a new key - no Shift required)
-  WinKey: Alt       Shift 73 :    095  #   ⇧⌥i → x! (a new key - no Shift required)
+  WinKey: Alt      CShift 73 :    098  #  ⇧,⌥i → Y^X (mnemonic macro - NO shift)
+  WinKey: Alt       Shift 73 :    098  #   ⇧⌥i → Y^X (mnemonic macro - NO shift)
   WinKey: Alt             78 :    078  #    ⌥n → LN (Natural LOG)
   WinKey: Alt      CShift 78 :    079  #  ⇧,⌥n → e^x (mnemonic macro - NO shift)
   WinKey: Alt       Shift 78 :    079  #   ⇧⌥n → e^x (mnemonic macro - NO shift)
@@ -659,12 +652,12 @@ Macro: 208      "SST^"       # SST^           #
   MacKey:            0xF703 :    091  #     ▶︎ → GTO (mnemonic macro - NO shift)
   MacKey:     CShift 0xF703 :    091  #   ⇧,▶︎ → GTO (mnemonic macro - NO shift)
   MacKey:      Shift 0xF703 :    091  #    ⇧▶︎ → GTO (mnemonic macro - NO shift)
-  MacKey: Alt        0x2122 :    097  #    ⌥2 → x^2   ( ⌥2 = ™ = 0x2122) (mnemonic macro - NO shift)
-  MacKey: Alt CShift 0x2122 :    145  #  ⇧,⌥2 → STAT  ( ⌥2 is "™")
-  MacKey: Alt  Shift 0x20AC : 28 145  #   ⇧⌥2 → STAT  (⇧⌥2 is "€")
-  MacKey: Alt        0x00A5 :    098  #    ⌥y → y^x ( ⌥y is "¥") (mnemonic macro - NO shift)
-  MacKey: Alt CShift 0x00A5 :    074  #  ⇧,⌥y → ∑+               (mnemonic macro - NO shift)
-  MacKey: Alt  Shift 0x00C1 :    074  #   ⇧⌥y → ∑+ (⇧⌥y is "Á")  (mnemonic macro - NO shift)
+  MacKey:                 e :    110  #     e → Exponent
+  MacKey:     CShift      e :    145  #   ⇧,e → STAT
+  MacKey:                 E : 28 145  #    ⇧e → STAT
+  MacKey:                 = :    112  #     = → +/- (the key looks like ±, same in numeric pad area)
+  MacKey:     CShift      = :    074  #   ⇧,= → ∑+ (mnemonic macro - NO shift)
+  MacKey:                 + :    074  #    ⇧= → ∑+ (mnemonic macro - NO shift)
   MacKey:            0x007F :    100  #    DELETE
   MacKey:     CShift 0x007F :    075  #  ⇧,BS → ∑- (mnemonic macro - NO shift)
   MacKey:      Shift 0x007F :    075  #   ⇧BS → ∑- (mnemonic macro - NO shift)
@@ -681,12 +674,12 @@ Macro: 208      "SST^"       # SST^           #
   GtkKey:                Right :    091  #     ▶︎ → GTO (mnemonic macro - NO shift)
   GtkKey:     CShift     Right :    091  #   ⇧,▶︎ → GTO (mnemonic macro - NO shift)
   GtkKey:      Shift     Right :    091  #    ⇧▶︎ → GTO (mnemonic macro - NO shift)
-  GtkKey: Alt                2 :    097  #    ⌥2 → x^2 (mnemonic macro - NO shift)
-  GtkKey: Alt CShift         2 :    145  #  ⇧,⌥2 → STAT
-  GtkKey: Alt  Shift        at : 28 145  #   ⇧⌥2 → STAT
-  GtkKey: Alt                y :    098  #    ⌥y → y^x (mnemonic macro - NO shift)
-  GtkKey: Alt CShift         y :    074  #  ⇧,⌥y → ∑+  (mnemonic macro - NO shift)
-  GtkKey: Alt  Shift         Y :    074  #   ⇧⌥y → ∑+  (mnemonic macro - NO shift)
+  GtkKey:                    e :    110  #     e → Exponent
+  GtkKey:     CShift         e :    145  #   ⇧,e → STAT
+  GtkKey:                    E : 28 145  #    ⇧e → STAT
+  GtkKey:                equal :    112  #     = → +/- (the key looks like ±, same in numeric pad area)
+  GtkKey:     CShift     equal :    074  #   ⇧,= → ∑+ (mnemonic macro - NO shift)
+  GtkKey:                 plus :    074  #    ⇧= → ∑+ (mnemonic macro - NO shift)
   GtkKey:            BackSpace :    100  #    BS key is labeled as DELETE
   GtkKey:     CShift BackSpace :    075  #  ⇧,BS → ∑-
   GtkKey:      Shift BackSpace :    075  #   ⇧BS → ∑-
@@ -703,12 +696,12 @@ Macro: 208      "SST^"       # SST^           #
   WinKey: Extended        39 :    091  #     ▶︎ → GTO (mnemonic macro - NO shift)
   WinKey: Extended CShift 39 :    091  #   ⇧,▶︎ → GTO (mnemonic macro - NO shift)
   WinKey: Extended  Shift 39 :    091  #    ⇧▶︎ → GTO (mnemonic macro - NO shift)
-  WinKey: Alt             50 :    097  #    ⌥2 → x^2 (mnemonic macro - NO shift)
-  WinKey: Alt      CShift 50 :    145  #  ⇧,⌥2 → STAT
-  WinKey: Alt       Shift 50 : 28 145  #   ⇧⌥2 → STAT
-  WinKey: Alt             89 :    098  #    ⌥y → y^x (mnemonic macro - NO shift)
-  WinKey: Alt      CShift 89 :    074  #  ⇧,⌥y → ∑+  (mnemonic macro - NO shift)
-  WinKey: Alt       Shift 89 :    074  #   ⇧⌥y → ∑+  (mnemonic macro - NO shift)
+  WinKey:                 69 :    110  #     e → Exponent
+  WinKey:         CShift  69 :    145  #   ⇧,e → STAT
+  WinKey:          Shift  69 : 28 145  #    ⇧e → STAT
+  WinKey:                187 :    112  #     = → +/- (the key looks like ±, same in numeric pad area)
+  WinKey:         CShift 187 :    074  #   ⇧,= → ∑+ (mnemonic macro - NO shift)
+  WinKey:          Shift 187 :    074  #    ⇧= → ∑+ (mnemonic macro - NO shift)
   WinKey:                 08 :    100  #    BS → DELETE
   WinKey:          CShift 08 :    075  #  ⇧,BS → ∑-
   WinKey:           Shift 08 :    075  #   ⇧BS → ∑-
@@ -716,178 +709,105 @@ Macro: 208      "SST^"       # SST^           #
   WinKey: Extended CShift 46 :    075  #  ⇧,fwd_delete → ∑-
   WinKey: Extended  Shift 46 :    075  #   ⇧fwd_delete → ∑-
 
-# ROW 4 (Note that hot-keys for metric notation buttons <1 are lowercase only!)
-  MacKey:                 e :    110  #     e → Exponent
-  MacKey:     CShift      e :    113  #   ⇧,e → FLAGS
-  MacKey:                 E : 28 113  #    ⇧e → FLAGS
-  MacKey:                 = :    112  #     = → +/- (the key looks like ±, same in numeric pad area)
-  MacKey:     CShift      = :    111  #   ⇧,= → CATALOG
-  MacKey:                 + : 28 111  #    ⇧= → CATALOG
-  MacKey:                 m :    114  #     m → m (milli)
-  MacKey:     CShift      m :    117  #   ⇧,m → M (Mega)
-  MacKey:                 M : 28 117  #    ⇧m → M (Mega)
-  MacKey:                 k : 28 115  #     k → k (kilo) k or K yields kilo
-  MacKey:     CShift      k :    115  #   ⇧,k → K (kilo)
-  MacKey:                 K : 28 115  #    ⇧k → K (kilo)
-  MacKey:                 u :    116  #     u → µ (micro)
-  MacKey:                 n :    118  #     n → n (nano)
-  MacKey:     CShift      n :     28  #   ⇧,n → NOP (just clear the shift to avoid confusion)
-  MacKey:                 N : 28  28  #    ⇧n → NOP (double-shift to avoid confusion)
-  MacKey:                 g : 28 119  #     g → g (Giga) g or G yields Giga
-  MacKey:     CShift      g :    119  #   ⇧,g → G (Giga)
-  MacKey:                 G : 28 119  #    ⇧g → G (Giga)
-  MacKey:                 p :    120  #     p → p (pico)
-  MacKey:                 t : 28 121  #     t → t (Tera) t or T yields Tera
-  MacKey:     CShift      t :    121  #   ⇧,t → T (Tera)
-  MacKey:                 T : 28 121  #    ⇧t → T (Tera)
+# ROW 4
+  MacKey:              0xF702 :    130  #     ◀︎ → x<>y
+  MacKey:      CShift  0xF702 :    113  #   ⇧,◀︎ → FLAGS
+  MacKey:       Shift  0xF702 : 28 113  #    ⇧◀︎ → FLAGS
+  MacKey:                   7 :    132  #     7 → 7
+  MacKey:      CShift       7 :    111  #   ⇧,7 → CATALOG
+  MacKey:                   & : 28 111  #    ⇧7 → CATALOG
+  MacKey:                   8 :    134  #     8 → 8
+  MacKey:      CShift       8 :    143  #   ⇧,8 → PROB
+  MacKey:                   * : 28 143  #    ⇧8 → PROB
+  MacKey:                   9 :    136  #     9 → 9
+  MacKey:      CShift       9 :    153  #   ⇧,9 → ASSIGN
+  MacKey:                   ( : 28 153  #    ⇧9 → ASSIGN
+  MacKey:                   / :    138  #     / → Divide
+  MacKey:      CShift       / :    155  #   ⇧,/ → CUSTOM
+  MacKey:                   ? : 28 155  #    ⇧/ → CUSTOM
 
-  GtkKey:                 e :    110  #     e → Exponent
-  GtkKey:     CShift      e :    113  #   ⇧,e → FLAGS
-  GtkKey:                 E : 28 113  #    ⇧e → FLAGS
-  GtkKey:             equal :    112  #     = → +/- (the key looks like ±, same in numeric pad area)
-  GtkKey:     CShift  equal :    111  #   ⇧,= → CATALOG
-  GtkKey:              plus : 28 111  #    ⇧= → CATALOG
-  GtkKey:                 m :    114  #     m → m (milli)
-  GtkKey:     CShift      m :    117  #   ⇧,m → M (Mega)
-  GtkKey:                 M : 28 117  #    ⇧m → M (Mega)
-  GtkKey:                 k : 28 115  #     k → k (kilo) k or K yields kilo
-  GtkKey:     CShift      k :    115  #   ⇧,k → K (kilo)
-  GtkKey:                 K : 28 115  #    ⇧k → K (kilo)
-  GtkKey:                 u :    116  #     u → µ (micro)
-  GtkKey:                 n :    118  #     n → n (nano)
-  GtkKey:     CShift      n :     28  #   ⇧,n → NOP (just clear the shift to avoid confusion)
-  GtkKey:                 N : 28  28  #    ⇧n → NOP (double-shift to avoid confusion)
-  GtkKey:                 g : 28 119  #     g → g (Giga) g or G yields Giga
-  GtkKey:     CShift      g :    119  #   ⇧,g → G (Giga)
-  GtkKey:                 G : 28 119  #    ⇧g → G (Giga)
-  GtkKey:                 p :    120  #     p → p (pico)
-  GtkKey:                 t : 28 121  #     t → t (Tera) t or T yields Tera
-  GtkKey:     CShift      t :    121  #   ⇧,t → T (Tera)
-  GtkKey:                 T : 28 121  #    ⇧t → T (Tera)
-
-  WinKey:                69 :    110  #     e → Exponent
-  WinKey:     CShift     69 :    113  #   ⇧,e → FLAGS
-  WinKey:      Shift     69 : 28 113  #    ⇧e → FLAGS
-  WinKey:               187 :    112  #     = → +/- (the key looks like ±, same in numeric pad area)
-  WinKey:     CShift    187 :    111  #   ⇧,= → CATALOG
-  WinKey:      Shift    187 : 28 111  #    ⇧= → CATALOG
-  WinKey:                77 :    114  #     m → m (milli)
-  WinKey:     CShift     77 :    117  #   ⇧,m → M (Mega)
-  WinKey:      Shift     77 : 28 117  #    ⇧m → M (Mega)
-  WinKey:                75 : 28 115  #     k → k (kilo) k or K yields kilo
-  WinKey:     CShift     75 :    115  #   ⇧,k → K (kilo)
-  WinKey:      Shift     75 : 28 115  #    ⇧k → K (kilo)
-  WinKey:                85 :    116  #     u → µ (micro)
-  WinKey:                78 :    118  #     n → n (nano)
-  WinKey:     CShift     78 :     28  #   ⇧,n → NOP (just clear the shift to avoid confusion)
-  WinKey:      Shift     78 : 28  28  #    ⇧n → NOP (double-shift to avoid confusion)
-  WinKey:                71 : 28 119  #     g → g (Giga) g or G yields Giga
-  WinKey:     CShift     71 :    119  #   ⇧,g → G (Giga)
-  WinKey:      Shift     71 : 28 119  #    ⇧g → G (Giga)
-  WinKey:                80 :    120  #     p → p (pico)
-  WinKey:                84 : 28 121  #     t → t (Tera) t or T yields Tera
-  WinKey:     CShift     84 :    121  #   ⇧,t → T (Tera)
-  WinKey:      Shift     84 : 28 121  #    ⇧t → T (Tera)
-
-# ROW 5
-  MacKey:            0xF702 :    130  #     ◀︎ → x<>y
-  MacKey:     CShift 0xF702 :    131  #   ⇧,◀︎ → x<> (a new key - no Shift required)
-  MacKey:      Shift 0xF702 :    131  #    ⇧◀︎ → x<> (a new key - no Shift required)
-  MacKey:                 7 :    132  #     7 → 7
-  MacKey:     CShift      7 :    165  #   ⇧,7 → PRINT
-  MacKey:                 & : 28 165  #    ⇧7 → PRINT
-  MacKey:                 8 :    134  #     8 → 8
-  MacKey:     CShift      8 :    153  #   ⇧,8 → ASSIGN
-  MacKey:                 * : 28 153  #    ⇧8 → ASSIGN
-  MacKey:                 9 :    136  #     9 → 9
-  MacKey:     CShift      9 :    155  #   ⇧,9 → CUSTOM
-  MacKey:                 ( : 28 155  #    ⇧9 → CUSTOM
-  MacKey:                 / :    138  #     / → Divide
-  MacKey:     CShift      / :    063  #   ⇧,/ → RDS
-  MacKey:                 ? : 28 063  #    ⇧/ → RDS
-
-  GtkKey:              Left :    130  #     ◀︎ → x<>y
-  GtkKey:     CShift   Left :    131  #   ⇧,◀︎ → x<> (a new key - no Shift required)
-  GtkKey:      Shift   Left :    131  #    ⇧◀︎ → x<> (a new key - no Shift required)
-  GtkKey:                 7 :    132  #     7 → 7
-  GtkKey:     CShift      7 :    165  #   ⇧,7 → PRINT
-  GtkKey:         ampersand : 28 165  #    ⇧7 → PRINT
-  GtkKey:                 8 :    134  #     8 → 8
-  GtkKey:     CShift      8 :    153  #   ⇧,8 → ASSIGN
-  GtkKey:          asterisk : 28 153  #    ⇧8 → ASSIGN
-  GtkKey:                 9 :    136  #     9 → 9
-  GtkKey:     CShift      9 :    155  #   ⇧,9 → CUSTOM
-  GtkKey:         parenleft : 28 155  #    ⇧9 → CUSTOM
-  GtkKey:             slash :    138  #     / → Divide
-  GtkKey:     CShift  slash :    063  #   ⇧,/ → RDS
-  GtkKey:          question : 28 063  #    ⇧/ → RDS
+  GtkKey:                Left :    130  #     ◀︎ → x<>y
+  GtkKey:      CShift    Left :    113  #   ⇧,◀︎ → FLAGS
+  GtkKey:       Shift    Left : 28 113  #    ⇧◀︎ → FLAGS
+  GtkKey:                   7 :    132  #     7 → 7
+  GtkKey:      CShift       7 :    111  #   ⇧,7 → CATALOG
+  GtkKey:           ampersand : 28 111  #    ⇧7 → CATALOG
+  GtkKey:                   8 :    134  #     8 → 8
+  GtkKey:      CShift       8 :    143  #   ⇧,8 → PROB
+  GtkKey:            asterisk : 28 143  #    ⇧8 → PROB
+  GtkKey:                   9 :    136  #     9 → 9
+  GtkKey:      CShift       9 :    153  #   ⇧,9 → ASSIGN
+  GtkKey:           parenleft : 28 153  #    ⇧9 → ASSIGN
+  GtkKey:               slash :    138  #     / → Divide
+  GtkKey:      CShift   slash :    155  #   ⇧,/ → CUSTOM
+  GtkKey:            question : 28 155  #    ⇧/ → CUSTOM
 
   WinKey: Extended         37 :    130  #     ◀︎ → x<>y
-  WinKey: Extended CShift  37 :    131  #   ⇧,◀︎ → x<> (a new key - no Shift required)
-  WinKey: Extended  Shift  37 :    131  #    ⇧◀︎ → x<> (a new key - no Shift required)
+  WinKey: Extended CShift  37 :    113  #   ⇧,◀︎ → FLAGS
+  WinKey: Extended  Shift  37 : 28 113  #    ⇧◀︎ → FLAGS
   WinKey:                  55 :    132  #     7 → 7
-  WinKey:          CShift  55 :    165  #   ⇧,7 → PRINT
-  WinKey:           Shift  55 : 28 165  #    ⇧7 → PRINT
+  WinKey:          CShift  55 :    111  #   ⇧,7 → CATALOG
+  WinKey:           Shift  55 : 28 111  #    ⇧7 → CATALOG
   WinKey:                  56 :    134  #     8 → 8
-  WinKey:          CShift  56 :    153  #   ⇧,8 → ASSIGN
-  WinKey:           Shift  56 : 28 153  #    ⇧8 → ASSIGN
+  WinKey:          CShift  56 :    143  #   ⇧,8 → PROB
+  WinKey:           Shift  56 : 28 143  #    ⇧8 → PROB
   WinKey:                  57 :    136  #     9 → 9
-  WinKey:          CShift  57 :    155  #   ⇧,9 → CUSTOM
-  WinKey:           Shift  57 : 28 155  #    ⇧9 → CUSTOM
+  WinKey:          CShift  57 :    153  #   ⇧,9 → ASSIGN
+  WinKey:           Shift  57 : 28 153  #    ⇧9 → ASSIGN
   WinKey:                 191 :    138  #     / → Divide
-  WinKey:          CShift 191 :    063  #   ⇧,/ → RDS
-  WinKey:           Shift 191 : 28 063  #    ⇧/ → RDS
+  WinKey:          CShift 191 :    155  #   ⇧,/ → CUSTOM
+  WinKey:           Shift 191 : 28 155  #    ⇧/ → CUSTOM
 
-# ROW 6
+# ROW 5
   MacKey:                 d :    140  #     d → R↓
   MacKey:     CShift      d :    141  #   ⇧,d → R↑ (a new key - no Shift required)
   MacKey:                 D :    141  #    ⇧d → R↑ (a new key - no Shift required)
   MacKey:                 4 :    142  #     4 → 4
-  MacKey:     CShift      4 :    161  #   ⇧,4 → SHOW
-  MacKey:                 $ : 28 161  #    ⇧4 → SHOW
+  MacKey:     CShift      4 :    165  #   ⇧,4 → PRINT
+  MacKey:                 $ : 28 165  #    ⇧4 → PRINT
   MacKey:                 5 :    144  #     5 → 5
-  MacKey:     CShift      5 :    157  #   ⇧,5 → MODES
-  MacKey:                 % : 28 157  #    ⇧5 → MODES
+  MacKey:     CShift      5 :    161  #   ⇧,5 → SHOW
+  MacKey:                 % : 28 161  #    ⇧5 → SHOW
   MacKey:                 6 :    146  #     6 → 6
-  MacKey:     CShift      6 :    163  #   ⇧,6 → DISP
-  MacKey:                 ^ : 28 163  #    ⇧6 → DISP
+  MacKey:     CShift      6 :    157  #   ⇧,6 → MODES
+  MacKey:                 ^ : 28 157  #    ⇧6 → MODES
   MacKey:                 x :    148  #     x → *
-  MacKey:     CShift      x :    062  #   ⇧,x → RSS
-  MacKey:                 X : 28 062  #    ⇧x → RSS
+  MacKey:     CShift      x :    163  #   ⇧,x → DISP
+  MacKey:                 X : 28 163  #    ⇧x → DISP
 
   GtkKey:                 d :    140  #     d → R↓
   GtkKey:     CShift      d :    141  #   ⇧,d → R↑ (a new key - no Shift required)
   GtkKey:                 D :    141  #    ⇧d → R↑ (a new key - no Shift required)
   GtkKey:                 4 :    142  #     4 → 4
-  GtkKey:     CShift      4 :    161  #   ⇧,4 → SHOW
-  GtkKey:            dollar : 28 161  #    ⇧4 → SHOW
+  GtkKey:     CShift      4 :    165  #   ⇧,4 → PRINT
+  GtkKey:            dollar : 28 165  #    ⇧4 → PRINT
   GtkKey:                 5 :    144  #     5 → 5
-  GtkKey:     CShift      5 :    157  #   ⇧,5 → MODES
-  GtkKey:           percent : 28 157  #    ⇧5 → MODES
+  GtkKey:     CShift      5 :    161  #   ⇧,5 → SHOW
+  GtkKey:           percent : 28 161  #    ⇧5 → SHOW
   GtkKey:                 6 :    146  #     6 → 6
-  GtkKey:     CShift      6 :    163  #   ⇧,6 → DISP
-  GtkKey:       asciicircum : 28 163  #    ⇧6 → DISP
+  GtkKey:     CShift      6 :    157  #   ⇧,6 → MODES
+  GtkKey:       asciicircum : 28 157  #    ⇧6 → MODES
   GtkKey:                 x :    148  #     x → *
-  GtkKey:     CShift      x :    062  #   ⇧,x → RSS
-  GtkKey:                 X : 28 062  #    ⇧x → RSS
+  GtkKey:     CShift      x :    163  #   ⇧,x → DISP
+  GtkKey:                 X : 28 163  #    ⇧x → DISP
 
   WinKey:                68 :    140  #     d → R↓
   WinKey:     CShift     68 :    141  #   ⇧,d → R↑ (a new key - no Shift required)
   WinKey:      Shift     68 :    141  #    ⇧d → R↑ (a new key - no Shift required)
   WinKey:                52 :    142  #     4 → 4
-  WinKey:     CShift     52 :    161  #   ⇧,4 → SHOW
-  WinKey:      Shift     52 : 28 161  #    ⇧4 → SHOW
+  WinKey:     CShift     52 :    165  #   ⇧,4 → PRINT
+  WinKey:      Shift     52 : 28 165  #    ⇧4 → PRINT
   WinKey:                53 :    144  #     5 → 5
-  WinKey:     CShift     53 :    157  #   ⇧,5 → MODES
-  WinKey:      Shift     53 : 28 157  #    ⇧5 → MODES
+  WinKey:     CShift     53 :    161  #   ⇧,5 → SHOW
+  WinKey:      Shift     53 : 28 161  #    ⇧5 → SHOW
   WinKey:                54 :    146  #     6 → 6
-  WinKey:     CShift     54 :    163  #   ⇧,6 → DISP
-  WinKey:      Shift     54 : 28 163  #    ⇧6 → DISP
+  WinKey:     CShift     54 :    157  #   ⇧,6 → MODES
+  WinKey:      Shift     54 : 28 157  #    ⇧6 → MODES
   WinKey:                88 :    148  #     x → *
-  WinKey:     CShift     88 :    062  #   ⇧,x → RSS
-  WinKey:      Shift     88 : 28 062  #    ⇧x → RSS
+  WinKey:     CShift     88 :    163  #   ⇧,x → DISP
+  WinKey:      Shift     88 : 28 163  #    ⇧x → DISP
 
-# ROW 7
+# ROW 6
   MacKey:                 s :    150  #     s → STO
   MacKey:     CShift      s :    151  #   ⇧,s → LASTx
   MacKey:                 S : 28 151  #    ⇧s → LASTx
@@ -936,7 +856,7 @@ Macro: 208      "SST^"       # SST^           #
   WinKey:     CShift    189 :    159  #   ⇧,- → HMS-
   WinKey:      Shift    189 :    159  #    ⇧- → HMS-
 
-# ROW 8
+# ROW 7
   MacKey:                 r :    160  #     r → RCL
   MacKey:     CShift      r :    137  #   ⇧,r → MATRIX
   MacKey:                 R : 28 137  #    ⇧r → MATRIX
@@ -990,15 +910,16 @@ Macro: 208      "SST^"       # SST^           #
 # -------------------------------------------------------------------------------------
 # Hidden extra keys (using what makes sense with the available left over characters)
 # Main Keys:
-#   Defined above: aA dD eE gG kK mM n oO p qQ rR sS tT u xX F1-6 F16-19
-#   Defined below: bB cC fF iI lL P U F7-8 F10-12
-#   Now available: hH jJ N vV wW yY zZ F13-15
+#   Defined above: aA dD eE oO qQ rR sS xX F1-6 F16-19
+#   Defined below: bB cC fF iI lL mM pP uU F7-8 F10-12
+#   Now available: gG hH jJ kK nN tT vV wW yY zZ F13-15
 # Alt Keys:
-#   Defined above: cC iI lL nN rR sS tT yY 2
-#   Defined below: a e f hH m pP wW  3 4 5 6 7 8 9 /
-#   Now available: A bB dD E F gG jJ kK m oO qQ uU vV xX zZ
+#   Defined above: cC iI lL nN rR sS tT
+#   Defined below: a e f hH m wW y 2 3 4 5 6 7 8 9 /
+#   Now available: A bB dD E F gG jJ kK m oO pP qQ uU vV xX zZ
 
-# ⌥3 → x^3, ⌥4 → x^4 ... ⌥9 → x^9
+# ⌥2 → x^2, ⌥3 → x^3 ... ⌥9 → x^9
+  MacKey: Alt        0x2122 :    097  #    ⌥2 → x^2  ( ⌥2 = ™ = 0x2122) (mnemonic macro - NO shift)
   MacKey: Alt        0x00A3 :    173  #    ⌥3 → x^3  ( ⌥3 = £ = 0x00A3)
   MacKey: Alt        0x00A2 :    174  #    ⌥4 → x^4  ( ⌥4 = ¢ = 0x00A2)
   MacKey: Alt        0x221E :    175  #    ⌥5 → x^5  ( ⌥5 = ∞ = 0x221E)
@@ -1006,6 +927,7 @@ Macro: 208      "SST^"       # SST^           #
   MacKey: Alt        0x00B6 :    177  #    ⌥7 → x^7  ( ⌥7 = ¶ = 0x00B6)
   MacKey: Alt        0x2022 :    178  #    ⌥8 → x^8  ( ⌥8 = • = 0x2022)
   MacKey: Alt        0x00AA :    179  #    ⌥9 → x^9  ( ⌥9 = ª = 0x00AA)
+  GtkKey: Alt             2 :    097  #    ⌥2 → x^2 (mnemonic macro - NO shift)
   GtkKey: Alt             3 :    173  #    ⌥3 → x^3
   GtkKey: Alt             4 :    174  #    ⌥4 → x^4
   GtkKey: Alt             5 :    175  #    ⌥5 → x^5
@@ -1013,6 +935,7 @@ Macro: 208      "SST^"       # SST^           #
   GtkKey: Alt             7 :    177  #    ⌥7 → x^7
   GtkKey: Alt             8 :    178  #    ⌥8 → x^8
   GtkKey: Alt             9 :    179  #    ⌥9 → x^9
+  WinKey: Alt            50 :    097  #    ⌥2 → x^2 (mnemonic macro - NO shift)
   WinKey: Alt            51 :    173  #    ⌥3 → x^3
   WinKey: Alt            52 :    174  #    ⌥4 → x^4
   WinKey: Alt            53 :    175  #    ⌥5 → x^5
@@ -1062,16 +985,16 @@ Macro: 208      "SST^"       # SST^           #
   MacKey: Ctrl Alt         0x0005 :    187  #   ^⌥e → e^x - 1
   GtkKey: Ctrl Alt              e :    187  #   ^⌥e → e^x - 1
   WinKey: Ctrl Alt             69 :    187  #   ^⌥e → e^x - 1
-# f → femto (x10^-15), F → FLAGS, ⌥f → x!
-  MacKey:                 f :    171  #     f → f (femto: x10^-15)
+# fF → FLAGS, ⌥f → x!
+  MacKey:                 f :    113  #     f → FLAGS
   MacKey:     CShift      f :    113  #   ⇧,f → FLAGS
   MacKey:                 F : 28 113  #    ⇧f → FLAGS
   MacKey: Alt        0x0192 :    095  #    ⌥f → x!  (⌥f is "ƒ")
-  GtkKey:                 f :    171  #     f → f (femto: x10^-15)
+  GtkKey:                 f :    113  #     f → FLAGS
   GtkKey:     CShift      f :    113  #   ⇧,f → FLAGS
   GtkKey:                 F : 28 113  #    ⇧f → FLAGS
   GtkKey: Alt             f :    095  #    ⌥f → x!
-  WinKey:                70 :    171  #     f → f (femto: x10^-15)
+  WinKey:                70 : 28 113  #     f → FLAGS
   WinKey:     CShift     70 :    113  #   ⇧,f → FLAGS
   WinKey:      Shift     70 : 28 113  #    ⇧f → FLAGS
   WinKey: Alt            70 :    095  #    ⌥f → x!
@@ -1105,6 +1028,16 @@ Macro: 208      "SST^"       # SST^           #
   WinKey:                76 : 28 151  #     l → LASTx
   WinKey:     CShift     76 :    151  #   ⇧,l → LASTx
   WinKey:      Shift     76 : 28 151  #    ⇧l → LASTx
+# mM → MODES
+  MacKey:                 m : 28 157  #     m → MODES
+  MacKey:     CShift      m :    157  #   ⇧,m → MODES
+  MacKey:                 M : 28 157  #    ⇧m → MODES
+  GtkKey:                 m : 28 157  #     m → MODES
+  GtkKey:     CShift      m :    157  #   ⇧,m → MODES
+  GtkKey:                 M : 28 157  #    ⇧m → MODES
+  WinKey:                77 : 28 157  #     m → MODES
+  WinKey:     CShift     77 :    157  #   ⇧,m → MODES
+  WinKey:      Shift     77 : 28 157  #    ⇧m → MODES
 # ⌥m → MOD, also ⌥/ → MOD because it relates to division
   MacKey: Alt        0x00B5 :    188  #    ⌥m → MOD ( ⌥m is "µ")
   MacKey: Alt        0x00F7 :    188  #    ⌥/ → MOD ( ⌥/ is "÷")
@@ -1123,22 +1056,16 @@ Macro: 208      "SST^"       # SST^           #
   GtkKey: Ctrl Alt  Shift      N :    187  #   ⇧^⌥n → e^x - 1
   WinKey: Ctrl Alt CShift     78 :    187  #  ⇧,^⌥n → e^x - 1
   WinKey: Ctrl Alt  Shift     78 :    187  #   ⇧^⌥n → e^x - 1
-# P → Peta (x10^15), ⌥pP → RSS,RDS ("P" for Pythagoras)
-  MacKey:     CShift      p : 28 172  #   ⇧,p → P (Peta: x10^15)
-  MacKey:                 P :    172  #    ⇧p → P (Peta: x10^15)
-  MacKey: Alt        0x03C0 :    062  #    ⌥p → RSS              (a new key - no Shift required)
-  MacKey: Alt CShift 0x03C0 :    063  #  ⇧,⌥p → RDS ( ⌥p is "π") (a new key - no Shift required)
-  MacKey: Alt  Shift 0x220F :    063  #   ⇧⌥p → RDS (⇧⌥p is "∏") (a new key - no Shift required)
-  GtkKey:     CShift      p : 28 172  #   ⇧,p → P (Peta: x10^15)
-  GtkKey:                 P :    172  #    ⇧p → P (Peta: x10^15)
-  GtkKey: Alt             p :    062  #    ⌥p → RSS (a new key - no Shift required)
-  GtkKey: Alt CShift      p :    063  #  ⇧,⌥p → RDS (a new key - no Shift required)
-  GtkKey: Alt             P :    063  #   ⇧⌥p → RDS (a new key - no Shift required)
-  WinKey:     CShift     80 : 28 172  #   ⇧,p → P (Peta: x10^15)
-  WinKey:      Shift     80 :    172  #    ⇧p → P (Peta: x10^15)
-  WinKey: Alt            80 :    062  #    ⌥p → RSS (a new key - no Shift required)
-  WinKey: Alt CShift     80 :    063  #  ⇧,⌥p → RDS (a new key - no Shift required)
-  WinKey: Alt  Shift     80 :    063  #   ⇧⌥p → RDS (a new key - no Shift required)
+# pP → PRINT
+  MacKey:                 p : 28 165  #     p → PRINT
+  MacKey:     CShift      p :    165  #   ⇧,p → PRINT
+  MacKey:                 P : 28 165  #    ⇧p → PRINT
+  GtkKey:                 p : 28 165  #     p → PRINT
+  GtkKey:     CShift      p :    165  #   ⇧,p → PRINT
+  GtkKey:                 P : 28 165  #    ⇧p → PRINT
+  WinKey:                80 : 28 165  #     p → PRINT
+  WinKey:     CShift     80 :    165  #   ⇧,p → PRINT
+  WinKey:      Shift     80 : 28 165  #    ⇧p → PRINT
 # ^⌥sS → SINH & ASINH
   MacKey: Ctrl Alt         0x0013 :    180  #   ^⌥s →  SINH
   MacKey: Ctrl Alt CShift  0x0013 :    181  # ⇧,^⌥s → SINNH
@@ -1159,11 +1086,14 @@ Macro: 208      "SST^"       # SST^           #
   WinKey: Ctrl Alt             84 :    184  #   ^⌥t →  TANH
   WinKey: Ctrl Alt CShift      84 :    185  # ⇧,^⌥t → TANNH
   WinKey: Ctrl Alt  Shift      84 :    185  #  ⇧^⌥t → ATANH
-# U → Roll UP
+# uU → Roll UP
+  MacKey:                 u :    141  #     u → R↑
   MacKey:     CShift      u :    141  #   ⇧,u → R↑
   MacKey:                 U :    141  #    ⇧u → R↑
+  GtkKey:                 u :    141  #     u → R↑
   GtkKey:     CShift      u :    141  #   ⇧,u → R↑
   GtkKey:                 U :    141  #    ⇧u → R↑
+  WinKey:                85 :    141  #     u → R↑
   WinKey:     CShift     85 :    141  #   ⇧,u → R↑
   WinKey:      Shift     85 :    141  #    ⇧u → R↑
 # ^⌥wW → ∑+ & ∑-  ( ⌥w is "∑", W is a ∑ shape on it's side)
@@ -1176,36 +1106,40 @@ Macro: 208      "SST^"       # SST^           #
   WinKey: Alt            87 :    074  #    ⌥w → ∑+ (mnemonic macro - NO shift)
   WinKey: Alt     CShift 87 :    075  #  ⇧,⌥w → ∑- (mnemonic macro - NO shift)
   WinKey: Alt      Shift 87 :    075  #   ⇧⌥w → ∑- (mnemonic macro - NO shift)
+# ⌥y → Y^X
+  MacKey: Alt        0x00A5 :    098  #    ⌥y → y^x ( ⌥y is "¥") (mnemonic macro - NO shift)
+  GtkKey: Alt             y :    098  #    ⌥y → y^x (mnemonic macro - NO shift)
+  WinKey: Alt            89 :    098  #    ⌥y → y^x (mnemonic macro - NO shift)
 # F7 → Multiply (because it's beside "*" on the keyboard)
   MacKey:            0xF70A :    148  #    F7 → *
-  MacKey:     CShift 0xF70A :    062  #  ⇧,F7 → RSS
-  MacKey:      Shift 0xF70A : 28 062  #   ⇧F7 → RSS
+  MacKey:     CShift 0xF70A :    163  #  ⇧,F7 → DISP
+  MacKey:      Shift 0xF70A : 28 163  #   ⇧F7 → DISP
   GTKKey:                F7 :    148  #    F7 → *
-  GTKKey:     CShift     F7 :    062  #  ⇧,F7 → RSS
-  GTKKey:      Shift     F7 : 28 062  #   ⇧F7 → RSS
+  GTKKey:     CShift     F7 :    163  #  ⇧,F7 → DISP
+  GTKKey:      Shift     F7 : 28 163  #   ⇧F7 → DISP
   WinKey:               118 :    148  #    F7 → *
-  WinKey:     CShift    118 :    062  #  ⇧,F7 → RSS
-  WinKey:      Shift    118 : 28 062  #   ⇧F7 → RSS
+  WinKey:     CShift    118 :    163  #  ⇧,F7 → DISP
+  WinKey:      Shift    118 : 28 163  #   ⇧F7 → DISP
 # F8 → Multiply (because it's beside "*" on the keyboard)
   MacKey:            0xF70B :    148  #    F8 → *
-  MacKey:     CShift 0xF70B :    062  #  ⇧,F8 → RSS
-  MacKey:      Shift 0xF70B : 28 062  #   ⇧F8 → RSS
+  MacKey:     CShift 0xF70B :    163  #  ⇧,F8 → DISP
+  MacKey:      Shift 0xF70B : 28 163  #   ⇧F8 → DISP
   GTKKey:                F8 :    148  #    F8 → *
-  GTKKey:     CShift     F8 :    062  #  ⇧,F8 → RSS
-  GTKKey:      Shift     F8 : 28 062  #   ⇧F8 → RSS
+  GTKKey:     CShift     F8 :    163  #  ⇧,F8 → DISP
+  GTKKey:      Shift     F8 : 28 163  #   ⇧F8 → DISP
   WinKey:               119 :    148  #    F8 → *
-  WinKey:     CShift    119 :    062  #  ⇧,F8 → RSS
-  WinKey:      Shift    119 : 28 062  #   ⇧F8 → RSS
+  WinKey:     CShift    119 :    163  #  ⇧,F8 → DISP
+  WinKey:      Shift    119 : 28 163  #   ⇧F8 → DISP
 # F9 → Multiply (because it's beside "*" on the keyboard)
   MacKey:            0xF70C :    148  #    F9 → *
-  MacKey:     CShift 0xF70C :    062  #  ⇧,F9 → RSS
-  MacKey:      Shift 0xF70C : 28 062  #   ⇧F9 → RSS
+  MacKey:     CShift 0xF70C :    163  #  ⇧,F9 → DISP
+  MacKey:      Shift 0xF70C : 28 163  #   ⇧F9 → DISP
   GTKKey:                F9 :    148  #    F9 → *
-  GTKKey:     CShift     F9 :    062  #  ⇧,F9 → RSS
-  GTKKey:      Shift     F9 : 28 062  #   ⇧F9 → RSS
+  GTKKey:     CShift     F9 :    163  #  ⇧,F9 → DISP
+  GTKKey:      Shift     F9 : 28 163  #   ⇧F9 → DISP
   WinKey:               120 :    148  #    F9 → *
-  WinKey:     CShift    120 :    062  #  ⇧,F9 → RSS
-  WinKey:      Shift    120 : 28 062  #   ⇧F9 → RSS
+  WinKey:     CShift    120 :    163  #  ⇧,F9 → DISP
+  WinKey:      Shift    120 : 28 163  #   ⇧F9 → DISP
 ## F10 → Add (because it's beside "+" on the PC keyboard)
   MacKey:            0xF70D :    168  #   F10 → +
   MacKey:     CShift 0xF70D :    169  # ⇧,F10 → HMS+
@@ -1250,22 +1184,22 @@ Macro: 208      "SST^"       # SST^           #
 #               +---------+---------+---------+---------+
 #         Label |   F16   |   F17   |   F18   |   F19   |
 #  ROW F        |         |         |         |         |
-#          ⇧Key |   x<>   |    R↑   |  LASTx  |  MATRIX |
+#          ⇧Key |   FLAGS |    R↑   |  LASTx  |  MATRIX |
 #           Key |   x<>y  |    R↓   |   STO   |   RCL   |
 #               +---------+---------+---------+---------+
 #         Label |  clear  |    =    |    /    |    *    |
 #  ROW 1        |         |         |         |         |
-#          ⇧Key |  FLAGS  | CATALOG |   RDS   |   RSS   |
+#          ⇧Key |   STAT  |    ∑+   |  CUSTOM |   DISP  |
 #           Key |    E    |   +/-   |    /    |    *    |
 #               +---------+---------+---------+---------+
 #         Label |    7    |    8    |    9    |    -    |
 #  ROW 2        |         |         |         |         |
-#          ⇧Key |  PRINT  |  ASSIGN |  CUSTOM |  H.MS-  |
+#          ⇧Key | CATALOG |   PROB  |  ASSIGN |  H.MS-  |
 #           Key |    7    |    8    |    9    |    -    |
 #               +---------+---------+---------+---------+
 #         Label |    4    |    5    |    6    |    +    |
 #  ROW 3        |         |         |         |         |
-#          ⇧Key |   SHOW  |  MODES  |   DISP  |  H.MS+  |
+#          ⇧Key |  PRINT  |   SHOW  |  MODES  |  H.MS+  |
 #           Key |    4    |    5    |    6    |    +    |
 #               +---------+---------+---------+---------+
 #         Label |    1    |    2    |    3    |  enter  |
@@ -1281,8 +1215,8 @@ Macro: 208      "SST^"       # SST^           #
 
 # NUMERIC PAD: ROW F (Mac)
   MacKey:                    0xF713 :    130  #    F16 → x<>y
-  MacKey:             CShift 0xF713 :    131  #  ⇧,F16 → x<> 
-  MacKey:              Shift 0xF713 :    131  #   ⇧F16 → x<> 
+  MacKey:             CShift 0xF713 :    113  #  ⇧,F16 → FLAGS 
+  MacKey:              Shift 0xF713 : 28 113  #   ⇧F16 → FLAGS 
   MacKey:                    0xF714 :    140  #    F17 → R↓
   MacKey:             CShift 0xF714 :    141  #  ⇧,F17 → R↑
   MacKey:              Shift 0xF714 :    141  #   ⇧F17 → R↑
@@ -1295,31 +1229,31 @@ Macro: 208      "SST^"       # SST^           #
 
 # NUMERIC PAD: ROW 1 (Mac)
   MacKey: NumPad             0xF739 :    110  #  clear → E
-  MacKey: NumPad      CShift 0xF739 :    113  #⇧,clear → FLAGS
-  MacKey: NumPad       Shift 0xF739 : 28 113  # ⇧clear → FLAGS
+  MacKey: NumPad      CShift 0xF739 :    145  #⇧,clear → STAT
+  MacKey: NumPad       Shift 0xF739 : 28 145  # ⇧clear → STAT
   MacKey: NumPad                  = :    112  #      = → +/- 
-  MacKey: NumPad      CShift      = :    111  #    ⇧,= → CATALOG
-  MacKey: NumPad       Shift      = : 28 111  #     ⇧= → CATALOG
+  MacKey: NumPad      CShift      = :    074  #    ⇧,= → ∑+ (mnemonic macro - NO shift)
+  MacKey: NumPad       Shift      = :    074  #     ⇧= → ∑+ (mnemonic macro - NO shift)
   MacKey: NumPad                  / :    138  #      / → /
-  MacKey: NumPad      CShift      / :    063  #    ⇧,/ → RDS
-  MacKey: NumPad       Shift      / : 28 063  #     ⇧/ → RDS
+  MacKey: NumPad      CShift      / :    155  #    ⇧,/ → CUSTOM
+  MacKey: NumPad       Shift      / : 28 155  #     ⇧/ → CUSTOM
   MacKey: NumPad  Alt        0x002F :    188  #     ⌥/ → MOD
   MacKey: NumPad                  * :    148  #      * → *
-  MacKey: NumPad      CShift      * :    062  #    ⇧,* → RSS
-  MacKey: NumPad       Shift      * : 28 062  #     ⇧* → RSS
+  MacKey: NumPad      CShift      * :    163  #    ⇧,* → DISP
+  MacKey: NumPad       Shift      * : 28 163  #     ⇧* → DISP
 
 # NUMERIC PAD: ROW 2 (Mac)
   MacKey: NumPad                  7 :    132  #      7 → 7
-  MacKey: NumPad      CShift      7 :    165  #    ⇧,7 → PRINT
-  MacKey: NumPad       Shift      7 : 28 165  #     ⇧7 → PRINT
+  MacKey: NumPad      CShift      7 :    111  #    ⇧,7 → CATALOG
+  MacKey: NumPad       Shift      7 : 28 111  #     ⇧7 → CATALOG
   MacKey: NumPad  Alt             7 :    177  #     ⌥7 → x^7
   MacKey: NumPad                  8 :    134  #      8 → 8
-  MacKey: NumPad      CShift      8 :    153  #    ⇧,8 → ASSIGN
-  MacKey: NumPad       Shift      8 : 28 153  #     ⇧8 → ASSIGN
+  MacKey: NumPad      CShift      8 :    143  #    ⇧,8 → PROB
+  MacKey: NumPad       Shift      8 : 28 143  #     ⇧8 → PROB
   MacKey: NumPad  Alt             8 :    178  #     ⌥8 → x^8
   MacKey: NumPad                  9 :    136  #      9 → 9
-  MacKey: NumPad      CShift      9 :    155  #    ⇧,9 → CUSTOM
-  MacKey: NumPad       Shift      9 : 28 155  #     ⇧9 → CUSTOM
+  MacKey: NumPad      CShift      9 :    153  #    ⇧,9 → ASSIGN
+  MacKey: NumPad       Shift      9 : 28 153  #     ⇧9 → ASSIGN
   MacKey: NumPad  Alt             9 :    179  #     ⌥9 → x^9
   MacKey: NumPad                  - :    158  #      - → -
   MacKey: NumPad      CShift      - :    159  #    ⇧,- → HMS-
@@ -1327,22 +1261,22 @@ Macro: 208      "SST^"       # SST^           #
 
 # NUMERIC PAD: ROW 3 (Mac)
   MacKey: NumPad                  4 :    142  #      4 → 4
-  MacKey: NumPad      CShift      4 :    161  #    ⇧,4 → SHOW
-  MacKey: NumPad       Shift      4 : 28 161  #     ⇧4 → SHOW
+  MacKey: NumPad      CShift      4 :    165  #    ⇧,4 → PRINT
+  MacKey: NumPad       Shift      4 : 28 165  #     ⇧4 → PRINT
   MacKey: NumPad  Alt             4 :    174  #     ⌥4 → x^4
   MacKey: NumPad Ctrl             4 :    004  #     ^4 → Display menu  4
   MacKey: NumPad Ctrl CShift      4 :    004  #   ⇧,^4 → Display menu ⇧4
   MacKey: NumPad Ctrl  Shift      4 : 28 004  #    ⇧^4 → Display menu ⇧4
   MacKey: NumPad                  5 :    144  #      5 → 5
-  MacKey: NumPad      CShift      5 :    157  #    ⇧,5 → MODES
-  MacKey: NumPad       Shift      5 : 28 157  #     ⇧5 → MODES
+  MacKey: NumPad      CShift      5 :    161  #    ⇧,5 → SHOW
+  MacKey: NumPad       Shift      5 : 28 161  #     ⇧5 → SHOW
   MacKey: NumPad  Alt             5 :    175  #     ⌥5 → x^5
   MacKey: NumPad Ctrl             5 :    005  #     ^5 → Display menu  5
   MacKey: NumPad Ctrl CShift      5 :    005  #   ⇧,^5 → Display menu ⇧5
   MacKey: NumPad Ctrl  Shift      5 : 28 005  #    ⇧^5 → Display menu ⇧5
   MacKey: NumPad                  6 :    146  #      6 → 6
-  MacKey: NumPad      CShift      6 :    163  #    ⇧,6 → DISP
-  MacKey: NumPad       Shift      6 : 28 163  #     ⇧6 → DISP
+  MacKey: NumPad      CShift      6 :    157  #    ⇧,6 → MODES
+  MacKey: NumPad       Shift      6 : 28 157  #     ⇧6 → MODES
   MacKey: NumPad  Alt             6 :    176  #     ⌥6 → x^6
   MacKey: NumPad Ctrl             6 :    006  #     ^6 → Display menu  6
   MacKey: NumPad Ctrl CShift      6 :    006  #   ⇧,^6 → Display menu ⇧6
@@ -1394,17 +1328,17 @@ Macro: 208      "SST^"       # SST^           #
 #               +---------+---------+---------+---------+
 #         Label | NumLock |    /    |    *    |    -    |
 #  ROW 1        |         |         |         |         |
-#          ⇧Key | CATALOG |   RDS   |   RSS   |  H.MS-  |
+#          ⇧Key |    ∑+   |  CUSTOM |   DISP  |  H.MS-  |
 #           Key |   +/-   |    /    |    *    |    -    |
 #               +---------+---------+---------+---------+
 #         Label |    7    |    8    |    9    |    +    |
 #  ROW 2        |         |         |         |         |
-#          ⇧Key |  PRINT  |  ASSIGN |  CUSTOM |         |
+#          ⇧Key | CATALOG |   PROB  |  ASSIGN |         |
 #           Key |    7    |    8    |    9    |         |
 #               +---------+---------+---------+         |
 #         Label |    4    |    5    |    6    |         |
 #  ROW 3        |         |         |         |         |
-#          ⇧Key |   SHOW  |  MODES  |   DISP  |  H.MS+  |
+#          ⇧Key |  PRINT  |   SHOW  |  MODES  |  H.MS+  |
 #           Key |    4    |    5    |    6    |    +    |
 #               +---------+---------+---------+---------+
 #         Label |    1    |    2    |    3    |  enter  |
@@ -1454,15 +1388,15 @@ Macro: 208      "SST^"       # SST^           #
 
 # NUMERIC PAD: ROW 1 (Windows)                 NumLock
   WinKey:                       144 :    112  #   X      NumLock → +/-
-  WinKey:          CShift       144 :    111  #   X    ⇧,NumLock → CATALOG
-  WinKey:           Shift       144 : 28 111  #   X     ⇧NumLock → CATALOG
+  WinKey:          CShift       144 :    074  #   X    ⇧,NumLock → ∑+ (mnemonic macro - NO shift)
+  WinKey:           Shift       144 :    074  #   X     ⇧NumLock → ∑+ (mnemonic macro - NO shift)
   WinKey:                       111 :    138  #   X      / → /
-  WinKey:          CShift       111 :    063  #   X    ⇧,/ → RDS
-  WinKey:           Shift       111 : 28 063  #   X     ⇧/ → RDS
+  WinKey:          CShift       111 :    155  #   X    ⇧,/ → CUSTOM
+  WinKey:           Shift       111 : 28 155  #   X     ⇧/ → CUSTOM
   WinKey:     Alt               111 :    188  #   X     ⌥/ → MOD
   WinKey:                       106 :    148  #   X      * → *
-  WinKey:          CShift       106 :    062  #   X    ⇧,* → RSS
-  WinKey:           Shift       106 : 28 062  #   X     ⇧* → RSS
+  WinKey:          CShift       106 :    163  #   X    ⇧,* → DISP
+  WinKey:           Shift       106 : 28 163  #   X     ⇧* → DISP
   WinKey:                       109 :    158  #   X      - → -
   WinKey:          CShift       109 :    159  #   X    ⇧,- → HMS-
   WinKey:           Shift       109 :    159  #   X     ⇧- → HMS-
@@ -1470,26 +1404,26 @@ Macro: 208      "SST^"       # SST^           #
 # NUMERIC PAD: ROW 2 (Windows)                 NumLock
   WinKey:                       103 :    132  #   1     7 → 7
   WinKey:                       036 :    132  #   0     7 → 7
-  WinKey:          CShift       103 :    165  #   1   ⇧,7 → PRINT
-  WinKey:          CShift       036 : 165 28  #   0   ⇧,7 → PRINT         (Called by ⇧103)
-# WinKey:           Shift       103 : 28 165  #   1    ⇧7   IGNORED! ⇧103 calls CShift 036!
-  WinKey:           Shift       036 : 28 165  #   0    ⇧7 → PRINT
+  WinKey:          CShift       103 :    111  #   1   ⇧,7 → CATALOG
+  WinKey:          CShift       036 : 111 28  #   0   ⇧,7 → CATALOG         (Called by ⇧103)
+# WinKey:           Shift       103 : 28 111  #   1    ⇧7   IGNORED! ⇧103 calls CShift 036!
+  WinKey:           Shift       036 : 28 111  #   0    ⇧7 → CATALOG
   WinKey:      Alt              103 :    177  #   1    ⌥7 → x^7
   WinKey:      Alt              036 :    177  #   0    ⌥7 → x^7
   WinKey:                       104 :    134  #   1     8 → 8
   WinKey:                       038 :    134  #   0     8 → 8
-  WinKey:          CShift       104 :    153  #   1   ⇧,8 → ASSIGN
-  WinKey:          CShift       038 : 153 28  #   0   ⇧,8 → ASSIGN (Called by ⇧104)
-# WinKey:           Shift       104 : 28 153  #   1    ⇧8   IGNORED! ⇧104 calls CShift 038!
-  WinKey:           Shift       038 : 28 153  #   0    ⇧8 → ASSIGN
+  WinKey:          CShift       104 :    143  #   1   ⇧,8 → PROB
+  WinKey:          CShift       038 : 143 28  #   0   ⇧,8 → PROB (Called by ⇧104)
+# WinKey:           Shift       104 : 28 143  #   1    ⇧8   IGNORED! ⇧104 calls CShift 038!
+  WinKey:           Shift       038 : 28 143  #   0    ⇧8 → PROB
   WinKey:      Alt              104 :    178  #   1    ⌥8 → x^8
   WinKey:      Alt              038 :    178  #   0    ⌥8 → x^8
   WinKey:                       105 :    136  #   1     9 → 9
   WinKey:                       033 :    136  #   0     9 → 9
-  WinKey:          CShift       105 :    155  #   1   ⇧,9 → CUSTOM
-  WinKey:          CShift       033 : 155 28  #   0   ⇧,9 → CUSTOM         (Called by ⇧105)
-# WinKey:           Shift       105 : 28 155  #   1    ⇧9   IGNORED! ⇧105 calls CShift 033!
-  WinKey:           Shift       033 : 28 155  #   0    ⇧9 → CUSTOM
+  WinKey:          CShift       105 :    153  #   1   ⇧,9 → ASSIGN
+  WinKey:          CShift       033 : 153 28  #   0   ⇧,9 → ASSIGN         (Called by ⇧105)
+# WinKey:           Shift       105 : 28 153  #   1    ⇧9   IGNORED! ⇧105 calls CShift 033!
+  WinKey:           Shift       033 : 28 153  #   0    ⇧9 → ASSIGN
   WinKey:      Alt              105 :    179  #   1    ⌥9 → x^9
   WinKey:      Alt              033 :    179  #   0    ⌥9 → x^9
   WinKey:                       107 :    168  #   X     +
@@ -1499,10 +1433,10 @@ Macro: 208      "SST^"       # SST^           #
 # NUMERIC PAD: ROW 3 (Windows)                 NumLock
   WinKey:                       100 :    142  #   1     4 → 4
   WinKey:                       037 :    142  #   0     4 → 4
-  WinKey:          CShift       100 :    161  #   1   ⇧,4 → SHOW
-  WinKey:          CShift       037 : 161 28  #   0   ⇧,4 → SHOW           (Called by ⇧100)
-# WinKey:           Shift       100 : 28 161  #   1    ⇧4   IGNORED! ⇧100 calls CShift 037!
-  WinKey:           Shift       037 : 28 161  #   0    ⇧4 → SHOW
+  WinKey:          CShift       100 :    165  #   1   ⇧,4 → PRINT
+  WinKey:          CShift       037 : 165 28  #   0   ⇧,4 → PRINT           (Called by ⇧100)
+# WinKey:           Shift       100 : 28 165  #   1    ⇧4   IGNORED! ⇧100 calls CShift 037!
+  WinKey:           Shift       037 : 28 165  #   0    ⇧4 → PRINT
   WinKey:      Alt              100 :    174  #   1    ⌥4 → x^4
   WinKey:      Alt              037 :    174  #   0    ⌥4 → x^4
   WinKey:     Ctrl              100 :    004  #   1    ^4 → Display menu  4
@@ -1513,10 +1447,10 @@ Macro: 208      "SST^"       # SST^           #
   WinKey:     Ctrl  Shift       037 : 28 004  #   0   ⇧^4 → Display menu ⇧4
   WinKey:                       101 :    144  #   1     5 → 5
   WinKey:                       012 :    144  #   0     5 → 5
-  WinKey:          CShift       101 :    157  #   1   ⇧,5 → MODES
-  WinKey:          CShift       012 : 157 28  #   0   ⇧,5 → MODES          (Called by ⇧101)
-# WinKey:           Shift       101 : 28 157  #   1    ⇧5   IGNORED! ⇧101 calls CShift 012!
-  WinKey:           Shift       012 : 28 157  #   0    ⇧5 → MODES
+  WinKey:          CShift       101 :    161  #   1   ⇧,5 → SHOW
+  WinKey:          CShift       012 : 161 28  #   0   ⇧,5 → SHOW          (Called by ⇧101)
+# WinKey:           Shift       101 : 28 161  #   1    ⇧5   IGNORED! ⇧101 calls CShift 012!
+  WinKey:           Shift       012 : 28 161  #   0    ⇧5 → SHOW
   WinKey:      Alt              101 :    175  #   1    ⌥5 → x^5
   WinKey:      Alt              012 :    175  #   0    ⌥5 → x^5
   WinKey:     Ctrl              101 :    005  #   1    ^5 → Display menu  5
@@ -1527,10 +1461,10 @@ Macro: 208      "SST^"       # SST^           #
   WinKey:     Ctrl  Shift       012 : 28 005  #   0   ⇧^5 → Display menu ⇧5
   WinKey:                       102 :    146  #   1     6 → 6
   WinKey:                       039 :    146  #   0     6 → 6
-  WinKey:          CShift       102 :    163  #   1   ⇧,6 → DISP
-  WinKey:          CShift       039 : 163 28  #   0   ⇧,6 → DISP           (Called by ⇧102)
-# WinKey:           Shift       102 : 28 163  #   1    ⇧6   IGNORED! ⇧102 calls CShift 039!
-  WinKey:           Shift       039 : 28 163  #   0    ⇧6 → DISP
+  WinKey:          CShift       102 :    157  #   1   ⇧,6 → MODES
+  WinKey:          CShift       039 : 157 28  #   0   ⇧,6 → MODES           (Called by ⇧102)
+# WinKey:           Shift       102 : 28 157  #   1    ⇧6   IGNORED! ⇧102 calls CShift 039!
+  WinKey:           Shift       039 : 28 157  #   0    ⇧6 → MODES
   WinKey:      Alt              102 :    176  #   1    ⌥6 → x^6
   WinKey:      Alt              039 :    176  #   0    ⌥6 → x^6
   WinKey:     Ctrl              102 :    006  #   1    ^6 → Display menu  6
@@ -1599,15 +1533,15 @@ Macro: 208      "SST^"       # SST^           #
 
 # NUMERIC PAD: ROW 1 (Linux)                   NumLock
   GtkKey:                  Num_Lock :    112  #   X      = → +/- 
-  GtkKey:      CShift      Num_Lock :    111  #   X    ⇧,= → CATALOG
-  GtkKey:       Shift      Num_Lock : 28 111  #   X     ⇧= → CATALOG
+  GtkKey:      CShift      Num_Lock :    074  #   X    ⇧,= → ∑+ (mnemonic macro - NO shift)
+  GtkKey:       Shift      Num_Lock :    074  #   X     ⇧= → ∑+ (mnemonic macro - NO shift)
   GtkKey:                 KP_Divide :    138  #   X      / → /
-  GtkKey:      CShift     KP_Divide :    063  #   X    ⇧,/ → RDS
-  GtkKey:       Shift     KP_Divide : 28 063  #   X     ⇧/ → RDS
+  GtkKey:      CShift     KP_Divide :    155  #   X    ⇧,/ → CUSTOM
+  GtkKey:       Shift     KP_Divide : 28 155  #   X     ⇧/ → CUSTOM
   GtkKey:         Alt     KP_Divide :    188  #   X     ⌥/ → MOD
   GtkKey:               KP_Multiply :    148  #   X      * → *
-  GtkKey:      CShift   KP_Multiply :    062  #   X    ⇧,* → RSS
-  GtkKey:       Shift   KP_Multiply : 28 062  #   X     ⇧* → RSS
+  GtkKey:      CShift   KP_Multiply :    163  #   X    ⇧,* → DISP
+  GtkKey:       Shift   KP_Multiply : 28 163  #   X     ⇧* → DISP
   GtkKey:               KP_Subtract :    158  #   X      - → -
   GtkKey:      CShift   KP_Subtract :    159  #   X    ⇧,- → HMS-
   GtkKey:       Shift   KP_Subtract :    159  #   X     ⇧- → HMS-
@@ -1615,26 +1549,26 @@ Macro: 208      "SST^"       # SST^           #
 # NUMERIC PAD: ROW 2 (Linux)                   NumLock
   GtkKey:                      KP_7 :    132  #   1      7 → 7
   GtkKey:                   KP_Home :    132  #   0      7 → 7
-  GtkKey:          CShift      KP_7 :    165  #   1    ⇧,7 → PRINT
-  GtkKey:          CShift   KP_Home :    165  #   0    ⇧,7 → PRINT
-  GtkKey:           Shift      KP_7 : 28 165  #   1     ⇧7 → PRINT
-  GtkKey:           Shift   KP_Home : 28 165  #   0     ⇧7 → PRINT
+  GtkKey:          CShift      KP_7 :    111  #   1    ⇧,7 → CATALOG
+  GtkKey:          CShift   KP_Home :    111  #   0    ⇧,7 → CATALOG
+  GtkKey:           Shift      KP_7 : 28 111  #   1     ⇧7 → CATALOG
+  GtkKey:           Shift   KP_Home : 28 111  #   0     ⇧7 → CATALOG
   GtkKey:      Alt             KP_7 :    177  #   1     ⌥7 → x^7
   GtkKey:      Alt          KP_Home :    177  #   0     ⌥7 → x^7
   GtkKey:                      KP_8 :    134  #   1      8 → 8
   GtkKey:                     KP_Up :    134  #   0      8 → 8
-  GtkKey:          CShift      KP_8 :    153  #   1    ⇧,8 → ASSIGN
-  GtkKey:          CShift     KP_Up :    153  #   0    ⇧,8 → ASSIGN
-  GtkKey:           Shift      KP_8 : 28 153  #   1     ⇧8 → ASSIGN
-  GtkKey:           Shift     KP_Up : 28 153  #   0     ⇧8 → ASSIGN
+  GtkKey:          CShift      KP_8 :    143  #   1    ⇧,8 → PROB
+  GtkKey:          CShift     KP_Up :    143  #   0    ⇧,8 → PROB
+  GtkKey:           Shift      KP_8 : 28 143  #   1     ⇧8 → PROB
+  GtkKey:           Shift     KP_Up : 28 143  #   0     ⇧8 → PROB
   GtkKey:      Alt             KP_8 :    178  #   1     ⌥8 → x^8
   GtkKey:      Alt            KP_Up :    178  #   0     ⌥8 → x^8
   GtkKey:                      KP_9 :    136  #   1      9 → 9
   GtkKey:                  KP_Prior :    136  #   0      9 → 9
-  GtkKey:          CShift      KP_9 :    155  #   1    ⇧,9 → CUSTOM
-  GtkKey:          CShift  KP_Prior :    155  #   0    ⇧,9 → CUSTOM
-  GtkKey:           Shift      KP_9 : 28 155  #   1     ⇧9 → CUSTOM
-  GtkKey:           Shift  KP_Prior : 28 155  #   0     ⇧9 → CUSTOM
+  GtkKey:          CShift      KP_9 :    153  #   1    ⇧,9 → ASSIGN
+  GtkKey:          CShift  KP_Prior :    153  #   0    ⇧,9 → ASSIGN
+  GtkKey:           Shift      KP_9 : 28 153  #   1     ⇧9 → ASSIGN
+  GtkKey:           Shift  KP_Prior : 28 153  #   0     ⇧9 → ASSIGN
   GtkKey:      Alt             KP_9 :    179  #   1     ⌥9 → x^9
   GtkKey:      Alt         KP_Prior :    179  #   0     ⌥9 → x^9
   GtkKey:                    KP_Add :    168  #   X      +
@@ -1644,10 +1578,10 @@ Macro: 208      "SST^"       # SST^           #
 # NUMERIC PAD: ROW 3 (Linux)                   NumLock
   GtkKey:                      KP_4 :    142  #   1     4 → 4
   GtkKey:                   KP_Left :    142  #   0     4 → 4
-  GtkKey:          CShift      KP_4 :    161  #   1   ⇧,4 → SHOW
-  GtkKey:          CShift   KP_Left :    161  #   0   ⇧,4 → SHOW
-  GtkKey:           Shift      KP_4 : 28 161  #   1    ⇧4 → SHOW
-  GtkKey:           Shift   KP_Left : 28 161  #   0    ⇧4 → SHOW
+  GtkKey:          CShift      KP_4 :    165  #   1   ⇧,4 → PRINT
+  GtkKey:          CShift   KP_Left :    165  #   0   ⇧,4 → PRINT
+  GtkKey:           Shift      KP_4 : 28 165  #   1    ⇧4 → PRINT
+  GtkKey:           Shift   KP_Left : 28 165  #   0    ⇧4 → PRINT
   GtkKey:      Alt             KP_4 :    174  #   1    ⌥4 → x^4
   GtkKey:      Alt          KP_Left :    174  #   0    ⌥4 → x^4
   GtkKey:     Ctrl             KP_4 :    004  #   1    ^4 → Display menu  4
@@ -1658,10 +1592,10 @@ Macro: 208      "SST^"       # SST^           #
   GtkKey:     Ctrl  Shift   KP_Left : 28 004  #   0   ⇧^4 → Display menu ⇧4
   GtkKey:                      KP_5 :    144  #   1     5 → 5
   GtkKey:                  KP_Begin :    144  #   0     5 → 5
-  GtkKey:          CShift      KP_5 :    157  #   1   ⇧,5 → MODES
-  GtkKey:          CShift  KP_Begin :    157  #   0   ⇧,5 → MODES
-  GtkKey:           Shift      KP_5 : 28 157  #   1    ⇧5 → MODES
-  GtkKey:           Shift  KP_Begin : 28 157  #   0    ⇧5 → MODES
+  GtkKey:          CShift      KP_5 :    161  #   1   ⇧,5 → SHOW
+  GtkKey:          CShift  KP_Begin :    161  #   0   ⇧,5 → SHOW
+  GtkKey:           Shift      KP_5 : 28 161  #   1    ⇧5 → SHOW
+  GtkKey:           Shift  KP_Begin : 28 161  #   0    ⇧5 → SHOW
   GtkKey:      Alt             KP_5 :    175  #   1    ⌥5 → x^5
   GtkKey:      Alt         KP_Begin :    175  #   0    ⌥5 → x^5
   GtkKey:     Ctrl             KP_5 :    005  #   1    ^5 → Display menu  5
@@ -1672,10 +1606,10 @@ Macro: 208      "SST^"       # SST^           #
   GtkKey:     Ctrl  Shift  KP_Begin : 28 005  #   0   ⇧^5 → Display menu ⇧5
   GtkKey:                      KP_6 :    146  #   1     6 → 6
   GtkKey:                  KP_Right :    146  #   0     6 → 6
-  GtkKey:          CShift      KP_6 :    163  #   1   ⇧,6 → DISP
-  GtkKey:          CShift  KP_Right :    163  #   0   ⇧,6 → DISP
-  GtkKey:           Shift      KP_6 : 28 163  #   1    ⇧6 → DISP
-  GtkKey:           Shift  KP_Right : 28 163  #   0    ⇧6 → DISP
+  GtkKey:          CShift      KP_6 :    157  #   1   ⇧,6 → MODES
+  GtkKey:          CShift  KP_Right :    157  #   0   ⇧,6 → MODES
+  GtkKey:           Shift      KP_6 : 28 157  #   1    ⇧6 → MODES
+  GtkKey:           Shift  KP_Right : 28 157  #   0    ⇧6 → MODES
   GtkKey:      Alt             KP_6 :    176  #   1    ⌥6 → x^6
   GtkKey:      Alt         KP_Right :    176  #   0    ⌥6 → x^6
   GtkKey:     Ctrl             KP_6 :    006  #   1    ^6 → Display menu  6
