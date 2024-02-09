@@ -131,3 +131,23 @@ GtkKey: x : 51
 GtkKey: X : 52
 GtkKey: CShift x : 52
 GtkKey: g : 52
+
+DroidKey: a : 41
+DroidKey: A : 42
+DroidKey: CShift a : 42
+DroidKey: v : 43
+DroidKey: V : 44
+DroidKey: CShift v : 44
+DroidKey: q : 45
+DroidKey: Q : 46
+DroidKey: CShift q : 46
+DroidKey: o : 47
+DroidKey: O : 48
+DroidKey: CShift o : 48
+DroidKey: l : 49
+DroidKey: L : 50
+DroidKey: CShift l : 50
+DroidKey: x : 51
+DroidKey: X : 52
+DroidKey: CShift x : 52
+DroidKey: g : 52

@@ -38,12 +38,12 @@ WinKey: Shift 74 : 28 27
 WinKey: CShift 74 : 28 27
 WinKey: CShift Shift 74 : 28 27
 
-MacKey: Alt 1 : 1
-MacKey: Alt 2 : 2
-MacKey: Alt 3 : 3
-MacKey: Alt 4 : 4
-MacKey: Alt 5 : 5
-MacKey: Alt 6 : 6
+MacKey: Alt 0xA1 : 1
+MacKey: Alt 0x2122 : 2
+MacKey: Alt 0xA3 : 3
+MacKey: Alt 0xA2 : 4
+MacKey: Alt 0x221E : 5
+MacKey: Alt 0xA7 : 6
 MacKey: u : 38         # map 'u' to macro 38
 MacKey: U : 39         # map 'U' to macro 39
 MacKey: CShift u : 39  # map CShift plus 'u' to macro 39
@@ -75,6 +75,25 @@ GtkKey: j : 27
 GtkKey: J : 28 27
 GtkKey: CShift j : 28 27
 GtkKey: CShift J : 28 27
+
+DroidKey: Alt 1 : 1
+DroidKey: Alt 2 : 2
+DroidKey: Alt 3 : 3
+DroidKey: Alt 4 : 4
+DroidKey: Alt 5 : 5
+DroidKey: Alt 6 : 6
+DroidKey: u : 38         # map 'u' to macro 38
+DroidKey: U : 39         # map 'U' to macro 39
+DroidKey: CShift u : 39  # map CShift plus 'u' to macro 39
+DroidKey: CShift U : 39  # map CShift plus 'U' to macro 39
+DroidKey: p : 37
+DroidKey: P : 28 37
+DroidKey: CShift p : 28 37
+DroidKey: CShift P : 28 37
+DroidKey: j : 27
+DroidKey: J : 28 27
+DroidKey: CShift j : 28 27
+DroidKey: CShift J : 28 27
 
 Skin: 0,0,640,402
 Display: 61,47 3 3 6b836b 0b2327

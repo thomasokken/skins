@@ -111,12 +111,12 @@ WinKey: Shift 85 : 88         # map 'U' to macro 88
 WinKey: CShift 85 : 88        # map CShift plus 'u' to macro 88
 WinKey: CShift Shift 85 : 88  # map CShift plus 'U' to macro 88
 
-MacKey: Alt 1 : 1
-MacKey: Alt 2 : 2
-MacKey: Alt 3 : 3
-MacKey: Alt 4 : 4
-MacKey: Alt 5 : 5
-MacKey: Alt 6 : 6
+MacKey: Alt 0xA1 : 1
+MacKey: Alt 0x2122 : 2
+MacKey: Alt 0xA3 : 3
+MacKey: Alt 0xA2 : 4
+MacKey: Alt 0x221E : 5
+MacKey: Alt 0xA7 : 6
 MacKey: p : 37
 MacKey: P : 28 37
 MacKey: CShift p : 28 37
@@ -149,3 +149,21 @@ GtkKey: U : 88         # map 'U' to macro 88
 GtkKey: CShift u : 88  # map CShift plus 'u' to macro 88
 GtkKey: CShift U : 88  # map CShift plus 'U' to macro 88
 
+DroidKey: Alt 1 : 1
+DroidKey: Alt 2 : 2
+DroidKey: Alt 3 : 3
+DroidKey: Alt 4 : 4
+DroidKey: Alt 5 : 5
+DroidKey: Alt 6 : 6
+DroidKey: p : 37
+DroidKey: P : 28 37
+DroidKey: CShift p : 28 37
+DroidKey: CShift P : 28 37
+DroidKey: j : 27
+DroidKey: J : 28 27
+DroidKey: CShift j : 28 27
+DroidKey: CShift J : 28 27
+DroidKey: u : 87         # map 'u' to macro 87
+DroidKey: U : 88         # map 'U' to macro 88
+DroidKey: CShift u : 88  # map CShift plus 'u' to macro 88
+DroidKey: CShift U : 88  # map CShift plus 'U' to macro 88

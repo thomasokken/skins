@@ -158,3 +158,23 @@ GtkKey: x : 60
 GtkKey: X : 61
 GtkKey: CShift x : 61
 GtkKey: g : 61
+
+DroidKey: a : 50
+DroidKey: A : 51
+DroidKey: CShift a : 51
+DroidKey: v : 52
+DroidKey: V : 53
+DroidKey: CShift v : 53
+DroidKey: q : 54
+DroidKey: Q : 55
+DroidKey: CShift q : 55
+DroidKey: o : 56
+DroidKey: O : 57
+DroidKey: CShift o : 57
+DroidKey: l : 58
+DroidKey: L : 59
+DroidKey: CShift l : 59
+DroidKey: x : 60
+DroidKey: X : 61
+DroidKey: CShift x : 61
+DroidKey: g : 61
