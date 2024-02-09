@@ -1,5 +1,5 @@
-# Mueck_402D.layout  402 x 600 skin for Free42 desktop version
-# 2023.1212: Mick Mueck (mick.mueck@mac.com)
+# Mueck_402D.layout 402x600 Free42 desktop skin - Mick Mueck: mick.mueck@mac.com
+# 2024.0127: Changed Mac key mappings ^⇧1 → ⌃⇧6 required for Free42 v3.1.4 and Plus42 v1.1.4
 # With thanks to Thomas Okken, Jerrod Hofferth and Andrew Novinc :-)
 # If you want to use the desktop version of this skin then use Plus42 - it's free!
 
@@ -435,22 +435,22 @@ Macro: 208      "SST^"       # SST^           #
   MacKey:      Shift 0xF709 : 28 006  #   ⇧F6 → Display menu ⇧6
   MacKey: Ctrl            1 :    001  #    ^1 → Display menu  1
   MacKey: Ctrl CShift     1 :    001  #  ⇧,^1 → Display menu ⇧1
-  MacKey: Ctrl            ! : 28 001  #   ⇧^1 → Display menu ⇧1
+  MacKey: Ctrl  Shift     1 : 28 001  #   ⇧^1 → Display menu ⇧1 (changed for Free42 v3.1.4)
   MacKey: Ctrl            2 :    002  #    ^2 → Display menu  2
   MacKey: Ctrl CShift     2 :    002  #  ⇧,^2 → Display menu ⇧2
-  MacKey: Ctrl            @ : 28 002  #   ⇧^2 → Display menu ⇧2
+  MacKey: Ctrl  Shift     2 : 28 002  #   ⇧^2 → Display menu ⇧2 (changed for Free42 v3.1.4)
   MacKey: Ctrl            3 :    003  #    ^3 → Display menu  3
   MacKey: Ctrl CShift     3 :    003  #  ⇧,^3 → Display menu ⇧3
-  MacKey: Ctrl       0x0023 : 28 003  #   ⇧^3 → Display menu ⇧3 (Used 0x0023 because # is a comment)
+  MacKey: Ctrl  Shift     3 : 28 003  #   ⇧^3 → Display menu ⇧3 (changed for Free42 v3.1.4)
   MacKey: Ctrl            4 :    004  #    ^4 → Display menu  4
   MacKey: Ctrl CShift     4 :    004  #  ⇧,^4 → Display menu ⇧4
-  MacKey: Ctrl            $ : 28 004  #   ⇧^4 → Display menu ⇧4
+  MacKey: Ctrl  Shift     4 : 28 004  #   ⇧^4 → Display menu ⇧4 (changed for Free42 v3.1.4)
   MacKey: Ctrl            5 :    005  #    ^5 → Display menu  5
   MacKey: Ctrl CShift     5 :    005  #  ⇧,^5 → Display menu ⇧5
-  MacKey: Ctrl            % : 28 005  #   ⇧^5 → Display menu ⇧5
+  MacKey: Ctrl  Shift     5 : 28 005  #   ⇧^5 → Display menu ⇧5 (changed for Free42 v3.1.4)
   MacKey: Ctrl            6 :    006  #    ^6 → Display menu  6
   MacKey: Ctrl CShift     6 :    006  #  ⇧,^6 → Display menu ⇧6
-  MacKey: Ctrl            ^ : 28 006  #   ⇧^6 → Display menu ⇧6
+  MacKey: Ctrl  Shift     6 : 28 006  #   ⇧^6 → Display menu ⇧6 (changed for Free42 v3.1.4)
 
   GtkKey:                F1 :    001  #    F1 → Display menu  1
   GtkKey:     CShift     F1 :    001  #  ⇧,F1 → Display menu ⇧1
