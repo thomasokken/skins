@@ -16,7 +16,7 @@ cat - << EOF
   </style>
   <script>
     var lastSortKey = "sk_name";
-    var sortDirection = { "sk_name": true, "sk_date": false, "sk_pixels": false, "sk_width": false, "sk_height": false };
+    var sortDirection = { "sk_name": true, "sk_date": false, "sk_pixels": false, "sk_width": false, "sk_height": false, "sk_aspect": false };
 
     function sortList(which) {
         var rows = document.getElementsByTagName("tr");
@@ -69,13 +69,15 @@ cat - << EOF
             return item.childNodes[0].childNodes[3].childNodes[0].innerText;
         var res = item.childNodes[0].childNodes[2].innerText;
         var t = res.indexOf("x");
+        var u = res.indexOf(" ");
         var x = +res.substring(0, t);
-        var y = +res.substring(t + 1);
+        var y = +res.substring(t + 1, u);
         var r;
         switch (which) {
             case "sk_pixels": r = x * y; break;
             case "sk_width": r = x; break;
             case "sk_height": r = y; break;
+            case "sk_aspect": r = Math.round((1000.0 * x) / y + 0.5); break;
         }
         r = "000000000" + r;
         return r.substring(r.length - 9);
@@ -86,7 +88,7 @@ cat - << EOF
   <h3>Free42 Skins</h3>
   <pre><a href="../.." class="crumb">Home</a> &gt; <a href=".." class="crumb">Free42</a> &gt; Skins</pre>
   <a href="README.html">README</a>
-  <pre>Sort by: <a href="javascript:sortList('sk_name')" class="crumb" id="sk_name">name▲</a> <a href="javascript:sortList('sk_date')" class="crumb" id="sk_date">date</a> <a href="javascript:sortList('sk_pixels')" class="crumb" id="sk_pixels">pixels</a> <a href="javascript:sortList('sk_width')" class="crumb" id="sk_width">width</a> <a href="javascript:sortList('sk_height')" class="crumb" id="sk_height">height</a></pre>
+  <pre>Sort by: <a href="javascript:sortList('sk_name')" class="crumb" id="sk_name">name▲</a> <a href="javascript:sortList('sk_date')" class="crumb" id="sk_date">date</a> <a href="javascript:sortList('sk_pixels')" class="crumb" id="sk_pixels">pixels</a> <a href="javascript:sortList('sk_width')" class="crumb" id="sk_width">width</a> <a href="javascript:sortList('sk_height')" class="crumb" id="sk_height">height</a> <a href="javascript:sortList('sk_aspect')" class="crumb" id="sk_aspect">aspect</a></pre>
   <table border="0" cellpadding="10">
 EOF
 prevdir=null
@@ -96,6 +98,17 @@ do
     base=`basename $layout .layout`
     gif=$dir/${base}.gif
     size=`grep '^Skin:' $layout | sed 's/^Skin: 0,0,\([0-9]*\),\([0-9]*\).*$/\1x\2/'`
+    width=`echo $size | sed 's/^\([^x]*\)x.*$/\1/'`
+    height=`echo $size | sed 's/^[^x]*x\(.*\)$/\1/'`
+    if [ $width -eq $height ]
+    then
+        size="$size (1:1)"
+    elif [ $width -lt $height ]
+    then
+        size="$size (1:`echo "scale=2; $height / $width" | bc`)"
+    else
+        size="$size (`echo "scale=2; $width / $height" | bc`:1)"
+    fi
     if [ ! -f $gif ]
     then
         continue
