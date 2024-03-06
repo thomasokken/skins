@@ -63,4 +63,4 @@ Key: 52,50 316,42,286,157 316,82,286,117 316,82 # Exit area
 
 Macro: 50 28 # Shift
 Macro: 52 33 # Exit
-Macro: 55 "CLST" # CLST
+Macro: 55 "CLST" '' # CLST

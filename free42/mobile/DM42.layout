@@ -51,16 +51,16 @@ Key: 35 286,1165,116,96 300,1184,88,58 300,2538
 Key: 36 412,1165,116,96 426,1184,88,58 426,2538
 Key: 37 538,1165,116,96 552,1184,88,58 552,2538
 
-Macro: 41 "Σ+"
-Macro: 42 "Σ-"
-Macro: 43 "1/X"
-Macro: 44 "Y↑X"
-Macro: 45 "SQRT"
-Macro: 46 "X↑2"
-Macro: 47 "LOG"
-Macro: 48 "10↑X"
-Macro: 49 "LN"
-Macro: 50 "E↑X"
+Macro: 41 "Σ+" 'Σ'
+Macro: 42 "Σ-" ''
+Macro: 43 "1/X" ''
+Macro: 44 "Y↑X" ''
+Macro: 45 "SQRT" '√'
+Macro: 46 "X↑2" ''
+Macro: 47 "LOG" ''
+Macro: 48 "10↑X" ''
+Macro: 49 "LN" ''
+Macro: 50 "E↑X" ''
 Macro: 51 "XEQ"
 Macro: 52 "GTO"
 

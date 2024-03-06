@@ -18,8 +18,8 @@ Annunciator: 7  238,35,37,16  208,593  # RAD
 
 Macro: 38  28 37 1 # FCN
 Macro: 39  37 2 # PGM
-Macro: 40  "R↑" # Roll stack up
-Macro: 41  "CLST" # Clear stack (CLST)
+Macro: 40  "R↑" '' # Roll stack up
+Macro: 41  "CLST" '' # Clear stack (CLST)
 Macro: 50  28 # Shift
 Macro: 52  33 # Exit
 
