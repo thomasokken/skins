@@ -1,0 +1,276 @@
+# MowgliiPlus42LS
+# Landscape skin for Plus42
+# By Sanjay Madan
+
+Skin: 0,0,1270,715
+Display: 22,70 4.55 6 b0b5a2 000000
+DisplaySize: 22,8 -1 -1 8
+Flags: 7
+
+Annunciator: 1  22,22,40,29 1292,22
+Annunciator: 2  72,22,52,29 1342,22
+Annunciator: 3 134,22,64,29 1404,22
+Annunciator: 4 210,22,38,29 1480,22
+Annunciator: 5 330,22,52,29 1600,22             
+Annunciator: 6 259,22,16,29 1529,22
+Annunciator: 7 275,22,46,29 1545,22
+
+Key:   1       21,332, 94, 70   21,332, 94, 70 1291,332
+Key:   2      122,332, 94, 70  122,332, 94, 70 1392,332
+Key:   3      223,332, 94, 70  223,332, 94, 70 1493,332
+Key:   4      323,332, 94, 70  323,332, 94, 70 1593,332
+Key:   5      424,332, 94, 70  424,332, 94, 70 1694,332
+Key:   6      525,332, 94, 70  525,332, 94, 70 1795,332
+
+Key:  38,39   122,414, 94, 88   21,414, 94, 88 1291,414
+Key:  40,41   223,414, 94, 88  223,414, 94, 88 1493,414
+Key:  42,43   651,319,110, 88  651,319,110, 88 1921,414
+Key:  44,45   323,414, 94, 88  323,414, 94, 88 1593,414
+Key:  46,47   424,414, 94, 88  424,414, 94, 88 1694,414
+Key:  48,49   525,414, 94, 88  525,414, 94, 88 1795,414
+
+Key:  50,51   651,224, 94, 88  651,224, 94, 88 1921,224
+Key:  52,53   752,224, 94, 88  752,224, 94, 88 2022,224
+Key:  54,55   853,224, 94, 88  853,224, 94, 88 2123,224
+Key:  56,57   953,224, 94, 88  953,224, 94, 88 2223,224
+Key:  58,59  1054,224, 94, 88 1054,224, 94, 88 2324,224
+Key:  60,61  1155,224, 94, 88 1155,224, 94, 88 2425,224
+
+Key:   7      651,509,110, 88  651,509,110, 88 1921,509
+Key:   8      651,604,110, 88  651,604,110, 88 1921,604
+Key:   9      651,414,110, 88  651,414,110, 88 1921,414
+Key:  10      223,604, 94, 88  223,604, 94, 88 1493,604
+Key:  11      323,604, 94, 88  323,604, 94, 88 1593,604
+Key:  12      424,604, 94, 88  424,604, 94, 88 1694,604
+
+Key:  13      525,509, 94,183  525,509, 94,183 1795,509
+Key:  14      122,509, 94, 88  122,509, 94, 88 1392,509
+Key:  15      223,509, 94, 88  223,509, 94, 88 1493,509
+Key:  16      323,509, 94, 88  323,509, 94, 88 1593,509
+Key:  17      424,509, 94, 88  424,509, 94, 88 1694,509
+
+Key:  18       21,414, 94, 88   21,414, 94, 88 1291,414
+Key:  19      772,319,110, 88  772,319,110, 88 2042,319
+Key:  20      894,319,110, 88  894,319,110, 88 2164,319
+Key:  21     1016,319,110, 88 1016,319,110, 88 2286,319
+Key:  22     1138,319,110, 88 1138,319,110, 88 2408,319
+
+Key:  23       21,509, 94, 88   21,509, 94, 88 1291,509
+Key:  24      772,414,110, 88  772,414,110, 88 2042,414
+Key:  25      894,414,110, 88  894,414,110, 88 2164,414
+Key:  26     1016,414,110, 88 1016,414,110, 88 2286,414
+Key:  27     1138,414,110, 88 1138,414,110, 88 2408,414
+
+Key:  28      122,604, 94, 88  122,604, 94, 88 1392,604
+Key:  29      772,509,110, 88  772,509,110, 88 2042,509
+Key:  30      894,509,110, 88  894,509,110, 88 2164,509
+Key:  31     1016,509,110, 88 1016,509,110, 88 2286,509
+Key:  32     1138,509,110, 88 1138,509,110, 88 2408,509
+
+Key:  33       21,604, 94, 88   21,604, 94, 88 1291,604
+Key:  34      772,604,110, 88  772,604,110, 88 2042,604
+Key:  35      894,604,110, 88  894,604,110, 88 2164,604
+Key:  36     1016,604,110, 88 1016,604,110, 88 2286,604
+Key:  37     1138,604,110, 88 1138,604,110, 88 2408,604
+
+AltBkgd: 1 2332, 115,195,88  122,509
+AltBkgd: 1 1921, 115,110,88  894,604
+AltBkgd: 1 2165, 115,110,88 1016,604
+AltBkgd: 2 2332, 115,195,88  122,509
+AltBkgd: 2 2043, 115,232,88  894,604
+
+AltKey: 1 14 2332, 15
+AltKey: 1 15 2433, 15
+AltKey: 1 35 1921, 15
+AltKey: 1 36 2165, 15
+AltKey: 2 14 2332, 15
+AltKey: 2 15 2433, 15
+AltKey: 2 35 2043, 15
+AltKey: 2 36 2165, 15
+
+Macro: 38 "DIRS"
+Macro: 39 "DIR.FCN"
+Macro: 40 "UNITS"
+Macro: 41 "UNIT.FCN"
+Macro: 42 "R^" ''
+Macro: 43 "PLOT.M"
+Macro: 44 "X<>" ''
+Macro: 45 "%CH" ''
+Macro: 46 "VIEW"
+Macro: 47 "SST^"
+Macro: 48 "EQN"
+Macro: 49 "EQN.FCN"
+
+Macro: 50 "Σ+" 'Σ'
+Macro: 51 "Σ-" ''
+Macro: 52 "1/X" ''
+Macro: 53 "Y^X" ''
+Macro: 54 "SQRT" '√'
+Macro: 55 "X^2" ''
+Macro: 56 "LOG" ''
+Macro: 57 "10^X" ''
+Macro: 58 "LN" ''
+Macro: 59 "E^X" ''
+Macro: 60 "XEQ"
+Macro: 61 "GTO"
+
+WinKey: 65 : 50
+WinKey: Shift 65 : 51
+WinKey: CShift 65 : 51
+WinKey: 86 : 52
+WinKey: Shift 86 : 53
+WinKey: CShift 86 : 53
+WinKey: 81 : 54
+WinKey: Shift 81 : 55
+WinKey: CShift 81 : 55
+WinKey: 79 : 56
+WinKey: Shift 79 : 57
+WinKey: CShift 79 : 57
+WinKey: 76 : 58
+WinKey: Shift 76 : 59
+WinKey: CShift 76 : 59
+WinKey: 88 : 60
+WinKey: Shift 88 : 61
+WinKey: CShift 88 : 61
+WinKey: 71 : 61
+
+WinKey: Alt 49 : 38
+WinKey: Alt Shift 49 : 39
+WinKey: Alt CShift 49 : 39
+WinKey: Alt 50 : 40
+WinKey: Alt Shift 50 : 41
+WinKey: Alt CShift 50 : 41
+WinKey: Alt 51 : 42
+WinKey: Alt Shift 51 : 43
+WinKey: Alt CShift 51 : 43
+WinKey: Alt 52 : 44
+WinKey: Alt Shift 52 : 45
+WinKey: Alt CShift 52 : 45
+WinKey: Alt 53 : 46
+WinKey: Alt Shift 53 : 47
+WinKey: Alt CShift 53 : 47
+WinKey: Alt 54 : 48
+WinKey: Alt Shift 54 : 49
+WinKey: Alt CShift 54 : 49
+WinKey: 85 : 42
+
+MacKey: a : 50
+MacKey: A : 51
+MacKey: CShift a : 51
+MacKey: v : 52
+MacKey: V : 53
+MacKey: CShift v : 53
+MacKey: q : 54
+MacKey: Q : 55
+MacKey: CShift q : 55
+MacKey: o : 56
+MacKey: O : 57
+MacKey: CShift o : 57
+MacKey: l : 58
+MacKey: L : 59
+MacKey: CShift l : 59
+MacKey: x : 60
+MacKey: X : 61
+MacKey: CShift x : 61
+MacKey: g : 61
+
+MacKey: Alt 0xA1 : 38
+MacKey: Alt Shift 0x2044 : 39
+MacKey: Alt CShift 0xA1 : 39
+MacKey: Alt 0x2122 : 40
+MacKey: Alt Shift 0x20AC : 41
+MacKey: Alt CShift 0x2122 : 41
+MacKey: Alt 0xA3 : 42
+MacKey: Alt Shift 0x2039 : 43
+MacKey: Alt CShift 0xA3 : 43
+MacKey: Alt 0xA2 : 44
+MacKey: Alt Shift 0x203A : 45
+MacKey: Alt CShift 0xA2 : 45
+MacKey: Alt 0x221E : 46
+MacKey: Alt Shift 0xFB01 : 47
+MacKey: Alt CShift 0x221E : 47
+MacKey: Alt 0xA7 : 48
+MacKey: Alt Shift 0xFB02 : 49
+MacKey: Alt CShift 0xA7 : 49
+MacKey: u : 42
+
+GtkKey: a : 50
+GtkKey: A : 51
+GtkKey: CShift a : 51
+GtkKey: v : 52
+GtkKey: V : 53
+GtkKey: CShift v : 53
+GtkKey: q : 54
+GtkKey: Q : 55
+GtkKey: CShift q : 55
+GtkKey: o : 56
+GtkKey: O : 57
+GtkKey: CShift o : 57
+GtkKey: l : 58
+GtkKey: L : 59
+GtkKey: CShift l : 59
+GtkKey: x : 60
+GtkKey: X : 61
+GtkKey: CShift x : 61
+GtkKey: g : 61
+
+GtkKey: Alt 1 : 38
+GtkKey: Alt exclam : 39
+GtkKey: Alt CShift 1 : 39
+GtkKey: Alt 2 : 40
+GtkKey: Alt at : 41
+GtkKey: Alt CShift 2 : 41
+GtkKey: Alt 3 : 42
+GtkKey: Alt numbersign : 43
+GtkKey: Alt CShift 3 : 43
+GtkKey: Alt 4 : 44
+GtkKey: Alt dollar : 45
+GtkKey: Alt CShift 4 : 45
+GtkKey: Alt 5 : 46
+GtkKey: Alt percent : 47
+GtkKey: Alt CShift 5 : 47
+GtkKey: Alt 6 : 48
+GtkKey: Alt asciicircum : 49
+GtkKey: Alt CShift 6 : 49
+GtkKey: u : 42
+
+DroidKey: a : 50
+DroidKey: A : 51
+DroidKey: CShift a : 51
+DroidKey: v : 52
+DroidKey: V : 53
+DroidKey: CShift v : 53
+DroidKey: q : 54
+DroidKey: Q : 55
+DroidKey: CShift q : 55
+DroidKey: o : 56
+DroidKey: O : 57
+DroidKey: CShift o : 57
+DroidKey: l : 58
+DroidKey: L : 59
+DroidKey: CShift l : 59
+DroidKey: x : 60
+DroidKey: X : 61
+DroidKey: CShift x : 61
+DroidKey: g : 61
+
+DroidKey: Alt 1 : 38
+DroidKey: Alt Shift 1 : 39
+DroidKey: Alt CShift 1 : 39
+DroidKey: Alt 2 : 40
+DroidKey: Alt Shift 2 : 41
+DroidKey: Alt CShift 2 : 41
+DroidKey: Alt 3 : 42
+DroidKey: Alt Shift 3 : 43
+DroidKey: Alt CShift 3 : 43
+DroidKey: Alt 4 : 44
+DroidKey: Alt Shift 4 : 45
+DroidKey: Alt CShift 4 : 45
+DroidKey: Alt 5 : 46
+DroidKey: Alt Shift 5 : 47
+DroidKey: Alt CShift 5 : 47
+DroidKey: Alt 6 : 48
+DroidKey: Alt Shift 6 : 49
+DroidKey: Alt CShift 6 : 49
+DroidKey: u : 42
+
