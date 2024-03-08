@@ -160,26 +160,26 @@ Macro: 070      23           # SCROLL DOWN    #    ▼
 Macro: 071      23           # SST            #   ⇧▼
 Macro: 072      36           # R/S            #    TAB
 Macro: 073      36           # PRGM           #   ⇧TAB
-Macro: 074      "Σ+"         # ∑+             #   ⌥w
-Macro: 075      "Σ-"         # ∑-             #  ⇧⌥w
-Macro: 076      "LOG"        # LOG            #   ⌥l
-Macro: 077      "10^X"       # 10^X           #  ⇧⌥l      ⌥a
-Macro: 078      "LN"         # LN             #   ⌥n
-Macro: 079      "E^X"        # E^X            #   ⌥e     ⇧⌥n
+Macro: 074      "Σ+" 'Σ'     # ∑+             #   ⌥w
+Macro: 075      "Σ-" ''      # ∑-             #  ⇧⌥w
+Macro: 076      "LOG" ''     # LOG            #   ⌥l
+Macro: 077      "10^X" ''    # 10^X           #  ⇧⌥l      ⌥a
+Macro: 078      "LN" ''      # LN             #   ⌥n
+Macro: 079      "E^X" ''     # E^X            #   ⌥e     ⇧⌥n
 Macro: 080      28           # SHIFT          #  ⇧
 Macro: 081      28           # SHIFT-SHIFT    #  ⇧⇧
 Macro: 090      13           # ENTER (LHS)    #    CR      ENTER SPACE
 Macro: 091      "GTO"        # GTO            #    ▶︎      ⇧▶︎
 Macro: 092      13           # ENTER (RHS)    #    CR      ENTER  SPACE
 Macro: 093      13           # ALPHA          #   ⇧CR     ⇧ENTER ⇧SPACE
-Macro: 096      "SQRT"       # SQRT           #   ⌥r
-Macro: 097      "X^2"        # X^2            #   ⌥2     ⇧⌥r
-Macro: 094      "1/X"        # 1/X            #   ⌥i
-Macro: 095      "FACT"       # FACT           #   ⌥f     ⇧⌥r
-Macro: 098      "Y^X"        # Y^X            #   ⌥y
+Macro: 096      "SQRT" '√'   # SQRT           #   ⌥r
+Macro: 097      "X^2" ''     # X^2            #   ⌥2     ⇧⌥r
+Macro: 094      "1/X" ''     # 1/X            #   ⌥i
+Macro: 095      "FACT" '!'   # FACT           #   ⌥f     ⇧⌥r
+Macro: 098      "Y^X" ''     # Y^X            #   ⌥y
 #Macro: 099      08           # %              #   ⇧/      ⌥p 
 Macro: 100      17           # BACKSPACE      #    BKSP    DEL
-#Macro: 101      "%CH"        # %CH            #   ⇧x     ⇧⌥p ⇧F7 ⇧F8 ⇧F9 ⇧*(numeric pad)
+#Macro: 101      "%CH" ''     # %CH            #   ⇧x     ⇧⌥p ⇧F7 ⇧F8 ⇧F9 ⇧*(numeric pad)
 Macro: 110      16           # E Exponent     #    e       CLEAR(Mac-only)
 Macro: 111      37           # CATALOG        #   ⇧e      ⇧CLEAR(Mac-only)
 Macro: 112      15           # +/-            #    =       NumLock(unix-only)
@@ -193,7 +193,7 @@ Macro: 119      28 16 21     # giga  (⇧E9)    #    g       G
 Macro: 120      16 15 29 30  # pico  (E-12)   #    p
 Macro: 121      28 16 29 30  # tera  (⇧E12)   #    t       T
 Macro: 130      14           # X<>Y           #    ◀︎       i  F16(Mac-only)
-Macro: 131      "X<>"        # X<>            #   ⇧◀︎      ⇧i ⇧F16(Mac-only)
+Macro: 131      "X<>" ''     # X<>            #   ⇧◀︎      ⇧i ⇧F16(Mac-only)
 Macro: 132      19           # 7              #    7
 Macro: 133      19           # SOLVER         #   ⇧7
 Macro: 134      20           # 8              #    8
@@ -203,7 +203,7 @@ Macro: 137      21           # MATRIX         #   ⇧9
 Macro: 138      22           # /              #    /
 Macro: 139      07           # COMPLEX        #   ⇧0
 Macro: 140      09           # R↓             #    d       F17(Mac-only)
-Macro: 141      "R^"         # R↑             #   ⇧d  ⇧u  ⇧F17(Mac-only)
+Macro: 141      "R^" ''      # R↑             #   ⇧d  ⇧u  ⇧F17(Mac-only)
 Macro: 142      24           # 4              #    4
 Macro: 143      27           # PROB           #   ⇧BKSP   ⇧DEL
 Macro: 144      25           # 5              #    5
@@ -221,7 +221,7 @@ Macro: 155      30           # CUSTOM         #   ⇧2
 Macro: 156      31           # 3              #    3
 Macro: 157      15           # MODES          #   ⇧r      ⇧F19(Mac-only)
 Macro: 158      32           # -              #    -
-Macro: 159      "HMS-"       # HMS-           #   ⇧-     ⇧⌥h
+Macro: 159      "HMS-" ''    # HMS-           #   ⇧-     ⇧⌥h
 Macro: 160      08           # RCL            #    r       F19(Mac-only)
 Macro: 161      35           # SHOW           #   ⇧4
 Macro: 162      34           # 0              #    0
@@ -230,7 +230,7 @@ Macro: 164      35           # Period         #    .
 Macro: 165      32           # PRINT          #   ⇧5
 Macro: 166      28 9         # PI             #    o
 Macro: 168      37           # +              #    a       F10  F11  F12  +(numeric pad)
-Macro: 169      "HMS+"       # HMS+           #   ⇧a  ⌥h  ⇧F10 ⇧F11 ⇧F12 ⇧+(numeric pad)
+Macro: 169      "HMS+" ''    # HMS+           #   ⇧a  ⌥h  ⇧F10 ⇧F11 ⇧F12 ⇧+(numeric pad)
 Macro: 167      34 6 28 13 1 3 4 2 4 1 5 2 5 3 13   # XEQ "CONST"   #   ⇧o
 
 # -------------------------------------------------------------------------------------
@@ -239,15 +239,15 @@ Macro: 167      34 6 28 13 1 3 4 2 4 1 5 2 5 3 13   # XEQ "CONST"   #   ⇧o
 #     Number    Key Code(s)  Function         Hot-key(s)
 Macro: 171      16 15 29 25  # femto (E-15)   #    f
 Macro: 172      16 29 25     # Peta  (E15)    #   ⇧p
-Macro: 180      "SINH"       # SINH           #  ⌃⌥s
-Macro: 181      "ASINH"      # ASINH          # ⌃⇧⌥s
-Macro: 182      "COSH"       # COSH           #  ⌃⌥c
-Macro: 183      "ACOSH"      # ACOSH          # ⌃⇧⌥c
-Macro: 184      "TANH"       # TANH           #  ⌃⌥t
-Macro: 185      "ATANH"      # ATANH          # ⌃⇧⌥t
-Macro: 186      "LN1+X"      # ln(1+x)        #  ⌃⌥n
-Macro: 187      "E^X-1"      # e^x - 1        #  ⌃⌥e    ⌃⇧⌥n
-Macro: 188      "MOD"        # MOD            #   ⌥/      ⌥m
+Macro: 180      "SINH" ''    # SINH           #  ⌃⌥s
+Macro: 181      "ASINH" ''   # ASINH          # ⌃⇧⌥s
+Macro: 182      "COSH" ''    # COSH           #  ⌃⌥c
+Macro: 183      "ACOSH" ''   # ACOSH          # ⌃⇧⌥c
+Macro: 184      "TANH" ''    # TANH           #  ⌃⌥t
+Macro: 185      "ATANH" ''   # ATANH          # ⌃⇧⌥t
+Macro: 186      "LN1+X" ''   # ln(1+x)        #  ⌃⌥n
+Macro: 187      "E^X-1" ''   # e^x - 1        #  ⌃⌥e    ⌃⇧⌥n
+Macro: 188      "MOD" ''     # MOD            #   ⌥/      ⌥m
 # x^3 → x^9 (with hot-keys ⌥3 → ⌥9) correctly set LASTx and don't dismiss a program menu
 Macro: 173  07 35 02 07 27 35 02 08 27 35 02                         # x^3  STO.L STO*.L RCL*.L
 Macro: 174  07 35 02 07 27 35 03 07 27 35 03                         # x^4  STO.L 2@(STO*.X)
