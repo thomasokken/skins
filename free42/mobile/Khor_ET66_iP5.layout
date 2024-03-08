@@ -32,16 +32,16 @@ Key: 22 522,491,84,84 522,491,84,84 522,490 # DIV
 Key: 15 522,371,84,84 522,371,84,82 522,370 # CHS
 
 # Left column, fifth to second rows
-Macro: 151 "CLX" # CLX
+Macro: 151 "CLX" '' # CLX
 Key: 151 035,855,84,84 035,855,84,84 035,854 # CLX
 
-Macro: 141 "%" # %
+Macro: 141 "%" '%' # %
 Key: 141 035,735,84,84 035,735,84,84 035,734 # %
 
 Macro: 131 28 15 23 04 03 # RRES (real results only) SQRT
 Key: 131 035,611,84,84 035,611,84,84 035,610 # SQRT (real results only)
 
-Macro: 121 "%CH" # %CH
+Macro: 121 "%CH" '' # %CH
 Key: 121 035,491,84,84 035,491,84,84 035,490 # %CH
 
 # First row, first four buttons

@@ -11,20 +11,20 @@ Display: 42,36 3 4 ffffff 000000
 keys in first row 10N, shifted keys 20N
 
 Key: 101,201   15,115,075,83  17,138,70,58  16,137
-Macro:  101        "Σ+"                                                         # S+
-Macro:  201        "Σ-"                                                         # S-
+Macro:  101        "Σ+" 'Σ'                                                     # S+
+Macro:  201        "Σ-" ''                                                      # S-
 Key: 102,202   90,115,075,83  92,138,70,58  91,137
-Macro:  102        "1/X"                                                        # 1/X
-Macro:  202        "Y↑X"                                                        # Y**X 
+Macro:  102        "1/X" ''                                                     # 1/X
+Macro:  202        "Y↑X" ''                                                     # Y**X 
 Key: 103,203  165,115,075,83 168,138,70,58 167,137
-Macro:  103        "SQRT"                                                       # SQRT
-Macro:  203        "X↑2"                                                        # X**2
+Macro:  103        "SQRT" '√'                                                   # SQRT
+Macro:  203        "X↑2" ''                                                     # X**2
 Key: 104,204  240,115,075,83 243,138,70,58 242,137
-Macro:  104        "LOG"                                                        # LOG
-Macro:  204        "10↑X"                                                       # 10**X
+Macro:  104        "LOG" ''                                                     # LOG
+Macro:  204        "10↑X" ''                                                    # 10**X
 Key: 105,205  315,115,075,83 318,138,70,58 317,137
-Macro:  105        "LN"                                                         # LN
-Macro:  205        "E↑X"                                                        # exp
+Macro:  105        "LN" ''                                                      # LN
+Macro:  205        "E↑X" ''                                                     # exp
 Key: 106,206  390,115,075,83 393,138,70,58 392,137
 Macro:  106       "XEQ"                                                         # XEQ
 Macro:  206       "GTO"                                                         # GTO

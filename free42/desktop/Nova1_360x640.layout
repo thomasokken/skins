@@ -69,20 +69,20 @@ Key: 35  142,561,72,62  150,582,56,33  510,582 # Point
 Key: 36  213,561,72,62  221,582,56,33  581,582 # R-S
 Key: 37  285,561,72,62  293,582,56,33  653,582 # Add
 
-Macro: 75 "Σ+"
-Macro: 76 "Σ-"
-Macro: 77 "1/X"
-Macro: 78 "Y↑X"
-Macro: 79 "SQRT"
-Macro: 80 "X↑2"
-Macro: 81 "LOG"
-Macro: 82 "10↑X"
-Macro: 83 "LN"
-Macro: 84 "E↑X"
+Macro: 75 "Σ+" 'Σ'
+Macro: 76 "Σ-" ''
+Macro: 77 "1/X" ''
+Macro: 78 "Y↑X" ''
+Macro: 79 "SQRT" '√'
+Macro: 80 "X↑2" ''
+Macro: 81 "LOG" ''
+Macro: 82 "10↑X" ''
+Macro: 83 "LN" ''
+Macro: 84 "E↑X" ''
 Macro: 85 "XEQ"
 Macro: 86 "GTO"
-Macro: 87 "R↑"
-Macro: 88 "CLST"
+Macro: 87 "R↑" ''
+Macro: 88 "CLST" ''
 Macro: 89 "SST→"
 Macro: 90 "SST↑"
 
