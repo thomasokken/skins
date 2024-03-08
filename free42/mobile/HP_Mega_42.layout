@@ -275,29 +275,29 @@ Annunciator: 7  460,36,48,30  288,800 # RAD
     Macro: 120    "RAD"         # RAD       [SHIFT] (       CHS 1/X )           
     Macro: 121    "GRAD"        # GRD       [SHIFT] (       CHS ROOT )
     Macro: 125    15            # MODE      [SHIFT] (       CHS )
-    Macro: 126    "MEAN"        # MEAN      [SHIFT] (       DIV LN )
-    Macro: 134    "IP"          # INT       [SHIFT] (       5 DN E+ )           
-    Macro: 135    "FP"          # FRAC      [SHIFT] (       5 DN 1/X )  
+    Macro: 126    "MEAN" ''     # MEAN      [SHIFT] (       DIV LN )
+    Macro: 134    "IP" ''       # INT       [SHIFT] (       5 DN E+ )           
+    Macro: 135    "FP" ''       # FRAC      [SHIFT] (       5 DN 1/X )  
 # --------------------------------------------------------------------------------------
 # Entry Control MACROS          KEY         IMPLIED         SEQUANCE        COMMENT 
 # --------------------------------------------------------------------------------------
-    Macro: 115    "ABS"         # ABS       [SHIFT] (       CONVERT UP LOG )
-    Macro: 116    "RAN"         # RAND#     [SHIFT] (       MUL LN )
-    Macro: 113    "LASTX"       # LAST X    [SHIFT] (        X<>Y ) 
-    Macro: 125    "SDEV"        # STDV      [SHIFT] (       DIV LN ) 
-    Macro: 126    "MEAN"        # MEAN      [SHIFT] (       DIV ROOT )  
+    Macro: 115    "ABS" ''      # ABS       [SHIFT] (       CONVERT UP LOG )
+    Macro: 116    "RAN" ''      # RAND#     [SHIFT] (       MUL LN )
+    Macro: 113    "LASTX" ''    # LAST X    [SHIFT] (        X<>Y ) 
+    Macro: 125    "SDEV" ''     # STDV      [SHIFT] (       DIV LN ) 
+    Macro: 126    "MEAN" ''     # MEAN      [SHIFT] (       DIV ROOT )  
     Macro: 127    24            # BASE      [SHIFT] (       4 )
 # --------------------------------------------------------------------------------------
 # Arithmetic MACROS             KEY         IMPLIED         SEQUANCE        COMMENT 
 # --------------------------------------------------------------------------------------
-    Macro: 40     "%"           # %                 ( SHIFT RCL )
-    Macro: 140    "%CH"         # DELTA %   [SHIFT] ( SHIFT XEQ ENTER SHIFT RCL E+ ROOT 1/X ROOT ENTER )
+    Macro: 40     "%" '%'       # %                 ( SHIFT RCL )
+    Macro: 140    "%CH" ''      # DELTA %   [SHIFT] ( SHIFT XEQ ENTER SHIFT RCL E+ ROOT 1/X ROOT ENTER )
 # --------------------------------------------------------------------------------------
 # STACK / REGISTER MACROS       KEY         IMPLIED         SEQUANCE        COMMENT 
 # --------------------------------------------------------------------------------------
-    Macro: 114    "X<>"         # x<>Reg    [SHIFT] ( SHIFT XEQ ENTER XEQ 1/X ROOT ROOT ROOT LOG ENTER )
-    Macro: 41     "R↑"          # RU                (       RCL POINT XEQ)
-    Macro: 148    "DIM"         # DIM       [SHIFT] (       9 RD LOG )
+    Macro: 114    "X<>" ''      # x<>Reg    [SHIFT] ( SHIFT XEQ ENTER XEQ 1/X ROOT ROOT ROOT LOG ENTER )
+    Macro: 41     "R↑" ''       # RU                (       RCL POINT XEQ)
+    Macro: 148    "DIM" ''      # DIM       [SHIFT] (       9 RD LOG )
 # --------------------------------------------------------------------------------------
 # MISC TOP ROW MACROS           KEY         IMPLIED         SEQUANCE        COMMENT 
 # --------------------------------------------------------------------------------------
@@ -306,9 +306,9 @@ Annunciator: 7  460,36,48,30  288,800 # RAD
     Macro: 142    34                # TOP.FCN   [SHIFT] (       0 )     
     Macro: 43  28 25            # CNV               ( SHIFT 5 )
     Macro: 143    "FIX"         # FIX       [SHIFT] (       EEX  E+ )   
-    Macro: 44     "PI"          # PI                ( SHIFT RD )
+    Macro: 44     "PI" 'π'      # PI                ( SHIFT RD )
     Macro: 144    "SCI"         # SCI       [SHIFT] (       EEX  1/X )          
-    Macro: 45     "N!"          # !X                ( SHIFT MUL ROOT )      
+    Macro: 45     "N!" '!'      # !X                ( SHIFT MUL ROOT )      
     Macro: 145    "ENG"         # ENG       [SHIFT] (       EEX  ROOT )
 # --------------------------------------------------------------------------------------
 # PROGRAMMING FUNCTION MACROS   KEY         IMPLIED         SEQUANCE        COMMENT 
@@ -316,7 +316,7 @@ Annunciator: 7  460,36,48,30  288,800 # RAD
     Macro: 107    "LBL"         # LBL       [SHIFT] (       3 E+ )
     Macro: 108    "RTN"         # RET       [SHIFT] (       3 1/X)
     Macro: 109    "GTO"         # GTO       [SHIFT] (       EXQ )
-    Macro: 124    "SIGN"        # SIGN      [SHIFT] (       + E+ RD(28) XEQ )
+    Macro: 124    "SIGN" ''     # SIGN      [SHIFT] (       + E+ RD(28) XEQ )
     Macro: 129    "SF"          # SF        [SHIFT] (       6 E+ )
     Macro: 130    "CF"          # CF        [SHIFT] (       6 1/X )
     Macro: 131    "FS?"         # FS?       [SHIFT] (       6 ROOT )
@@ -336,7 +336,7 @@ Annunciator: 7  460,36,48,30  288,800 # RAD
     Macro: 151    "DSE"         # DSE       [SHIFT] (       3 DN XEQ )
     Macro: 55     "PROMPT"      # PROMPT         [] ( SHIFT 3 DN ROOT )
     Macro: 155    "PSE"         # PAUSE     [SHIFT] (       3 DN LOG )
-    Macro: 56     "COMPLEX"     # CPLX      [SHIFT] ( SHIFT STO )
+    Macro: 56     "COMPLEX" ''  # CPLX      [SHIFT] ( SHIFT STO )
     Macro: 156    "CPXRES"      # CPXRES    [SHIFT] (       + E+ RD RD RD RD RD RD RD RD LOG )
     Macro: 57     "X≥Y?"        # X >= Y         [] ( SHIFT 3 DN 1/X XEQ )
     Macro: 157    "X≤Y?"        # X <= Y    [SHIFT] (       3 DN 1/X LN )

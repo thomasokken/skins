@@ -66,8 +66,8 @@ Macro: 212 "MDY" # MDY
 Macro: 213 "CLK12" # CLK12
 Macro: 214 30 # CUSTOM
 Macro: 215 "CLK24" # CLK24
-Macro: 216 "HMS+" # HMS+
-Macro: 217 "HMS-" # HMS-
+Macro: 216 "HMS+" '' # HMS+
+Macro: 217 "HMS-" '' # HMS-
 
 Key: 02,211 075,221,69,71 075,221,69,71 075,220 # 1/x DMY
 Key: 34,212 148,221,69,71 148,221,69,71 148,220 # 0 MDY
@@ -79,13 +79,13 @@ Key: 117,217 498,221,69,71 498,221,69,71 498,220 # SQRT HMS-
 
 # Second row
 
-Macro: 127 "CLX" # CLX
+Macro: 127 "CLX" "CLA" # CLX
 Macro: 221 35 # SHOW
-Macro: 222 "Σ+" # SUM+
-Macro: 223 "Σ-" # SUM-
+Macro: 222 "Σ+" 'Σ' # SUM+
+Macro: 223 "Σ-" '' # SUM-
 Macro: 224 19 # SOLVER
-Macro: 225 "SUM" # SUM
-Macro: 226 "MEAN" # MEAN
+Macro: 225 "SUM" '' # SUM
+Macro: 226 "MEAN" '' # MEAN
 Macro: 227 17 01 28 17 04 # CLstatreg and CLST
 
 Key: 35,221 075,292,69,55 075,292,69,54 075,291 # . SHOW
@@ -98,13 +98,13 @@ Key: 127,227 498,292,69,55 498,292,69,54 498,291 # C CLX CLstatreg and CLST
 
 # Third row
 
-Macro: 231 "DOW" # DOW
-Macro: 232 "DATE+" # DATE+
+Macro: 231 "DOW" '' # DOW
+Macro: 232 "DATE+" '' # DATE+
 Macro: 233 28 15 # CHS
-Macro: 234 "X<>Y" # x<>Y
-Macro: 235 "→HR" # >HR
-Macro: 236 "→HMS" # >HMS
-Macro: 237 "LASTX" # Last x
+Macro: 234 "X<>Y" '' # x<>Y
+Macro: 235 "→HR" '' # >HR
+Macro: 236 "→HMS" '' # >HMS
+Macro: 237 "LASTX" '' # Last x
 
 Key: 16,231 075,373,69,54 075,373,69,54 075,372 # E DOW
 Key: 37,232 148,373,69,54 148,373,69,54 148,372 # PLUS DATE+
@@ -116,15 +116,15 @@ Key: 09,237 498,373,69,54 498,373,69,54 498,372 # Roll down Last x
 
 # Fourth row
 
-Macro: 141 "DATE" # DATE
-Macro: 142 "DDAYS" # DDAYS
+Macro: 141 "DATE" '' # DATE
+Macro: 142 "DDAYS" '' # DDAYS
 Macro: 145 08 30 24 # MR  RCL Reg24
-Macro: 146 "%" # %
-Macro: 147 "TIME" # TIME
+Macro: 146 "%" '%' # %
+Macro: 147 "TIME" '' # TIME
 Macro: 241 16 01 34 26 # FIX 06
-Macro: 242 "DDAYS" # DDAYS
+Macro: 242 "DDAYS" '' # DDAYS
 Macro: 245 37 01 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 02 30 24 # MS  STO Reg24
-Macro: 246 "%CH" # %CH
+Macro: 246 "%CH" '' # %CH
 Macro: 247 16 01 34 24 # FIX 04
 
 Key: 141,241 075,427,68,55 075,427,68,55 075,426 # DATE FIX 06
@@ -137,18 +137,18 @@ Key: 147,247 498,427,68,55 498,427,68,55 498,426 # TIME FIX 04
 
 # Shifted third row (available via direct click on desktop skin)
 
-Macro: 181 "DOW" # DOW
-Macro: 182 "DATE+" # DATE+
-Macro: 185 "→HR" # >HR
-Macro: 186 "→HMS" # >HMS
-Macro: 187 "LASTX" # Last x
-Macro: 81 "DOW" # DOW
-Macro: 82 "DATE+" # DATE+
+Macro: 181 "DOW" '' # DOW
+Macro: 182 "DATE+" '' # DATE+
+Macro: 185 "→HR" '' # >HR
+Macro: 186 "→HMS" '' # >HMS
+Macro: 187 "LASTX" '' # Last x
+Macro: 81 "DOW" '' # DOW
+Macro: 82 "DATE+" '' # DATE+
 Macro: 83 28 15 # CHS
-Macro: 84 "X<>Y" # X<>Y
-Macro: 85 "→HR" # >HR
-Macro: 86 "→HMS" # >HMS
-Macro: 87 "LASTX" # Last x
+Macro: 84 "X<>Y" '' # X<>Y
+Macro: 85 "→HR" '' # >HR
+Macro: 86 "→HMS" '' # >HMS
+Macro: 87 "LASTX" '' # Last x
 
 Key: 181,81 082,346,55,25 082,348,55,25 082,347 # DW DOW
 Key: 182,82 153,346,55,25 153,348,55,25 153,347 # DATE+
