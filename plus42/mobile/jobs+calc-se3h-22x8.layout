@@ -1,0 +1,190 @@
+# Jobs Calc skin for Plus42
+# Suitable for iPhone 4.7" {6, 6s, 7, 8, SE (gen 2), SE (gen 3)}
+# By Ivan Savochenko (LeftyDeMilo)
+
+Skin: 0,0,1334,750                 # Absolute coordinates
+Display: 6,182 5 6 000000 cccccc   # Relative (in-skin) coordinates
+DisplaySize: 22,8 182 6 8          # cols,rows disp_y pixel_scale_y max_rows
+Flags: 7
+
+#           Relative (in-skin) coordinates    Absolute coordinates
+#           --------------------------------  --------------------
+#                     click          display       down
+#             x,   y,  w, h    x,   y,  w, h     x,   y
+Key: 1        6, 572,105,30    6, 578,105,18     6,1328  # Custom-1
+Key: 2      158, 572,105,30  158, 578,105,18   158,1328  # Custom-2
+Key: 3      268, 572,105,30  268, 578,105,18   268,1328  # Custom-3
+Key: 4      378, 572,105,30  378, 578,105,18   378,1328  # Custom-4
+Key: 5      488, 572,105,30  488, 578,105,18   488,1328  # Custom-5
+Key: 6      598, 572,105,30  598, 578,105,18   598,1328  # Custom-6
+
+Key: 38,39   14,  36, 96,80   10,  32,104,88    10, 782  # Dirs
+Key: 40,41  124,  36, 96,80  120,  32,104,88   120, 782  # Units
+Key: 42,43  234,  36, 96,80  230,  32,104,88   230, 782  # Roll Stack Up
+Key: 44,45  344,  36, 96,80  340,  32,104,88   340, 782  # Swap X<>...
+Key: 46,47  454,  36, 96,80  450,  32,104,88   450, 782  # View
+Key: 48,49  564,  36, 96,80  560,  32,104,88   560, 782  # Equation
+
+Key: 50,51  674,  36, 96,80  670,  32,104,88   670, 782  # Sigma
+Key: 52,53  784,  36, 96,80  780,  32,104,88   780, 782  # Reciprocal
+Key: 54,55  894,  36, 96,80  890,  32,104,88   890, 782  # Square Root
+Key: 56,57 1004,  36, 96,80 1000,  32,104,88  1000, 782  # LOG 10
+Key: 58,59 1114,  36, 96,80 1110,  32,104,88  1110, 782  # LN
+Key: 60,61 1224,  36, 96,80 1220,  32,104,88  1220, 782  # XEQ
+
+Key: 7       14, 646, 96,80   10, 642,104,88    10,1392  # STO
+Key: 8      124, 646, 96,80  120, 642,104,88   120,1392  # RCL
+Key: 9      234, 646, 96,80  230, 642,104,88   230,1392  # Roll Stack Down
+Key: 10     344, 646, 96,80  340, 642,104,88   340,1392  # SIN
+Key: 11     454, 646, 96,80  450, 642,104,88   450,1392  # COS
+Key: 12     564, 646, 96,80  560, 642,104,88   560,1392  # TAN
+
+Key: 13     674, 646,206,80  670, 642,202,88   670,1392  # ENTER
+Key: 14     894, 646, 96,80  890, 642,104,88   890,1392  # Swap X<>Y
+Key: 15    1004, 646, 96,80 1000, 642,104,88  1000,1392  # Negate
+Key: 16    1114, 646, 96,80 1110, 642,104,88  1110,1392  # Exponent
+Key: 17    1224, 646, 96,80 1220, 642,104,88  1220,1392  # Backspace
+
+Key: 18     674, 158,118,80  670, 154,126,88   670, 904  # Scroll Up
+Key: 19     806, 158,118,80  802, 154,126,88   802, 904  # 7
+Key: 20     938, 158,118,80  934, 154,126,88   934, 904  # 8
+Key: 21    1070, 158,118,80 1066, 154,126,88  1066, 904  # 9
+Key: 22    1202, 158,118,80 1198, 154,126,88  1198, 904  # Divide
+
+Key: 23     674, 280,118,80  670, 276,126,88   670,1026  # Scroll Down
+Key: 24     806, 280,118,80  802, 276,126,88   802,1026  # 4
+Key: 25     938, 280,118,80  934, 276,126,88   934,1026  # 5
+Key: 26    1070, 280,118,80 1066, 276,126,88  1066,1026  # 6
+Key: 27    1202, 280,118,80 1198, 276,126,88  1198,1026  # Multiply
+
+Key: 28     674, 402,118,80  670, 398,126,88   670,1148  # Shift
+Key: 29     806, 402,118,80  802, 398,126,88   802,1148  # 1
+Key: 30     938, 402,118,80  934, 398,126,88   934,1148  # 2
+Key: 31    1070, 402,118,80 1066, 398,126,88  1066,1148  # 3
+Key: 32    1202, 402,118,80 1198, 398,126,88  1198,1148  # Subtract
+
+Key: 33     674, 524,118,80  670, 520,126,88   670,1270  # Exit
+Key: 34     806, 524,118,80  802, 520,126,88   802,1270  # 0
+Key: 35     938, 524,118,80  934, 520,126,88   934,1270  # Point
+Key: 36    1070, 524,118,80 1066, 520,126,88  1066,1270  # Run Stop
+Key: 37    1202, 524,118,80 1198, 520,126,88  1198,1270  # Add
+
+#         Relative coordinates  Absolute coordinates
+#         --------------------  --------------------
+Annunciator: 1  580,132, 66,40  580,882  # Scroll Up-Down
+Annunciator: 2   32,132, 60,40   32,882  # Shift
+Annunciator: 3  130,132, 85,40  130,882  # Printing
+Annunciator: 4  256,132, 52,40  256,882  # Busy
+Annunciator: 5  388,132, 10,40  388,882  # Battery
+Annunciator: 6  452,132, 22,40  452,882  # GRAD
+Annunciator: 7  474,132, 58,40  474,882  # RAD
+
+# Taken from '+42_MoHo_FULLÂ½.layout'
+
+Macro: 38 "DIRS"
+Macro: 39 "DIR.FCN"
+Macro: 40 "UNITS"
+Macro: 41 "UNIT.FCN"
+Macro: 42 "R^" ''
+Macro: 43 "PLOT.M"
+Macro: 44 "X<>" ''
+Macro: 45 "%CH" ''
+Macro: 46 "VIEW"
+Macro: 47 "SST^"
+Macro: 48 "EQN"
+Macro: 49 "EQN.FCN"
+
+Macro: 50 "Î£+" 'Î£'
+Macro: 51 "Î£-" ''
+Macro: 52 "1/X" ''
+Macro: 53 "Y^X" ''
+Macro: 54 "SQRT" 'âˆš'
+Macro: 55 "X^2" ''
+Macro: 56 "LOG" ''
+Macro: 57 "10^X" ''
+Macro: 58 "LN" ''
+Macro: 59 "E^X" ''
+Macro: 60 "XEQ"
+Macro: 61 "GTO"
+
+WinKey: 65 : 50
+WinKey: Shift 65 : 51
+WinKey: CShift 65 : 51
+WinKey: 86 : 52
+WinKey: Shift 86 : 53
+WinKey: CShift 86 : 53
+WinKey: 81 : 54
+WinKey: Shift 81 : 55
+WinKey: CShift 81 : 55
+WinKey: 79 : 56
+WinKey: Shift 79 : 57
+WinKey: CShift 79 : 57
+WinKey: 76 : 58
+WinKey: Shift 76 : 59
+WinKey: CShift 76 : 59
+WinKey: 88 : 60
+WinKey: Shift 88 : 61
+WinKey: CShift 88 : 61
+WinKey: 71 : 61
+
+MacKey: a : 50
+MacKey: A : 51
+MacKey: CShift a : 51
+MacKey: v : 52
+MacKey: V : 53
+MacKey: CShift v : 53
+MacKey: q : 54
+MacKey: Q : 55
+MacKey: CShift q : 55
+MacKey: o : 56
+MacKey: O : 57
+MacKey: CShift o : 57
+MacKey: l : 58
+MacKey: L : 59
+MacKey: CShift l : 59
+MacKey: x : 60
+MacKey: X : 61
+MacKey: CShift x : 61
+MacKey: g : 61
+
+GtkKey: a : 50
+GtkKey: A : 51
+GtkKey: CShift a : 51
+GtkKey: v : 52
+GtkKey: V : 53
+GtkKey: CShift v : 53
+GtkKey: q : 54
+GtkKey: Q : 55
+GtkKey: CShift q : 55
+GtkKey: o : 56
+GtkKey: O : 57
+GtkKey: CShift o : 57
+GtkKey: l : 58
+GtkKey: L : 59
+GtkKey: CShift l : 59
+GtkKey: x : 60
+GtkKey: X : 61
+GtkKey: CShift x : 61
+GtkKey: g : 61
+
+DroidKey: a : 50
+DroidKey: A : 51
+DroidKey: CShift a : 51
+DroidKey: v : 52
+DroidKey: V : 53
+DroidKey: CShift v : 53
+DroidKey: q : 54
+DroidKey: Q : 55
+DroidKey: CShift q : 55
+DroidKey: o : 56
+DroidKey: O : 57
+DroidKey: CShift o : 57
+DroidKey: l : 58
+DroidKey: L : 59
+DroidKey: CShift l : 59
+DroidKey: x : 60
+DroidKey: X : 61
+DroidKey: CShift x : 61
+DroidKey: g : 61
+
+
