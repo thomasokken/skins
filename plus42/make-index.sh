@@ -99,7 +99,7 @@ do
     dir=`dirname $layout`
     base=`basename $layout .layout`
     gif=$dir/${base}.gif
-    size=`grep '^Skin:' $layout | sed 's/^Skin: 0,0,\([0-9]*\),\([0-9]*\).*$/\1x\2/'`
+    size=`grep '^Skin:' $layout | sed 's/^Skin: [0-9]*,[0-9]*,\([0-9]*\),\([0-9]*\).*$/\1x\2/'`
     width=`echo $size | sed 's/^\([^x]*\)x.*$/\1/'`
     height=`echo $size | sed 's/^[^x]*x\(.*\)$/\1/'`
     if [ $width -eq $height ]
