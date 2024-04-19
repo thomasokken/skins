@@ -6,6 +6,7 @@ cat - << EOF
 <head>
   <title>Plus42 Skins</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no"/>
   <link rel="icon" type="image/png" href="../images/plus42-icon.png">
   <style>
     .crumb { color: DeepPink }
