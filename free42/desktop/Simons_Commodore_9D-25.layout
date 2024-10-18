@@ -1,0 +1,72 @@
+# --------------------------------------------------------------
+# Commodore 9D-25 skin
+#
+# created by Simon Widmer
+# --------------------------------------------------------------
+# awsome imperfect picture taken from my real calculator
+# ( notice that some buttons are somewhat slightly rotated. :)
+#   I do not mind because this beast is working since 1975! 
+#   nevertheless, the image had to be rescaled and slightly
+#   edited in order to marry it with the free42 calculator.
+#   Commodore is dead - long live Commodore
+
+Skin: 0,0,464,900
+Display: 44,122 2.9 4 040602 22ffff #040602 22ffff
+
+# 6th row
+Key: 34 37,718,82,82 37,718,82,82 35,716 # 0
+Key: 35 142,718,82,82 142,718,82,82 140,716 # .
+Key: 13 356,718,82,82 356,718,82,82 354,716 # ENTER
+Key: 37 356,609,82,82 356,609,82,82 354,607 # PLUS
+
+# 5th row
+Key: 29 35,609,82,82 35,609,82,82 33,607 # 1
+Key: 30 144,609,82,82 144,609,82,82 142,607 # 2
+Key: 31 246,609,82,82 246,609,82,82 244,607 # 3
+Key: 32 247,718,82,82 248,718,82,82 245,716 # MINUS
+
+# 4th row
+Key: 24 34,504,82,82 34,504,82,82 32,502 # 4
+Key: 25 141,504,82,82 141,504,82,82 139,502 # 5
+Key: 26 246,504,82,82 246,504,82,82 244,502 # 6
+Key: 27 353,504,82,82 353,504,82,82 351,502 # MULT
+
+# third row
+Key: 19 34,394,82,82 34,394,82,82 32,392 # 7
+Key: 20 141,394,82,82 141,394,82,82 139,392 # 8
+Key: 21 246,394,82,82 246,394,82,82 244,392 # 9
+Key: 22 353,394,82,82 353,394,82,82 351,392 # DIV
+
+# second row, smaller red buttons
+Macro: 111 07 37 30 24 # M+  STO+ Reg24
+Macro: 112 07 32 30 24 # M-  STO- Reg24
+Macro: 113 08 30 24    # MR  RCL Reg24
+Macro: 114 07 35 02 28 17 06 07 30 24 28 17 06 08 35 02 # MC  STO .ST L CLX STO Reg24 CLX RCL .ST L
+Macro: 115 "CLST" '' # CLST
+Key: 111 035,310,82,82 035,310,82,82 033,308 # M+
+Key: 112 118,310,82,82 118,310,82,82 116,308 # M-
+Key: 113 205,310,82,82 205,310,82,82 203,308 # MR
+Key: 114 290,310,82,82 290,310,82,82 288,308 # MC
+Key: 115 376,310,62,62 376,310,62,62 374,308 # CLST   OK
+
+# First row, smaller blue buttons
+Macro: 120 28 3 # X2  (means key 28 + key3 or Shift + key 3)
+Macro: 121 28 15 23 04 03 # RRES (real results only) SQRT
+Macro: 122 "%" '%' # %
+Key: 2 33,226,62,62 33,226,62,62 31,224 # 1/X2
+Key: 120 118,226,62,62 118,226,62,62 116,224 # X2
+Key: 121 207,226,62,62 207,226,62,62 205,224 # SQRT (real results only)
+Key: 122 290,226,62,62 290,226,62,62 288,224 # %      OK
+
+# OFF key extra feature :)
+Macro: 160 28 33 # Switch OFF
+Key: 160 381,244,45,20 381,244,45,20 360,244
+
+# Annunciators (not displayed)
+Annunciator: 1 000,000,00,00 000,000 # Scroll Up-Down
+Annunciator: 2 000,000,00,00 000,000 # Shift
+Annunciator: 3 000,000,00,00 000,000 # Printing
+Annunciator: 4 000,000,00,00 000,000 # Busy
+Annunciator: 5 000,000,00,00 000,000 # Battery
+Annunciator: 6 000,000,00,00 000,000 # GRAD
+Annunciator: 7 000,000,00,00 000,000 # RAD
