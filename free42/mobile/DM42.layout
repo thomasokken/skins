@@ -72,3 +72,82 @@ Annunciator: 5 555,96,53,28 325,1313
 Annunciator: 6 340,132,16,28 404,1313
 Annunciator: 7 358,132,51,28 422,1313
 
+WinKey: 65 : 41
+WinKey: Shift 65 : 42
+WinKey: CShift 65 : 42
+WinKey: 86 : 43
+WinKey: Shift 86 : 44
+WinKey: CShift 86 : 44
+WinKey: 81 : 45
+WinKey: Shift 81 : 46
+WinKey: CShift 81 : 46
+WinKey: 79 : 47
+WinKey: Shift 79 : 48
+WinKey: CShift 79 : 48
+WinKey: 76 : 49
+WinKey: Shift 76 : 50
+WinKey: CShift 76 : 50
+WinKey: 88 : 51
+WinKey: Shift 88 : 52
+WinKey: CShift 88 : 52
+WinKey: 71 : 52
+
+MacKey: a : 41
+MacKey: A : 42
+MacKey: CShift a : 42
+MacKey: v : 43
+MacKey: V : 44
+MacKey: CShift v : 44
+MacKey: q : 45
+MacKey: Q : 46
+MacKey: CShift q : 46
+MacKey: o : 47
+MacKey: O : 48
+MacKey: CShift o : 48
+MacKey: l : 49
+MacKey: L : 50
+MacKey: CShift l : 50
+MacKey: x : 51
+MacKey: X : 52
+MacKey: CShift x : 52
+MacKey: g : 52
+
+GtkKey: a : 41
+GtkKey: A : 42
+GtkKey: CShift a : 42
+GtkKey: v : 43
+GtkKey: V : 44
+GtkKey: CShift v : 44
+GtkKey: q : 45
+GtkKey: Q : 46
+GtkKey: CShift q : 46
+GtkKey: o : 47
+GtkKey: O : 48
+GtkKey: CShift o : 48
+GtkKey: l : 49
+GtkKey: L : 50
+GtkKey: CShift l : 50
+GtkKey: x : 51
+GtkKey: X : 52
+GtkKey: CShift x : 52
+GtkKey: g : 52
+
+DroidKey: a : 41
+DroidKey: A : 42
+DroidKey: CShift a : 42
+DroidKey: v : 43
+DroidKey: V : 44
+DroidKey: CShift v : 44
+DroidKey: q : 45
+DroidKey: Q : 46
+DroidKey: CShift q : 46
+DroidKey: o : 47
+DroidKey: O : 48
+DroidKey: CShift o : 48
+DroidKey: l : 49
+DroidKey: L : 50
+DroidKey: CShift l : 50
+DroidKey: x : 51
+DroidKey: X : 52
+DroidKey: CShift x : 52
+DroidKey: g : 52
