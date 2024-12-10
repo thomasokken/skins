@@ -8,6 +8,7 @@ cat - << EOF
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,user-scalable=no"/>
   <link rel="icon" type="image/png" href="../images/plus42-icon.png">
+  <link rel="stylesheet" href="../../styles/default.css">
   <style>
     .crumb { color: DeepPink }
     .crumb:link { text-decoration: none; }
