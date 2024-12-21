@@ -94,11 +94,11 @@ Macro: 47 "SST^"
 Macro: 48 "EQN"
 Macro: 49 "EQN.FCN"
 
-Macro: 50 "Î£+" 'Î£'
-Macro: 51 "Î£-" ''
+Macro: 50 "Σ+" 'Σ'
+Macro: 51 "Σ-" ''
 Macro: 52 "1/X" ''
-Macro: 53 "Y^X" ''
-Macro: 54 "SQRT" 'âˆš'
+Macro: 53 "Y^X" '↑'
+Macro: 54 "SQRT" '√'
 Macro: 55 "X^2" ''
 Macro: 56 "LOG" ''
 Macro: 57 "10^X" ''
