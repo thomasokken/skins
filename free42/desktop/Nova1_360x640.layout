@@ -72,7 +72,7 @@ Key: 37  285,561,72,62  293,582,56,33  653,582 # Add
 Macro: 75 "Σ+" 'Σ'
 Macro: 76 "Σ-" ''
 Macro: 77 "1/X" ''
-Macro: 78 "Y↑X" ''
+Macro: 78 "Y↑X" '↑'
 Macro: 79 "SQRT" '√'
 Macro: 80 "X↑2" ''
 Macro: 81 "LOG" ''

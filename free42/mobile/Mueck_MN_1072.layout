@@ -183,7 +183,7 @@ Macro: 096      "SQRT" '√'   # SQRT           #   ⌥r
 Macro: 097      "X^2" ''     # X^2            #   ⌥2     ⇧⌥r
 Macro: 094      "1/X" ''     # 1/X            #   ⌥i
 Macro: 095      "FACT" '!'   # FACT           #   ⌥f     ⇧⌥r
-Macro: 098      "Y^X" ''     # Y^X            #   ⌥y
+Macro: 098      "Y^X" '↑'    # Y^X            #   ⌥y
 #Macro: 099      08           # %              #   ⇧/      ⌥p 
 Macro: 100      17           # BACKSPACE      #    BKSP    DEL
 #Macro: 101      "%CH" ''     # %CH            #   ⇧x     ⇧⌥p ⇧F7 ⇧F8 ⇧F9 ⇧*(numeric pad)

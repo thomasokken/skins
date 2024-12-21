@@ -142,7 +142,7 @@ Macro: 74 28 37
 Macro: 75 "Σ+" 'Σ'
 Macro: 76 "Σ-" ''
 Macro: 77 "1/X" ''
-Macro: 78 "Y↑X" ''
+Macro: 78 "Y↑X" '↑'
 Macro: 79 "SQRT" '√'
 Macro: 80 "X↑2" ''
 Macro: 81 "LOG" ''

@@ -54,7 +54,7 @@ Key: 37 538,1165,116,96 552,1184,88,58 552,2538
 Macro: 41 "Σ+" 'Σ'
 Macro: 42 "Σ-" ''
 Macro: 43 "1/X" ''
-Macro: 44 "Y↑X" ''
+Macro: 44 "Y↑X" '↑'
 Macro: 45 "SQRT" '√'
 Macro: 46 "X↑2" ''
 Macro: 47 "LOG" ''
