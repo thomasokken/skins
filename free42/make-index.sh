@@ -159,12 +159,15 @@ do
     layout_d=`date -jf 'Date: %a %b %d %H:%M:%S %Y %z' '+%Y-%m-%d' "$layout_ds"`
     gif_ds=`git log --follow $dir/${base}.gif | awk 'BEGIN { d = ""; f = 0 }; /Date:/ { if (d == "") { d = $0 }; f++}; /Created subdirectories/ { if (f == 1) { d = "" }}; END { print d }'`
     gif_d=`date -jf 'Date: %a %b %d %H:%M:%S %Y %z' '+%Y-%m-%d' "$gif_ds"`
-    date=`(echo $layout_d; echo $gif_d) | sort | tail -1`
     if [ -f $dir/${base}.zip ]
     then
         zip_link="<p><b><font color=\"red\">Support files:</font> <a href=\"$dir/${base}.zip\">zip</a></b>"
+        zip_ds=`git log --follow $dir/${base}.zip | awk 'BEGIN { d = ""; f = 0 }; /Date:/ { if (d == "") { d = $0 }; f++}; /Created subdirectories/ { if (f == 1) { d = "" }}; END { print d }'`
+        zip_d=`date -jf 'Date: %a %b %d %H:%M:%S %Y %z' '+%Y-%m-%d' "$zip_ds"`
+        date=`(echo $layout_d; echo $gif_d; echo $zip_d) | sort | tail -1`
     else
         zip_link=""
+        date=`(echo $layout_d; echo $gif_d) | sort | tail -1`
     fi
     echo "    <tr bgcolor=\"#$color\" $title><td><b>$base</b><br><font size=\"-1\">$size<p>Last Updated: $date</font>$zip_link</td><td align=\"center\"><a href=\"$gif\"><img src=\"$thumb\" width=\"$width\" height=\"$height\"></a></td><td><a href=\"$gif\">view gif</a><br><a href=\"$layout\">view layout</a><p><a href=\"$gif\" download>download gif</a><br><a href=\"$layout\" download>download layout</a></td></tr>"
     if [ $color = "dddddd" ]
